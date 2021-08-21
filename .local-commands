@@ -1,0 +1,24 @@
+### elastic beanstalk init enviroment
+eb init -p docker application-name
+
+## elastic beanstalk run docker file locally through elastic beanstalk
+eb local run --port 5000
+
+## To test the docker file you can run
+docker-compose build
+docker-compose up
+
+## To test the above has worked you need to use curl
+curl -X GET http://0.0.0.0
+
+## After testing docker file works localy you will want to deploy with elastic beanstalk
+eb create environment-name
+
+## Open hosted elastic beanstalk
+eb open
+
+## When hosted can be tested with 
+curl -X GET https://app-basicsynbio.co.uk 
+
+## Redeploy new changes
+eb deploy
