@@ -15,9 +15,7 @@ def getCollections():
                 {
                     "label": bsbversion[item].name,
                     "accessor": item,
-                    "binaryString": partToString(
-                        bsbversion[item]
-                    ),
+                    "binaryString": partToString(bsbversion[item]),
                     "description": bsbversion[item].description,
                     "collection": collection,
                 }

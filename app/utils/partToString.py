@@ -7,8 +7,8 @@ from Bio import SeqIO
 def partToString(mypart):
     mypart.annotations["molecule_type"] = "DNA"
     SeqIO.write(mypart, "mypart.gb", "genbank")
-    text_file = open("mypart.gb", "r")
-    data = text_file.read()
-    text_file.close()
+    with open("mypart.gb", "r") as f:
+        output = f.read()
+        f.close()
     os.remove("mypart.gb")
-    return str(data)
+    return str(output)
