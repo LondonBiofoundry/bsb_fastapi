@@ -39,7 +39,6 @@ def basicPartsFromUploadFile(
             filepath = get_file_path_name(file)
             save_upload_file(file, filepath)
             basic_parts = bsb.import_parts(filepath, type, addiseq)
-            os.remove(filepath)
             parts_array = [
                 {
                     "label": part.id,
@@ -48,6 +47,7 @@ def basicPartsFromUploadFile(
                 }
                 for part in basic_parts
             ]
+            os.remove(filepath)
             return {"result": "success", "partsarray": parts_array}
     except Exception as e:
         return {"error": str(e)}
