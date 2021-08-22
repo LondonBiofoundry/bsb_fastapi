@@ -29,5 +29,14 @@ def getCollectionsData():
 
 
 @app.post("/fileupload/singular")
-async def file_upload_singular(type: fileType, addiseq: bool,file: UploadFile = File(...)):
+async def file_upload_singular(
+    type: fileType, addiseq: bool, file: UploadFile = File(...)
+):
     return await fileUploadSingular(type, addiseq, file)
+
+
+@app.post("/fileupload/multiple")
+async def file_upload_multiple(
+    type: fileType, addiseq: bool, file: UploadFile = File(...)
+):
+    return await fileUploadMultiple(type, addiseq, file)

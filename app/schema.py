@@ -22,19 +22,23 @@ class basicBuild(BaseModel):
     description: Optional[str] = None
     parts: Optional[List[basicPart]] = None
 
-class fileTypeInformation():
+
+class fileTypeInformation:
     name: str
     extension: str
 
-class fileTypeData(fileTypeInformation,Enum):
-    genbank = {"name":"genbank","extension":".gb"}
-    fasta = {"name":"fasta","extension":".fasta"}
-    SBOL = {"name":"SBOL","extension":".rdf"}
+
+class fileTypeData(fileTypeInformation, Enum):
+    genbank = {"name": "genbank", "extension": ".gb"}
+    fasta = {"name": "fasta", "extension": ".fasta"}
+    SBOL = {"name": "SBOL", "extension": ".rdf"}
+
 
 class fileType(str, Enum):
     genbank = "genbank"
     fasta = "fasta"
     SBOL = "SBOL"
+
 
 class fileUploadArgs(BaseModel):
     addiseq: bool
