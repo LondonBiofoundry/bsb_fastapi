@@ -2,11 +2,13 @@ from fastapi import FastAPI, File, UploadFile
 import basicsynbio as bsb
 from pathlib import Path
 import os
-from app.schema import fileType, fileTypeData
+from app.schema import fileType, fileTypeData, basicBuild
+from typing import List
 
 from app.src.getCollections import getCollections
 from app.src.fileUploadSingular import fileUploadSingular
 from app.src.fileUploadMultiple import fileUploadMultiple
+from app.src.buildCSVs import buildCSVs
 
 
 app = FastAPI()
@@ -44,3 +46,9 @@ async def file_upload_multiple(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
 ):
     return await fileUploadMultiple(type, addiseq, file)
+
+
+# Route to return CSV representation on basicBuild Object
+@app.post("/buildcsvs")
+async def return_build_csvs(myBuild: List[basicBuild]):
+    return buildCSVs(myBuild)
