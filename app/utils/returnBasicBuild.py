@@ -1,4 +1,3 @@
-from flask import request, send_from_directory
 import basicsynbio as bsb
 from app.utils.ItemtoPart import itemtopart
 
