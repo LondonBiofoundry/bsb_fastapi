@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional, List
+from enum import Enum
 
 
 class basicPart(BaseModel):
@@ -20,3 +21,21 @@ class basicBuild(BaseModel):
     name: Optional[str] = None
     description: Optional[str] = None
     parts: Optional[List[basicPart]] = None
+
+class fileTypeInformation():
+    name: str
+    extension: str
+
+class fileTypeData(fileTypeInformation,Enum):
+    genbank = {"name":"genbank","extension":".gb"}
+    fasta = {"name":"fasta","extension":".fasta"}
+    SBOL = {"name":"SBOL","extension":".rdf"}
+
+class fileType(str, Enum):
+    genbank = "genbank"
+    fasta = "fasta"
+    SBOL = "SBOL"
+
+class fileUploadArgs(BaseModel):
+    addiseq: bool
+    type: fileType

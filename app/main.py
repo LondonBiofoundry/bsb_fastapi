@@ -1,7 +1,11 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile
 import basicsynbio as bsb
+from pathlib import Path
+import os
+from app.schema import fileType, fileTypeData
 
 from app.src.getCollections import getCollections
+from app.src.fileUploadSingular import fileUploadSingular
 
 app = FastAPI()
 
@@ -22,3 +26,8 @@ def getCollectionsNames():
 @app.get("/collections/data")
 def getCollectionsData():
     return {"data": getCollections()}
+
+
+@app.post("/fileupload/singular")
+async def file_upload_singular(type: fileType, addiseq: bool,file: UploadFile = File(...)):
+    return await fileUploadSingular(type, addiseq, file)
