@@ -6,7 +6,7 @@ from app.schema import fileType, fileTypeData
 
 
 def createPathForType(type: fileType = fileType.genbank):
-    return "mypart" + fileTypeData[type].extension
+    return "mypart" + fileTypeData[type].value["extension"]
 
 
 def partToString(mypart, type: fileType = fileType.genbank):

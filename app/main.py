@@ -6,6 +6,8 @@ from app.schema import fileType, fileTypeData
 
 from app.src.getCollections import getCollections
 from app.src.fileUploadSingular import fileUploadSingular
+from app.src.fileUploadMultiple import fileUploadMultiple
+
 
 app = FastAPI()
 
