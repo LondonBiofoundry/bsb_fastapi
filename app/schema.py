@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Any
 from enum import Enum
 from fastapi import File, UploadFile
 
@@ -8,7 +8,7 @@ class basicPart(BaseModel):
     id: str
     accessor: Optional[str] = None
     binaryString: Optional[str] = None
-    base64: Optional[UploadFile] = None
+    base64: Optional[Any] = None
     collection: Optional[str] = None
     description: Optional[str] = None
     label: Optional[str] = None

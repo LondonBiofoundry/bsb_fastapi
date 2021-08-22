@@ -10,7 +10,7 @@ def return_build(mybuild) -> bsb.BasicBuild:
             parts = []
             for item in assembly.parts:
                 part = itemtopart(item)
-                print('part', part)
+                print("part", part)
                 parts.append(part)
             if assembly.name:
                 parts.insert(0, assembly.name)
