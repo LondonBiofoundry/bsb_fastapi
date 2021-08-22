@@ -10,12 +10,6 @@ async def fileUploadSingular(
 ):
     result = returnBasicPartFromUploadFile(file, type, addiseq)
     if isinstance(result, bsb.BasicPart):
-        return {
-            "file_size": file.filename,
-            "typeData": fileTypeData[type],
-            "type": type,
-            "addiseq": addiseq,
-            "fileb_content_type": file.content_type,
-        }
+        return {"result": "success", "seq": str(result.seq)}
     else:
         return result
