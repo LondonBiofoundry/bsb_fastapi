@@ -30,6 +30,7 @@ def getCollectionsData():
     return {"data": getCollections()}
 
 
+# Route to return sequence data witin a uploaded file
 @app.post("/fileupload/singular")
 async def file_upload_singular(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
@@ -37,6 +38,7 @@ async def file_upload_singular(
     return await fileUploadSingular(type, addiseq, file)
 
 
+# Route to return sequence datas for each record within a uploaded file
 @app.post("/fileupload/multiple")
 async def file_upload_multiple(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
