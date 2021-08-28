@@ -12246,5 +12246,5 @@ snapshots['test_collection_names 2'] = {
 snapshots['test_root_hello_world 1'] = 200
 
 snapshots['test_root_hello_world 2'] = {
-    'message': 'Hello Worlds'
+    'message': 'Hello World'
 }
