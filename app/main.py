@@ -12,6 +12,7 @@ from app.src.fileUploadMultiple import fileUploadMultiple
 from app.src.buildCSVs import buildCSVs
 from app.src.buildEchoInstructions import buildEchoInstructions
 from app.src.buildPDFInstructions import buildPDFInstructions
+from app.src.buildJSON import buildJSON
 
 
 app = FastAPI()
@@ -82,3 +83,9 @@ async def return_build_echo_instructions(myBuild: List[basicBuild]):
 @app.post("/build_pdf_instructions")
 async def return_build_pdf_instructions(myBuild: List[basicBuild]):
     return buildPDFInstructions(myBuild)
+
+
+# Route to return JSON representation on basicBuild Object
+@app.post("/buildjson")
+async def return_build_json(myBuild: List[basicBuild]):
+    return buildJSON(myBuild)

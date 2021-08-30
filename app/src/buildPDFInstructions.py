@@ -9,4 +9,4 @@ import basicsynbio as bsb
 def buildPDFInstructions(myBuild: List[basicBuild]):
     build = return_build(myBuild)
     filepath = bsb.pdf_instructions(build)
-    return read_return_delete(filepath, "application/zip", "archive.zip")
+    return read_return_delete(filepath, "application/pdf", filepath)

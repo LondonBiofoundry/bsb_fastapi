@@ -12253,6 +12253,8 @@ snapshots["test_singular_build_csvs 1"] = 200
 
 snapshots["test_singular_build_echo_instructions 1"] = 200
 
+snapshots["test_singular_build_json 1"] = 200
+
 snapshots["test_singular_file_upload 1"] = 200
 
 snapshots["test_singular_file_upload 2"] = {

@@ -3,14 +3,18 @@ from app.schema import basicBuild
 from app.utils.returnBasicBuild import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
+import json
 
 from app.utils.readReturnDelete import read_return_delete
 
+import basicsynbio as bsb
 
-def buildCSVs(myBuild: List[basicBuild]):
+
+def buildJSON(myBuild: List[basicBuild]):
     try:
         build = return_build(myBuild)
-        filepath = build.export_csvs()
-        return read_return_delete(filepath, "application/zip", "archive.zip")
+        with open("my_build.json", "w") as json_file:
+            json.dump(build, json_file, cls=bsb.BuildEncoder, indent=4)
+        return read_return_delete("my_build.json", "application/json", "my_build.json")
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
