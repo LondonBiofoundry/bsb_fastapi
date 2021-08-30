@@ -1,6 +1,8 @@
 from fastapi.testclient import TestClient
 from snapshottest.file import FileSnapshot
 from pathlib import Path
+import json
+
 from app.main import app
 
 client = TestClient(app)
@@ -101,3 +103,15 @@ def test_singular_file_upload(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
+
+
+def test_singular_build_csvs(snapshot):
+    """Testing the API for ability to build csv"""
+    f = open("tests/inputs/BasicBuild.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/buildcsvs",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.content)
