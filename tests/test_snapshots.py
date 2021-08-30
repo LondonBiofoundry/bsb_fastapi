@@ -198,3 +198,15 @@ def test_validate_success(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
+
+
+def test_validate_failure(snapshot):
+    """Testing the API for ability to fail builds"""
+    f = open("tests/inputs/BasicBuildPartsFailure.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/validate",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
