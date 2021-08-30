@@ -7,16 +7,16 @@ from snapshottest import Snapshot
 
 snapshots = Snapshot()
 
-snapshots['test_collection_data 1'] = 200
+snapshots["test_collection_data 1"] = 200
 
-snapshots['test_collection_data 2'] = {
-    'data': [
+snapshots["test_collection_data 2"] = {
+    "data": [
         {
-            'name': 'BASIC_BIOLEGIO_LINKERS',
-            'v0.1': [
+            "name": "BASIC_BIOLEGIO_LINKERS",
+            "v0.1": [
                 {
-                    'accessor': 'L1',
-                    'binaryString': '''LOCUS       L1                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L1",
+                    "binaryString": """LOCUS       L1                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   0893fc2b9795b280f4c43ee3267489aa
@@ -31,14 +31,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttac ttacgacact ccgagacagt cagagggtat ttattgaact agtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L1'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L1",
                 },
                 {
-                    'accessor': 'L2',
-                    'binaryString': '''LOCUS       L2                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L2",
+                    "binaryString": """LOCUS       L2                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   edd651940d345a5447cf8d52a7e55bb8
@@ -53,14 +53,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgatcg gtgtgaaaag tcagtatcca gtcgtgtagt tcttattacc tgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L2'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L2",
                 },
                 {
-                    'accessor': 'L3',
-                    'binaryString': '''LOCUS       L3                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L3",
+                    "binaryString": """LOCUS       L3                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   97c74b65b44da2f7067b124118549149
@@ -75,14 +75,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgatca cggcactaca ctcgttgctt tatcggtatt gttattacag agtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L3'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L3",
                 },
                 {
-                    'accessor': 'L4',
-                    'binaryString': '''LOCUS       L4                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L4",
+                    "binaryString": """LOCUS       L4                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   7a22202a9f583aa0162a950092b42214
@@ -97,14 +97,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgagaa gtagtgccac agacagtatt gcttacgagt tgatttatcc tgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L4'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L4",
                 },
                 {
-                    'accessor': 'L5',
-                    'binaryString': '''LOCUS       L5                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L5",
+                    "binaryString": """LOCUS       L5                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   cc431c8b2d3171f61db4e06226457930
@@ -119,14 +119,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat tgtaaagcac gaaacctacg ataagagtgt cagttctcct tgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L5'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L5",
                 },
                 {
-                    'accessor': 'L6',
-                    'binaryString': '''LOCUS       L6                        55 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "L6",
+                    "binaryString": """LOCUS       L6                        55 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   0ce3392fcc9379be69a6827f905e0060
@@ -141,14 +141,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgaact tttacgggtg ccgactcact attacagact tactacaatc tgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'L6'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "L6",
                 },
                 {
-                    'accessor': 'LMP',
-                    'binaryString': '''LOCUS       LMP                       57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LMP",
+                    "binaryString": """LOCUS       LMP                       57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   00d898637a50a35f638cd3c4bc3ef744
@@ -163,14 +163,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggta agaactcgca cttcgtggaa acactattat ctggtgggtc tctgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LMP'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LMP",
                 },
                 {
-                    'accessor': 'LMS',
-                    'binaryString': '''LOCUS       LMS                       57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LMS",
+                    "binaryString": """LOCUS       LMS                       57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   1b62864ef7e8ad38d30e92a2dbc17670
@@ -185,14 +185,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggag acctatcggt aataacagtc caatctggtg taacttcgga atcgtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LMS'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LMS",
                 },
                 {
-                    'accessor': 'LF1',
-                    'binaryString': '''LOCUS       LF1                       54 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF1",
+                    "binaryString": """LOCUS       LF1                       54 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   3dba4a2ad654e64e225a6f2f8bb7af56
@@ -207,14 +207,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggct cgggctccga aaacttgtac ttccagggat cgggctccgg gtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF1'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF1",
                 },
                 {
-                    'accessor': 'LF2',
-                    'binaryString': '''LOCUS       LF2                       57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF2",
+                    "binaryString": """LOCUS       LF2                       57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   9363b002ab3c87830711d0b41e4b64bf
@@ -229,14 +229,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggct cgggctccct ggaagttctg tttcaaggtc catcgggctc cgggtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF2'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF2",
                 },
                 {
-                    'accessor': 'LF3',
-                    'binaryString': '''LOCUS       LF3                       54 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF3",
+                    "binaryString": """LOCUS       LF3                       54 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   e153fef2c069e165c5ec2dba6a1404da
@@ -251,14 +251,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggct cgggctccgg atctggttca ggttcaggat cgggctccgg gtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF3'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF3",
                 },
                 {
-                    'accessor': 'LF4',
-                    'binaryString': '''LOCUS       LF4                       60 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF4",
+                    "binaryString": """LOCUS       LF4                       60 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   d5b4666ba1dd2443a66c39ab86faa6c9
@@ -273,14 +273,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgggct cgggctccgg atcaggatct ggttcaggtt caggatcggg ctccgggtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF4'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF4",
                 },
                 {
-                    'accessor': 'LF5',
-                    'binaryString': '''LOCUS       LF5                       66 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF5",
+                    "binaryString": """LOCUS       LF5                       66 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   15593e99c7f9ee8ff0ad0a99fe8836c8
@@ -296,14 +296,14 @@ ORIGIN
         1 ggctcgggct cgggctccgg atcaggatct ggttcaggtt caggatcagg atcgggctcc
        61 gggtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF5'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF5",
                 },
                 {
-                    'accessor': 'LF6',
-                    'binaryString': '''LOCUS       LF6                       63 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "LF6",
+                    "binaryString": """LOCUS       LF6                       63 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   c13be98895e10de91aef13c0730dc91c
@@ -319,14 +319,14 @@ ORIGIN
         1 ggctcggccg aagcggctgc taaagaagca gctgctaaag aggcggccgc caaggcaggg
        61 tcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'LF6'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "LF6",
                 },
                 {
-                    'accessor': 'UTR1-RBS1',
-                    'binaryString': '''LOCUS       UTR1-RBS1                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS1",
+                    "binaryString": """LOCUS       UTR1-RBS1                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   64ae9c70fd948887b240d8ad3c6a5a76
@@ -341,14 +341,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tcacacagga ctagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS1'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS1",
                 },
                 {
-                    'accessor': 'UTR1-RBS2',
-                    'binaryString': '''LOCUS       UTR1-RBS2                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS2",
+                    "binaryString": """LOCUS       UTR1-RBS2                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   6bbd830ee167938f0dae3f872bc965b1
@@ -363,14 +363,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa aagaggggaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS2'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS2",
                 },
                 {
-                    'accessor': 'UTR1-RBS3',
-                    'binaryString': '''LOCUS       UTR1-RBS3                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS3",
+                    "binaryString": """LOCUS       UTR1-RBS3                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   8cb7b58a64af42b6a789aff6c1964d71
@@ -385,14 +385,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa aagaggagaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS3'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS3",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A01',
-                    'binaryString': '''LOCUS       UTR1-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A01",
+                    "binaryString": """LOCUS       UTR1-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   0907969930e261cda278aa298685f146
@@ -407,14 +407,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A01'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A01",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A02',
-                    'binaryString': '''LOCUS       UTR1-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A02",
+                    "binaryString": """LOCUS       UTR1-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   baeee0c134f95d27d490ba64e60f5e21
@@ -429,14 +429,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tccggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A02'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A02",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A03',
-                    'binaryString': '''LOCUS       UTR1-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A03",
+                    "binaryString": """LOCUS       UTR1-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   5cdc9bf0184268b9545803457105ee1c
@@ -451,14 +451,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A03'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A03",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A04',
-                    'binaryString': '''LOCUS       UTR1-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A04",
+                    "binaryString": """LOCUS       UTR1-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   391980d42f427c819286cbf9ad29d2a9
@@ -473,14 +473,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tccagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A04'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A04",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A05',
-                    'binaryString': '''LOCUS       UTR1-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A05",
+                    "binaryString": """LOCUS       UTR1-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   37e342ed4eb7552ec1d49e7f13510ba7
@@ -495,14 +495,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tcccgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A05'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A05",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A06',
-                    'binaryString': '''LOCUS       UTR1-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A06",
+                    "binaryString": """LOCUS       UTR1-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   fa6d79f20fe200ab7372923981e65be7
@@ -517,14 +517,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tccgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A06'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A06",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A07',
-                    'binaryString': '''LOCUS       UTR1-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A07",
+                    "binaryString": """LOCUS       UTR1-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   5f7a05b009c57070b62ba9ccf0ed30a1
@@ -539,14 +539,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctcaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A07'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A07",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A08',
-                    'binaryString': '''LOCUS       UTR1-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A08",
+                    "binaryString": """LOCUS       UTR1-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   12b6f530b162ee31c3a6a51585c2b18c
@@ -561,14 +561,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tccaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A08'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A08",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A09',
-                    'binaryString': '''LOCUS       UTR1-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A09",
+                    "binaryString": """LOCUS       UTR1-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   752c823d5da16e77328abf1534185857
@@ -583,14 +583,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A09'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A09",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A10',
-                    'binaryString': '''LOCUS       UTR1-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A10",
+                    "binaryString": """LOCUS       UTR1-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   3279858541bb7efc8cbf57e7d2e47d2a
@@ -605,14 +605,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tcccaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A10'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A10",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A11',
-                    'binaryString': '''LOCUS       UTR1-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A11",
+                    "binaryString": """LOCUS       UTR1-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   2ac35f789459fe582bbf4fc4cd809ec0
@@ -627,14 +627,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctcgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A11'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A11",
                 },
                 {
-                    'accessor': 'UTR1-RBS-A12',
-                    'binaryString': '''LOCUS       UTR1-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-A12",
+                    "binaryString": """LOCUS       UTR1-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   7306fd414dbf389a2760afff5bf6a395
@@ -649,14 +649,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tctaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-A12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-A12",
                 },
                 {
-                    'accessor': 'UTR2-RBS1',
-                    'binaryString': '''LOCUS       UTR2-RBS1                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS1",
+                    "binaryString": """LOCUS       UTR2-RBS1                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   f0f4d42a987078be33f5b3a9c1dbc3cb
@@ -671,14 +671,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tcacacagga ctagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS1'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS1",
                 },
                 {
-                    'accessor': 'UTR2-RBS2',
-                    'binaryString': '''LOCUS       UTR2-RBS2                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS2",
+                    "binaryString": """LOCUS       UTR2-RBS2                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   ab672049c8b56106d458b65235492868
@@ -693,14 +693,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa aagaggggaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS2'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS2",
                 },
                 {
-                    'accessor': 'UTR2-RBS3',
-                    'binaryString': '''LOCUS       UTR2-RBS3                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS3",
+                    "binaryString": """LOCUS       UTR2-RBS3                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   d1b71c47c0be2efa1abad479c1ec5413
@@ -715,14 +715,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa aagaggagaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS3'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS3",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A01',
-                    'binaryString': '''LOCUS       UTR2-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A01",
+                    "binaryString": """LOCUS       UTR2-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   718e056a59d5903802c37d9d6b3e5f90
@@ -737,14 +737,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A01'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A01",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A02',
-                    'binaryString': '''LOCUS       UTR2-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A02",
+                    "binaryString": """LOCUS       UTR2-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   a6171892e133a3d2bcd6ababba241fe8
@@ -759,14 +759,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tccggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A02'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A02",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A03',
-                    'binaryString': '''LOCUS       UTR2-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A03",
+                    "binaryString": """LOCUS       UTR2-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   685a5074af227291b1a223793eb50c5c
@@ -781,14 +781,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A03'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A03",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A04',
-                    'binaryString': '''LOCUS       UTR2-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A04",
+                    "binaryString": """LOCUS       UTR2-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   e7d767bd7fbe1e3212eb1d10bca1fd65
@@ -803,14 +803,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tccagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A04'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A04",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A05',
-                    'binaryString': '''LOCUS       UTR2-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A05",
+                    "binaryString": """LOCUS       UTR2-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   d706b105571c3a4bafa1d04f3007b84b
@@ -825,14 +825,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tcccgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A05'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A05",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A06',
-                    'binaryString': '''LOCUS       UTR2-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A06",
+                    "binaryString": """LOCUS       UTR2-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   f9374efcdb0a0e11bbe677f03d63d805
@@ -847,14 +847,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tccgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A06'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A06",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A07',
-                    'binaryString': '''LOCUS       UTR2-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A07",
+                    "binaryString": """LOCUS       UTR2-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   3a853eed70dd58e5d1c4788c31db5f87
@@ -869,14 +869,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctcaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A07'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A07",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A08',
-                    'binaryString': '''LOCUS       UTR2-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A08",
+                    "binaryString": """LOCUS       UTR2-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   7bdd5ddcf9c9164ed17af84788b5e4ee
@@ -891,14 +891,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tccaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A08'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A08",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A09',
-                    'binaryString': '''LOCUS       UTR2-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A09",
+                    "binaryString": """LOCUS       UTR2-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   22661c99debdb0045cc853ebc5dc8168
@@ -913,14 +913,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A09'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A09",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A10',
-                    'binaryString': '''LOCUS       UTR2-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A10",
+                    "binaryString": """LOCUS       UTR2-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   1471223a787dc58a6499f26bba1178ce
@@ -935,14 +935,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tcccaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A10'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A10",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A11',
-                    'binaryString': '''LOCUS       UTR2-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A11",
+                    "binaryString": """LOCUS       UTR2-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   078fcc54c3bc19d2d40af6a50d5da5dd
@@ -957,14 +957,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctcgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A11'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A11",
                 },
                 {
-                    'accessor': 'UTR2-RBS-A12',
-                    'binaryString': '''LOCUS       UTR2-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-A12",
+                    "binaryString": """LOCUS       UTR2-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   58b633636914793217f8b87cf9667e74
@@ -979,14 +979,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tctaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-A12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-A12",
                 },
                 {
-                    'accessor': 'UTR3-RBS1',
-                    'binaryString': '''LOCUS       UTR3-RBS1                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS1",
+                    "binaryString": """LOCUS       UTR3-RBS1                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   bca77c7687ab87e13e28f91b224e774b
@@ -1001,14 +1001,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tcacacagga ctagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS1'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS1",
                 },
                 {
-                    'accessor': 'UTR3-RBS2',
-                    'binaryString': '''LOCUS       UTR3-RBS2                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS2",
+                    "binaryString": """LOCUS       UTR3-RBS2                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   f012ae13cc4ea6fd256b9352284fb4e0
@@ -1023,14 +1023,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa aagaggggaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS2'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS2",
                 },
                 {
-                    'accessor': 'UTR3-RBS3',
-                    'binaryString': '''LOCUS       UTR3-RBS3                 57 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS3",
+                    "binaryString": """LOCUS       UTR3-RBS3                 57 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   2d97cb65f8cdc1ad30e1aeeaf2bee326
@@ -1045,14 +1045,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa aagaggagaa atagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS3'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS3",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A01',
-                    'binaryString': '''LOCUS       UTR3-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A01",
+                    "binaryString": """LOCUS       UTR3-RBS-A01              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   a56d39731ca82b3cb7546e8fc4a00d48
@@ -1067,14 +1067,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A01'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A01",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A02',
-                    'binaryString': '''LOCUS       UTR3-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A02",
+                    "binaryString": """LOCUS       UTR3-RBS-A02              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   668593d5460b6d84ebc0046dd0d33ef3
@@ -1089,14 +1089,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tccggggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A02'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A02",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A03',
-                    'binaryString': '''LOCUS       UTR3-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A03",
+                    "binaryString": """LOCUS       UTR3-RBS-A03              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   f3976d8ef3d08745c33eaf4de32909e3
@@ -1111,14 +1111,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A03'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A03",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A04',
-                    'binaryString': '''LOCUS       UTR3-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A04",
+                    "binaryString": """LOCUS       UTR3-RBS-A04              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   2fdacd0087234f3ccfb2dc2923334178
@@ -1133,14 +1133,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tccagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A04'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A04",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A05',
-                    'binaryString': '''LOCUS       UTR3-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A05",
+                    "binaryString": """LOCUS       UTR3-RBS-A05              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   2ce398b62951e59ff1f79fc129d6597c
@@ -1155,14 +1155,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tcccgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A05'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A05",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A06',
-                    'binaryString': '''LOCUS       UTR3-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A06",
+                    "binaryString": """LOCUS       UTR3-RBS-A06              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   1b5be340f5cc1f618932601e4a63a755
@@ -1177,14 +1177,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tccgaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A06'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A06",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A07',
-                    'binaryString': '''LOCUS       UTR3-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A07",
+                    "binaryString": """LOCUS       UTR3-RBS-A07              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   73a8ff224fe7eaf60725634baa0247a7
@@ -1199,14 +1199,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctcaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A07'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A07",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A08',
-                    'binaryString': '''LOCUS       UTR3-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A08",
+                    "binaryString": """LOCUS       UTR3-RBS-A08              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   67cdcf1bc190bd99968c37f344530e6c
@@ -1221,14 +1221,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tccaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A08'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A08",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A09',
-                    'binaryString': '''LOCUS       UTR3-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A09",
+                    "binaryString": """LOCUS       UTR3-RBS-A09              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   98d31e83ff42da8a5fbc5ad79e794148
@@ -1243,14 +1243,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctagggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A09'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A09",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A10',
-                    'binaryString': '''LOCUS       UTR3-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A10",
+                    "binaryString": """LOCUS       UTR3-RBS-A10              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   8b36ca67ee9eadf1f392e9aee3829773
@@ -1265,14 +1265,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tcccaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A10'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A10",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A11',
-                    'binaryString': '''LOCUS       UTR3-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A11",
+                    "binaryString": """LOCUS       UTR3-RBS-A11              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   8d48211a02d2270fbdfa8d80008893a1
@@ -1287,14 +1287,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctcgggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A11'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A11",
                 },
                 {
-                    'accessor': 'UTR3-RBS-A12',
-                    'binaryString': '''LOCUS       UTR3-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-A12",
+                    "binaryString": """LOCUS       UTR3-RBS-A12              56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   7ca01cfe4061cf2ceb4999cd99a026d8
@@ -1309,14 +1309,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tctaaggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-A12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-A12",
                 },
                 {
-                    'accessor': 'UTR1-RBS-AM12',
-                    'binaryString': '''LOCUS       UTR1-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-AM12",
+                    "binaryString": """LOCUS       UTR1-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   874f2eec71f58b5ea689948f074d2d5a
@@ -1331,14 +1331,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tcyvrggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-AM12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-AM12",
                 },
                 {
-                    'accessor': 'UTR1-RBS-AM24',
-                    'binaryString': '''LOCUS       UTR1-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR1-RBS-AM24",
+                    "binaryString": """LOCUS       UTR1-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   4ec1b460101a3af758c528b91f3992bb
@@ -1353,14 +1353,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgttga acaccgtctc aggtaagtat cagttgtaaa tcyvrggrgg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR1-RBS-AM24'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR1-RBS-AM24",
                 },
                 {
-                    'accessor': 'UTR2-RBS-AM12',
-                    'binaryString': '''LOCUS       UTR2-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-AM12",
+                    "binaryString": """LOCUS       UTR2-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   08bd28b5b76160cd713a99bf67343daa
@@ -1375,14 +1375,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tcyvrggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-AM12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-AM12",
                 },
                 {
-                    'accessor': 'UTR2-RBS-AM24',
-                    'binaryString': '''LOCUS       UTR2-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR2-RBS-AM24",
+                    "binaryString": """LOCUS       UTR2-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   e8066eb21f1d4809c78abd8925dd900e
@@ -1397,14 +1397,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcgtgtt actattggct gagataaggg tagcagaaaa tcyvrggrgg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR2-RBS-AM24'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR2-RBS-AM24",
                 },
                 {
-                    'accessor': 'UTR3-RBS-AM12',
-                    'binaryString': '''LOCUS       UTR3-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-AM12",
+                    "binaryString": """LOCUS       UTR3-RBS-AM12             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   f56ae28c523fde9db2521cc1adb8a5fa
@@ -1419,14 +1419,14 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tcyvrggagg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-AM12'
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-AM12",
                 },
                 {
-                    'accessor': 'UTR3-RBS-AM24',
-                    'binaryString': '''LOCUS       UTR3-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
+                    "accessor": "UTR3-RBS-AM24",
+                    "binaryString": """LOCUS       UTR3-RBS-AM24             56 bp    DNA              UNK 01-JAN-1980
 DEFINITION  visit https://www.biolegio.com/products-services/basic/ for further
             information..
 ACCESSION   c1e2a75d330308ac4419cc0bd09b80c3
@@ -1441,19 +1441,19 @@ FEATURES             Location/Qualifiers
 ORIGIN
         1 ggctcggtat ctcgtggtct gacggtaaaa tctattgtaa tcyvrggrgg tagtcc
 //
-''',
-                    'collection': 'BASIC_BIOLEGIO_LINKERS',
-                    'description': 'visit https://www.biolegio.com/products-services/basic/ for further information.',
-                    'label': 'UTR3-RBS-AM24'
-                }
-            ]
+""",
+                    "collection": "BASIC_BIOLEGIO_LINKERS",
+                    "description": "visit https://www.biolegio.com/products-services/basic/ for further information.",
+                    "label": "UTR3-RBS-AM24",
+                },
+            ],
         },
         {
-            'name': 'BASIC_CDS_PARTS',
-            'v0.1': [
+            "name": "BASIC_CDS_PARTS",
+            "v0.1": [
                 {
-                    'accessor': 'sfGFP',
-                    'binaryString': '''LOCUS       BASIC_sfGFP_CDS         3141 bp    DNA     circular UNK 23-JUL-2020
+                    "accessor": "sfGFP",
+                    "binaryString": """LOCUS       BASIC_sfGFP_CDS         3141 bp    DNA     circular UNK 23-JUL-2020
 DEFINITION  sfGFP stored in BASIC_SEVA_18.
 ACCESSION   f3eb90a77c18c828cc1c0e2ce99d9f83
 VERSION     f3eb90a77c18c828cc1c0e2ce99d9f83
@@ -1531,14 +1531,14 @@ ORIGIN
      3061 gacgagctgt ataagcgtcc gtaaggctcg ggagacctat cggtaataac agtccaatct
      3121 ggtgtaactt cggaatcgtc c
 //
-''',
-                    'collection': 'BASIC_CDS_PARTS',
-                    'description': 'sfGFP stored in BASIC_SEVA_18',
-                    'label': 'BASIC_sfGFP_CDS'
+""",
+                    "collection": "BASIC_CDS_PARTS",
+                    "description": "sfGFP stored in BASIC_SEVA_18",
+                    "label": "BASIC_sfGFP_CDS",
                 },
                 {
-                    'accessor': 'mCherry',
-                    'binaryString': '''LOCUS       BASIC_mCherry_CDS       3129 bp    DNA     circular UNK 23-JUL-2020
+                    "accessor": "mCherry",
+                    "binaryString": """LOCUS       BASIC_mCherry_CDS       3129 bp    DNA     circular UNK 23-JUL-2020
 DEFINITION  mCherry stored in BASIC_SEVA_18.
 ACCESSION   62771c44c2711126d5250509d5b64554
 VERSION     62771c44c2711126d5250509d5b64554
@@ -1616,14 +1616,14 @@ ORIGIN
      3061 ctgtacaagt aaggctcggg agacctatcg gtaataacag tccaatctgg tgtaacttcg
      3121 gaatcgtcc
 //
-''',
-                    'collection': 'BASIC_CDS_PARTS',
-                    'description': 'mCherry stored in BASIC_SEVA_18',
-                    'label': 'BASIC_mCherry_CDS'
+""",
+                    "collection": "BASIC_CDS_PARTS",
+                    "description": "mCherry stored in BASIC_SEVA_18",
+                    "label": "BASIC_mCherry_CDS",
                 },
                 {
-                    'accessor': 'mTagBFP2',
-                    'binaryString': '''LOCUS       BASIC_mTagBFP2_CDS      3126 bp    DNA     circular UNK 23-JUL-2020
+                    "accessor": "mTagBFP2",
+                    "binaryString": """LOCUS       BASIC_mTagBFP2_CDS      3126 bp    DNA     circular UNK 23-JUL-2020
 DEFINITION  mTagBFP2 stored in BASIC_SEVA_18.
 ACCESSION   adb85d1208ec49e5cf26279bbf0391c0
 VERSION     adb85d1208ec49e5cf26279bbf0391c0
@@ -1701,19 +1701,19 @@ ORIGIN
      3061 ggtagctaag gctcgggaga cctatcggta ataacagtcc aatctggtgt aacttcggaa
      3121 tcgtcc
 //
-''',
-                    'collection': 'BASIC_CDS_PARTS',
-                    'description': 'mTagBFP2 stored in BASIC_SEVA_18',
-                    'label': 'BASIC_mTagBFP2_CDS'
-                }
-            ]
+""",
+                    "collection": "BASIC_CDS_PARTS",
+                    "description": "mTagBFP2 stored in BASIC_SEVA_18",
+                    "label": "BASIC_mTagBFP2_CDS",
+                },
+            ],
         },
         {
-            'name': 'BASIC_PROMOTER_PARTS',
-            'v0.1': [
+            "name": "BASIC_PROMOTER_PARTS",
+            "v0.1": [
                 {
-                    'accessor': 'B-P1',
-                    'binaryString': '''LOCUS       B-P1_Terminator1_J23119_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P1",
+                    "binaryString": """LOCUS       B-P1_Terminator1_J23119_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P1 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P1,
             contains a J23119 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -1790,14 +1790,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P1 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P1, contains a J23119 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P1_Terminator1_J23119_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P1 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P1, contains a J23119 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P1_Terminator1_J23119_RiboA",
                 },
                 {
-                    'accessor': 'B-P2',
-                    'binaryString': '''LOCUS       B-P2_Terminator1_J23111_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P2",
+                    "binaryString": """LOCUS       B-P2_Terminator1_J23111_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P2 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P2,
             contains a J23111 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -1874,14 +1874,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P2 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P2, contains a J23111 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P2_Terminator1_J23111_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P2 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P2, contains a J23111 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P2_Terminator1_J23111_RiboA",
                 },
                 {
-                    'accessor': 'B-P3',
-                    'binaryString': '''LOCUS       B-P3_Terminator1_J23104_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P3",
+                    "binaryString": """LOCUS       B-P3_Terminator1_J23104_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P3 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P3,
             contains a J23104 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -1958,14 +1958,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P3 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P3, contains a J23104 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P3_Terminator1_J23104_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P3 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P3, contains a J23104 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P3_Terminator1_J23104_RiboA",
                 },
                 {
-                    'accessor': 'B-P4',
-                    'binaryString': '''LOCUS       B-P4_Terminator1_J23101_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P4",
+                    "binaryString": """LOCUS       B-P4_Terminator1_J23101_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P4 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P4,
             contains a J23101 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -2042,14 +2042,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P4 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P4, contains a J23101 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P4_Terminator1_J23101_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P4 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P4, contains a J23101 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P4_Terminator1_J23101_RiboA",
                 },
                 {
-                    'accessor': 'B-P5',
-                    'binaryString': '''LOCUS       B-P5_Terminator1_J23108_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P5",
+                    "binaryString": """LOCUS       B-P5_Terminator1_J23108_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P5 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P5,
             contains a J23108 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -2126,14 +2126,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P5 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P5, contains a J23108 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P5_Terminator1_J23108_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P5 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P5, contains a J23108 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P5_Terminator1_J23108_RiboA",
                 },
                 {
-                    'accessor': 'B-P6',
-                    'binaryString': '''LOCUS       B-P6_Terminator1_J23106_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P6",
+                    "binaryString": """LOCUS       B-P6_Terminator1_J23106_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P6 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P6,
             contains a J23106 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -2210,14 +2210,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P6 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P6, contains a J23106 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P6_Terminator1_J23106_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P6 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P6, contains a J23106 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P6_Terminator1_J23106_RiboA",
                 },
                 {
-                    'accessor': 'B-P7',
-                    'binaryString': '''LOCUS       B-P7_Terminator1_J23105_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P7",
+                    "binaryString": """LOCUS       B-P7_Terminator1_J23105_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P7 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P7,
             contains a J23105 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -2294,14 +2294,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P7 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P7, contains a J23105 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P7_Terminator1_J23105_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P7 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P7, contains a J23105 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P7_Terminator1_J23105_RiboA",
                 },
                 {
-                    'accessor': 'B-P8',
-                    'binaryString': '''LOCUS       B-P8_Terminator1_J23116_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P8",
+                    "binaryString": """LOCUS       B-P8_Terminator1_J23116_RiboA 2609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P8 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P8,
             contains a J23116 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -2378,14 +2378,14 @@ ORIGIN
      2521 caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc
      2581 ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P8 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P8, contains a J23116 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P8_Terminator1_J23116_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P8 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P8, contains a J23116 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P8_Terminator1_J23116_RiboA",
                 },
                 {
-                    'accessor': 'B-P9',
-                    'binaryString': '''LOCUS       B-P9_Terminator2_J23119_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P9",
+                    "binaryString": """LOCUS       B-P9_Terminator2_J23119_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P9 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P9,
             contains a J23119 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2462,14 +2462,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P9 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P9, contains a J23119 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P9_Terminator2_J23119_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P9 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P9, contains a J23119 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P9_Terminator2_J23119_RiboB",
                 },
                 {
-                    'accessor': 'B-P10',
-                    'binaryString': '''LOCUS       B-P10_Terminator2_J23111_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P10",
+                    "binaryString": """LOCUS       B-P10_Terminator2_J23111_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P10 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P10,
             contains a J23111 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2546,14 +2546,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P10 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P10, contains a J23111 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P10_Terminator2_J23111_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P10 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P10, contains a J23111 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P10_Terminator2_J23111_RiboB",
                 },
                 {
-                    'accessor': 'B-P11',
-                    'binaryString': '''LOCUS       B-P11_Terminator2_J23104_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P11",
+                    "binaryString": """LOCUS       B-P11_Terminator2_J23104_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P11 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P11,
             contains a J23104 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2630,14 +2630,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P11 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P11, contains a J23104 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P11_Terminator2_J23104_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P11 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P11, contains a J23104 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P11_Terminator2_J23104_RiboB",
                 },
                 {
-                    'accessor': 'B-P12',
-                    'binaryString': '''LOCUS       B-P12_Terminator2_J23101_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P12",
+                    "binaryString": """LOCUS       B-P12_Terminator2_J23101_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P12 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P12,
             contains a J23101 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2714,14 +2714,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P12 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P12, contains a J23101 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P12_Terminator2_J23101_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P12 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P12, contains a J23101 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P12_Terminator2_J23101_RiboB",
                 },
                 {
-                    'accessor': 'B-P13',
-                    'binaryString': '''LOCUS       B-P13_Terminator2_J23108_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P13",
+                    "binaryString": """LOCUS       B-P13_Terminator2_J23108_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P13 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P13,
             contains a J23108 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2798,14 +2798,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P13 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P13, contains a J23108 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P13_Terminator2_J23108_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P13 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P13, contains a J23108 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P13_Terminator2_J23108_RiboB",
                 },
                 {
-                    'accessor': 'B-P14',
-                    'binaryString': '''LOCUS       B-P14_Terminator2_J23106_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P14",
+                    "binaryString": """LOCUS       B-P14_Terminator2_J23106_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P14 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P14,
             contains a J23106 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2882,14 +2882,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P14 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P14, contains a J23106 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P14_Terminator2_J23106_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P14 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P14, contains a J23106 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P14_Terminator2_J23106_RiboB",
                 },
                 {
-                    'accessor': 'B-P15',
-                    'binaryString': '''LOCUS       B-P15_Terminator2_J23105_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P15",
+                    "binaryString": """LOCUS       B-P15_Terminator2_J23105_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P15 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P15,
             contains a J23105 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -2966,14 +2966,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P15 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P15, contains a J23105 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P15_Terminator2_J23105_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P15 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P15, contains a J23105 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P15_Terminator2_J23105_RiboB",
                 },
                 {
-                    'accessor': 'B-P16',
-                    'binaryString': '''LOCUS       B-P16_Terminator2_J23116_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P16",
+                    "binaryString": """LOCUS       B-P16_Terminator2_J23116_RiboB 2605 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P16 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P16,
             contains a J23116 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -3050,14 +3050,14 @@ ORIGIN
      2521 agagcgttca ccgacaaaca acagataaaa cgaaaggccc agtctttcga ctgagccttt
      2581 cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P16 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P16, contains a J23116 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P16_Terminator2_J23116_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P16 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P16, contains a J23116 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P16_Terminator2_J23116_RiboB",
                 },
                 {
-                    'accessor': 'B-P17',
-                    'binaryString': '''LOCUS       B-P17_Terminator3_J23119_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P17",
+                    "binaryString": """LOCUS       B-P17_Terminator3_J23119_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P17 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P17,
             contains a J23119 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3134,14 +3134,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P17 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P17, contains a J23119 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P17_Terminator3_J23119_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P17 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P17, contains a J23119 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P17_Terminator3_J23119_RiboC",
                 },
                 {
-                    'accessor': 'B-P18',
-                    'binaryString': '''LOCUS       B-P18_Terminator3_J23111_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P18",
+                    "binaryString": """LOCUS       B-P18_Terminator3_J23111_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P18 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P18,
             contains a J23111 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3218,14 +3218,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P18 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P18, contains a J23111 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P18_Terminator3_J23111_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P18 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P18, contains a J23111 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P18_Terminator3_J23111_RiboC",
                 },
                 {
-                    'accessor': 'B-P19',
-                    'binaryString': '''LOCUS       B-P19_Terminator3_J23104_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P19",
+                    "binaryString": """LOCUS       B-P19_Terminator3_J23104_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P19 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P19,
             contains a J23104 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3302,14 +3302,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P19 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P19, contains a J23104 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P19_Terminator3_J23104_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P19 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P19, contains a J23104 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P19_Terminator3_J23104_RiboC",
                 },
                 {
-                    'accessor': 'B-P20',
-                    'binaryString': '''LOCUS       B-P20_Terminator3_J23101_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P20",
+                    "binaryString": """LOCUS       B-P20_Terminator3_J23101_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P20 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P20,
             contains a J23101 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3386,14 +3386,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P20 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P20, contains a J23101 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P20_Terminator3_J23101_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P20 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P20, contains a J23101 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P20_Terminator3_J23101_RiboC",
                 },
                 {
-                    'accessor': 'B-P21',
-                    'binaryString': '''LOCUS       B-P21_Terminator3_J23108_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P21",
+                    "binaryString": """LOCUS       B-P21_Terminator3_J23108_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P21 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P21,
             contains a J23108 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3470,14 +3470,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P21 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P21, contains a J23108 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P21_Terminator3_J23108_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P21 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P21, contains a J23108 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P21_Terminator3_J23108_RiboC",
                 },
                 {
-                    'accessor': 'B-P22',
-                    'binaryString': '''LOCUS       B-P22_Terminator3_J23106_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P22",
+                    "binaryString": """LOCUS       B-P22_Terminator3_J23106_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P22 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P22,
             contains a J23106 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3554,14 +3554,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P22 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P22, contains a J23106 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P22_Terminator3_J23106_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P22 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P22, contains a J23106 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P22_Terminator3_J23106_RiboC",
                 },
                 {
-                    'accessor': 'B-P23',
-                    'binaryString': '''LOCUS       B-P23_Terminator3_J23105_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P23",
+                    "binaryString": """LOCUS       B-P23_Terminator3_J23105_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P23 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P23,
             contains a J23105 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3638,14 +3638,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P23 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P23, contains a J23105 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P23_Terminator3_J23105_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P23 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P23, contains a J23105 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P23_Terminator3_J23105_RiboC",
                 },
                 {
-                    'accessor': 'B-P24',
-                    'binaryString': '''LOCUS       B-P24_Terminator3_J23116_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P24",
+                    "binaryString": """LOCUS       B-P24_Terminator3_J23116_RiboC 2599 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P24 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P24,
             contains a J23116 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -3722,14 +3722,14 @@ ORIGIN
      2521 ttcaccgaca aacaacagat aaaacgaaag gcccagtctt tcgactgagc ctttcgtttt
      2581 atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P24 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P24, contains a J23116 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P24_Terminator3_J23116_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P24 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P24, contains a J23116 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P24_Terminator3_J23116_RiboC",
                 },
                 {
-                    'accessor': 'B-P25',
-                    'binaryString': '''LOCUS       B-P25_Terminator1_Phlf_RiboA 2640 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P25",
+                    "binaryString": """LOCUS       B-P25_Terminator1_Phlf_RiboA 2640 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P25 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P25,
             contains a Phlf promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -3806,14 +3806,14 @@ ORIGIN
      2521 cagctgtcta gggcggcgga tttgtcctac tcaggagagc gttcaccgac aaacaacaga
      2581 taaaacgaaa ggcccagtct ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P25 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P25, contains a Phlf promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P25_Terminator1_Phlf_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P25 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P25, contains a Phlf promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P25_Terminator1_Phlf_RiboA",
                 },
                 {
-                    'accessor': 'B-P26',
-                    'binaryString': '''LOCUS       B-P26_Terminator1_CymR_RiboA 2664 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P26",
+                    "binaryString": """LOCUS       B-P26_Terminator1_CymR_RiboA 2664 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P26 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P26,
             contains a CymR promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -3891,14 +3891,14 @@ ORIGIN
      2581 gagcgttcac cgacaaacaa cagataaaac gaaaggccca gtctttcgac tgagcctttc
      2641 gttttatttg atgcctttaa ttaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P26 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P26, contains a CymR promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P26_Terminator1_CymR_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P26 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P26, contains a CymR promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P26_Terminator1_CymR_RiboA",
                 },
                 {
-                    'accessor': 'B-P27',
-                    'binaryString': '''LOCUS       B-P27_Terminator1_TetR_RiboA 2650 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P27",
+                    "binaryString": """LOCUS       B-P27_Terminator1_TetR_RiboA 2650 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P27 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P27,
             contains a TetR promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -3976,14 +3976,14 @@ ORIGIN
      2581 aaacaacaga taaaacgaaa ggcccagtct ttcgactgag cctttcgttt tatttgatgc
      2641 ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P27 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P27, contains a TetR promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P27_Terminator1_TetR_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P27 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P27, contains a TetR promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P27_Terminator1_TetR_RiboA",
                 },
                 {
-                    'accessor': 'B-P28',
-                    'binaryString': '''LOCUS       B-P28_Terminator1_VanR_RiboA 2624 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P28",
+                    "binaryString": """LOCUS       B-P28_Terminator1_VanR_RiboA 2624 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P28 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P28,
             contains a VanR promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -4060,14 +4060,14 @@ ORIGIN
      2521 cggatttgtc ctactcagga gagcgttcac cgacaaacaa cagataaaac gaaaggccca
      2581 gtctttcgac tgagcctttc gttttatttg atgcctttaa ttaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P28 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P28, contains a VanR promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P28_Terminator1_VanR_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P28 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P28, contains a VanR promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P28_Terminator1_VanR_RiboA",
                 },
                 {
-                    'accessor': 'B-P29',
-                    'binaryString': '''LOCUS       B-P29_Terminator1_LuxR_RiboA 2629 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P29",
+                    "binaryString": """LOCUS       B-P29_Terminator1_LuxR_RiboA 2629 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P29 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P29,
             contains a LuxR promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -4144,14 +4144,14 @@ ORIGIN
      2521 ggcggcggat ttgtcctact caggagagcg ttcaccgaca aacaacagat aaaacgaaag
      2581 gcccagtctt tcgactgagc ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P29 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P29, contains a LuxR promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P29_Terminator1_LuxR_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P29 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P29, contains a LuxR promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P29_Terminator1_LuxR_RiboA",
                 },
                 {
-                    'accessor': 'B-P30',
-                    'binaryString': '''LOCUS       B-P30_Terminator1_CinR_RiboA 2800 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P30",
+                    "binaryString": """LOCUS       B-P30_Terminator1_CinR_RiboA 2800 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P30 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P30,
             contains a CinR promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -4231,14 +4231,14 @@ ORIGIN
      2701 tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa ggcccagtct
      2761 ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P30 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P30, contains a CinR promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P30_Terminator1_CinR_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P30 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P30, contains a CinR promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P30_Terminator1_CinR_RiboA",
                 },
                 {
-                    'accessor': 'B-P31',
-                    'binaryString': '''LOCUS       B-P31_Terminator1_LacI_RiboA 2630 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P31",
+                    "binaryString": """LOCUS       B-P31_Terminator1_LacI_RiboA 2630 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P31 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P31,
             contains a LacI promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -4315,14 +4315,14 @@ ORIGIN
      2521 gggcggcgga tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa
      2581 ggcccagtct ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P31 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P31, contains a LacI promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P31_Terminator1_LacI_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P31 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P31, contains a LacI promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P31_Terminator1_LacI_RiboA",
                 },
                 {
-                    'accessor': 'B-P32',
-                    'binaryString': '''LOCUS       B-P32_Terminator1_AraC_RiboA 2863 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P32",
+                    "binaryString": """LOCUS       B-P32_Terminator1_AraC_RiboA 2863 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P32 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P32,
             contains a AraC promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -4403,14 +4403,14 @@ ORIGIN
      2761 ggatttgtcc tactcaggag agcgttcacc gacaaacaac agataaaacg aaaggcccag
      2821 tctttcgact gagcctttcg ttttatttga tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P32 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P32, contains a AraC promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P32_Terminator1_AraC_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P32 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P32, contains a AraC promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P32_Terminator1_AraC_RiboA",
                 },
                 {
-                    'accessor': 'B-P33',
-                    'binaryString': '''LOCUS       B-P33_Terminator2_Phlf_RiboB 2636 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P33",
+                    "binaryString": """LOCUS       B-P33_Terminator2_Phlf_RiboB 2636 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P33 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P33,
             contains a Phlf promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4487,14 +4487,14 @@ ORIGIN
      2521 tgtctagggc ggcggatttg tcctactcag gagagcgttc accgacaaac aacagataaa
      2581 acgaaaggcc cagtctttcg actgagcctt tcgttttatt tgatgccttt aattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P33 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P33, contains a Phlf promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P33_Terminator2_Phlf_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P33 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P33, contains a Phlf promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P33_Terminator2_Phlf_RiboB",
                 },
                 {
-                    'accessor': 'B-P34',
-                    'binaryString': '''LOCUS       B-P34_Terminator2_CymR_RiboB 2660 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P34",
+                    "binaryString": """LOCUS       B-P34_Terminator2_CymR_RiboB 2660 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P34 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P34,
             contains a CymR promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4572,14 +4572,14 @@ ORIGIN
      2581 gttcaccgac aaacaacaga taaaacgaaa ggcccagtct ttcgactgag cctttcgttt
      2641 tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P34 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P34, contains a CymR promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P34_Terminator2_CymR_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P34 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P34, contains a CymR promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P34_Terminator2_CymR_RiboB",
                 },
                 {
-                    'accessor': 'B-P35',
-                    'binaryString': '''LOCUS       B-P35_Terminator2_TetR_RiboB 2646 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P35",
+                    "binaryString": """LOCUS       B-P35_Terminator2_TetR_RiboB 2646 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P35 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P35,
             contains a TetR promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4657,14 +4657,14 @@ ORIGIN
      2581 aacagataaa acgaaaggcc cagtctttcg actgagcctt tcgttttatt tgatgccttt
      2641 aattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P35 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P35, contains a TetR promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P35_Terminator2_TetR_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P35 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P35, contains a TetR promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P35_Terminator2_TetR_RiboB",
                 },
                 {
-                    'accessor': 'B-P36',
-                    'binaryString': '''LOCUS       B-P36_Terminator2_VanR_RiboB 2620 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P36",
+                    "binaryString": """LOCUS       B-P36_Terminator2_VanR_RiboB 2620 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P36 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P36,
             contains a VanR promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4741,14 +4741,14 @@ ORIGIN
      2521 tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa ggcccagtct
      2581 ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P36 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P36, contains a VanR promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P36_Terminator2_VanR_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P36 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P36, contains a VanR promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P36_Terminator2_VanR_RiboB",
                 },
                 {
-                    'accessor': 'B-P37',
-                    'binaryString': '''LOCUS       B-P37_Terminator2_LuxR_RiboB 2625 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P37",
+                    "binaryString": """LOCUS       B-P37_Terminator2_LuxR_RiboB 2625 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P37 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P37,
             contains a LuxR promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4825,14 +4825,14 @@ ORIGIN
      2521 gcggatttgt cctactcagg agagcgttca ccgacaaaca acagataaaa cgaaaggccc
      2581 agtctttcga ctgagccttt cgttttattt gatgccttta attaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P37 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P37, contains a LuxR promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P37_Terminator2_LuxR_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P37 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P37, contains a LuxR promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P37_Terminator2_LuxR_RiboB",
                 },
                 {
-                    'accessor': 'B-P38',
-                    'binaryString': '''LOCUS       B-P38_Terminator2_CinR_RiboB 2796 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P38",
+                    "binaryString": """LOCUS       B-P38_Terminator2_CinR_RiboB 2796 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P38 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P38,
             contains a CinR promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4912,14 +4912,14 @@ ORIGIN
      2701 tcctactcag gagagcgttc accgacaaac aacagataaa acgaaaggcc cagtctttcg
      2761 actgagcctt tcgttttatt tgatgccttt aattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P38 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P38, contains a CinR promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P38_Terminator2_CinR_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P38 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P38, contains a CinR promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P38_Terminator2_CinR_RiboB",
                 },
                 {
-                    'accessor': 'B-P39',
-                    'binaryString': '''LOCUS       B-P39_Terminator2_LacI_RiboB 2626 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P39",
+                    "binaryString": """LOCUS       B-P39_Terminator2_LacI_RiboB 2626 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P39 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P39,
             contains a LacI promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -4996,14 +4996,14 @@ ORIGIN
      2521 ggcggatttg tcctactcag gagagcgttc accgacaaac aacagataaa acgaaaggcc
      2581 cagtctttcg actgagcctt tcgttttatt tgatgccttt aattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P39 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P39, contains a LacI promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P39_Terminator2_LacI_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P39 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P39, contains a LacI promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P39_Terminator2_LacI_RiboB",
                 },
                 {
-                    'accessor': 'B-P40',
-                    'binaryString': '''LOCUS       B-P40_Terminator2_AraC_RiboB 2859 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P40",
+                    "binaryString": """LOCUS       B-P40_Terminator2_AraC_RiboB 2859 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P40 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P40,
             contains a AraC promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -5084,14 +5084,14 @@ ORIGIN
      2761 ttgtcctact caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt
      2821 tcgactgagc ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P40 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P40, contains a AraC promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P40_Terminator2_AraC_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P40 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P40, contains a AraC promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P40_Terminator2_AraC_RiboB",
                 },
                 {
-                    'accessor': 'B-P41',
-                    'binaryString': '''LOCUS       B-P41_Terminator3_Phlf_RiboC 2630 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P41",
+                    "binaryString": """LOCUS       B-P41_Terminator3_Phlf_RiboC 2630 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P41 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P41,
             contains a Phlf promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5168,14 +5168,14 @@ ORIGIN
      2521 gggcggcgga tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa
      2581 ggcccagtct ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P41 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P41, contains a Phlf promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P41_Terminator3_Phlf_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P41 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P41, contains a Phlf promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P41_Terminator3_Phlf_RiboC",
                 },
                 {
-                    'accessor': 'B-P42',
-                    'binaryString': '''LOCUS       B-P42_Terminator3_CymR_RiboC 2654 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P42",
+                    "binaryString": """LOCUS       B-P42_Terminator3_CymR_RiboC 2654 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P42 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P42,
             contains a CymR promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5253,14 +5253,14 @@ ORIGIN
      2581 cgacaaacaa cagataaaac gaaaggccca gtctttcgac tgagcctttc gttttatttg
      2641 atgcctttaa ttaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P42 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P42, contains a CymR promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P42_Terminator3_CymR_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P42 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P42, contains a CymR promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P42_Terminator3_CymR_RiboC",
                 },
                 {
-                    'accessor': 'B-P43',
-                    'binaryString': '''LOCUS       B-P43_Terminator3_TetR_RiboC 2640 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P43",
+                    "binaryString": """LOCUS       B-P43_Terminator3_TetR_RiboC 2640 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P43 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P43,
             contains a TetR promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5337,14 +5337,14 @@ ORIGIN
      2521 cagctgtcta gggcggcgga tttgtcctac tcaggagagc gttcaccgac aaacaacaga
      2581 taaaacgaaa ggcccagtct ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P43 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P43, contains a TetR promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P43_Terminator3_TetR_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P43 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P43, contains a TetR promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P43_Terminator3_TetR_RiboC",
                 },
                 {
-                    'accessor': 'B-P44',
-                    'binaryString': '''LOCUS       B-P44_Terminator3_VanR_RiboC 2614 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P44",
+                    "binaryString": """LOCUS       B-P44_Terminator3_VanR_RiboC 2614 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P44 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P44,
             contains a VanR promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5421,14 +5421,14 @@ ORIGIN
      2521 ctactcagga gagcgttcac cgacaaacaa cagataaaac gaaaggccca gtctttcgac
      2581 tgagcctttc gttttatttg atgcctttaa ttaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P44 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P44, contains a VanR promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P44_Terminator3_VanR_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P44 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P44, contains a VanR promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P44_Terminator3_VanR_RiboC",
                 },
                 {
-                    'accessor': 'B-P45',
-                    'binaryString': '''LOCUS       B-P45_Terminator3_LuxR_RiboC 2619 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P45",
+                    "binaryString": """LOCUS       B-P45_Terminator3_LuxR_RiboC 2619 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P45 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P45,
             contains a LuxR promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5505,14 +5505,14 @@ ORIGIN
      2521 ttgtcctact caggagagcg ttcaccgaca aacaacagat aaaacgaaag gcccagtctt
      2581 tcgactgagc ctttcgtttt atttgatgcc tttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P45 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P45, contains a LuxR promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P45_Terminator3_LuxR_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P45 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P45, contains a LuxR promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P45_Terminator3_LuxR_RiboC",
                 },
                 {
-                    'accessor': 'B-P46',
-                    'binaryString': '''LOCUS       B-P46_Terminator3_CinR_RiboC 2790 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P46",
+                    "binaryString": """LOCUS       B-P46_Terminator3_CinR_RiboC 2790 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P46 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P46,
             contains a CinR promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5592,14 +5592,14 @@ ORIGIN
      2701 tcaggagagc gttcaccgac aaacaacaga taaaacgaaa ggcccagtct ttcgactgag
      2761 cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P46 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P46, contains a CinR promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P46_Terminator3_CinR_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P46 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P46, contains a CinR promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P46_Terminator3_CinR_RiboC",
                 },
                 {
-                    'accessor': 'B-P47',
-                    'binaryString': '''LOCUS       B-P47_Terminator3_LacI_RiboC 2620 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P47",
+                    "binaryString": """LOCUS       B-P47_Terminator3_LacI_RiboC 2620 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P47 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P47,
             contains a LacI promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5676,14 +5676,14 @@ ORIGIN
      2521 tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa ggcccagtct
      2581 ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P47 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P47, contains a LacI promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P47_Terminator3_LacI_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P47 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P47, contains a LacI promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P47_Terminator3_LacI_RiboC",
                 },
                 {
-                    'accessor': 'B-P48',
-                    'binaryString': '''LOCUS       B-P48_Terminator3_AraC_RiboC 2853 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P48",
+                    "binaryString": """LOCUS       B-P48_Terminator3_AraC_RiboC 2853 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P48 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P48,
             contains a AraC promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -5764,14 +5764,14 @@ ORIGIN
      2761 tactcaggag agcgttcacc gacaaacaac agataaaacg aaaggcccag tctttcgact
      2821 gagcctttcg ttttatttga tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P48 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P48, contains a AraC promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P48_Terminator3_AraC_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P48 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P48, contains a AraC promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P48_Terminator3_AraC_RiboC",
                 },
                 {
-                    'accessor': 'B-P49',
-                    'binaryString': '''LOCUS       B-P49_Terminator1_T7_100_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P49",
+                    "binaryString": """LOCUS       B-P49_Terminator1_T7_100_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P49 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P49,
             contains a T7_100 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -5848,14 +5848,14 @@ ORIGIN
      2521 caccgacaaa caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat
      2581 ttgatgcctt taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P49 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P49, contains a T7_100 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P49_Terminator1_T7_100_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P49 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P49, contains a T7_100 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P49_Terminator1_T7_100_RiboA",
                 },
                 {
-                    'accessor': 'B-P50',
-                    'binaryString': '''LOCUS       B-P50_Terminator1_T7_52_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P50",
+                    "binaryString": """LOCUS       B-P50_Terminator1_T7_52_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P50 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P50,
             contains a T7_52 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -5932,14 +5932,14 @@ ORIGIN
      2521 caccgacaaa caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat
      2581 ttgatgcctt taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P50 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P50, contains a T7_52 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P50_Terminator1_T7_52_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P50 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P50, contains a T7_52 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P50_Terminator1_T7_52_RiboA",
                 },
                 {
-                    'accessor': 'B-P51',
-                    'binaryString': '''LOCUS       B-P51_Terminator1_T7_50_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P51",
+                    "binaryString": """LOCUS       B-P51_Terminator1_T7_50_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P51 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P51,
             contains a T7_50 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -6016,14 +6016,14 @@ ORIGIN
      2521 caccgacaaa caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat
      2581 ttgatgcctt taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P51 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P51, contains a T7_50 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P51_Terminator1_T7_50_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P51 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P51, contains a T7_50 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P51_Terminator1_T7_50_RiboA",
                 },
                 {
-                    'accessor': 'B-P52',
-                    'binaryString': '''LOCUS       B-P52_Terminator1_T7_25_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P52",
+                    "binaryString": """LOCUS       B-P52_Terminator1_T7_25_RiboA 2597 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P52 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P52,
             contains a T7_25 promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -6100,14 +6100,14 @@ ORIGIN
      2521 caccgacaaa caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat
      2581 ttgatgcctt taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P52 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P52, contains a T7_25 promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P52_Terminator1_T7_25_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P52 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P52, contains a T7_25 promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P52_Terminator1_T7_25_RiboA",
                 },
                 {
-                    'accessor': 'B-P53',
-                    'binaryString': '''LOCUS       B-P53_Terminator2_T7_100_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P53",
+                    "binaryString": """LOCUS       B-P53_Terminator2_T7_100_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P53 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P53,
             contains a T7_100 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -6184,14 +6184,14 @@ ORIGIN
      2521 gacaaacaac agataaaacg aaaggcccag tctttcgact gagcctttcg ttttatttga
      2581 tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P53 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P53, contains a T7_100 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P53_Terminator2_T7_100_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P53 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P53, contains a T7_100 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P53_Terminator2_T7_100_RiboB",
                 },
                 {
-                    'accessor': 'B-P54',
-                    'binaryString': '''LOCUS       B-P54_Terminator2_T7_52_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P54",
+                    "binaryString": """LOCUS       B-P54_Terminator2_T7_52_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P54 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P54,
             contains a T7_52 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -6268,14 +6268,14 @@ ORIGIN
      2521 gacaaacaac agataaaacg aaaggcccag tctttcgact gagcctttcg ttttatttga
      2581 tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P54 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P54, contains a T7_52 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P54_Terminator2_T7_52_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P54 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P54, contains a T7_52 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P54_Terminator2_T7_52_RiboB",
                 },
                 {
-                    'accessor': 'B-P55',
-                    'binaryString': '''LOCUS       B-P55_Terminator2_T7_50_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P55",
+                    "binaryString": """LOCUS       B-P55_Terminator2_T7_50_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P55 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P55,
             contains a T7_50 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -6352,14 +6352,14 @@ ORIGIN
      2521 gacaaacaac agataaaacg aaaggcccag tctttcgact gagcctttcg ttttatttga
      2581 tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P55 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P55, contains a T7_50 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P55_Terminator2_T7_50_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P55 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P55, contains a T7_50 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P55_Terminator2_T7_50_RiboB",
                 },
                 {
-                    'accessor': 'B-P56',
-                    'binaryString': '''LOCUS       B-P56_Terminator2_T7_25_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P56",
+                    "binaryString": """LOCUS       B-P56_Terminator2_T7_25_RiboB 2593 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P56 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P56,
             contains a T7_25 promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -6436,14 +6436,14 @@ ORIGIN
      2521 gacaaacaac agataaaacg aaaggcccag tctttcgact gagcctttcg ttttatttga
      2581 tgcctttaat taa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P56 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P56, contains a T7_25 promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P56_Terminator2_T7_25_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P56 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P56, contains a T7_25 promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P56_Terminator2_T7_25_RiboB",
                 },
                 {
-                    'accessor': 'B-P57',
-                    'binaryString': '''LOCUS       B-P57_Terminator3_T7_100_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P57",
+                    "binaryString": """LOCUS       B-P57_Terminator3_T7_100_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P57 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P57,
             contains a T7_100 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -6520,14 +6520,14 @@ ORIGIN
      2521 caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat ttgatgcctt
      2581 taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P57 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P57, contains a T7_100 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P57_Terminator3_T7_100_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P57 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P57, contains a T7_100 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P57_Terminator3_T7_100_RiboC",
                 },
                 {
-                    'accessor': 'B-P58',
-                    'binaryString': '''LOCUS       B-P58_Terminator3_T7_52_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P58",
+                    "binaryString": """LOCUS       B-P58_Terminator3_T7_52_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P58 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P58,
             contains a T7_52 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -6604,14 +6604,14 @@ ORIGIN
      2521 caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat ttgatgcctt
      2581 taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P58 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P58, contains a T7_52 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P58_Terminator3_T7_52_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P58 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P58, contains a T7_52 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P58_Terminator3_T7_52_RiboC",
                 },
                 {
-                    'accessor': 'B-P59',
-                    'binaryString': '''LOCUS       B-P59_Terminator3_T7_50_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P59",
+                    "binaryString": """LOCUS       B-P59_Terminator3_T7_50_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P59 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P59,
             contains a T7_50 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -6688,14 +6688,14 @@ ORIGIN
      2521 caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat ttgatgcctt
      2581 taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P59 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P59, contains a T7_50 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P59_Terminator3_T7_50_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P59 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P59, contains a T7_50 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P59_Terminator3_T7_50_RiboC",
                 },
                 {
-                    'accessor': 'B-P60',
-                    'binaryString': '''LOCUS       B-P60_Terminator3_T7_25_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P60",
+                    "binaryString": """LOCUS       B-P60_Terminator3_T7_25_RiboC 2587 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P60 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P60,
             contains a T7_25 promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -6772,14 +6772,14 @@ ORIGIN
      2521 caacagataa aacgaaaggc ccagtctttc gactgagcct ttcgttttat ttgatgcctt
      2581 taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P60 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P60, contains a T7_25 promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P60_Terminator3_T7_25_RiboC'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P60 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P60, contains a T7_25 promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P60_Terminator3_T7_25_RiboC",
                 },
                 {
-                    'accessor': 'B-P61',
-                    'binaryString': '''LOCUS       B-P61_Terminator1_BetI_RiboA 2637 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P61",
+                    "binaryString": """LOCUS       B-P61_Terminator1_BetI_RiboA 2637 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P61 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P61,
             contains a BetI promoter with an upstream Terminator1 and a
             downstream RiboA.
@@ -6856,14 +6856,14 @@ ORIGIN
      2521 ctgtctaggg cggcggattt gtcctactca ggagagcgtt caccgacaaa caacagataa
      2581 aacgaaaggc ccagtctttc gactgagcct ttcgttttat ttgatgcctt taattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P61 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P61, contains a BetI promoter with an upstream Terminator1 and a downstream RiboA',
-                    'label': 'B-P61_Terminator1_BetI_RiboA'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P61 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P61, contains a BetI promoter with an upstream Terminator1 and a downstream RiboA",
+                    "label": "B-P61_Terminator1_BetI_RiboA",
                 },
                 {
-                    'accessor': 'B-P62',
-                    'binaryString': '''LOCUS       B-P62_Terminator2_Ttg_RiboB 2621 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P62",
+                    "binaryString": """LOCUS       B-P62_Terminator2_Ttg_RiboB 2621 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P62 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P62,
             contains a Ttg promoter with an upstream Terminator2 and a
             downstream RiboB.
@@ -6940,14 +6940,14 @@ ORIGIN
      2521 atttgtccta ctcaggagag cgttcaccga caaacaacag ataaaacgaa aggcccagtc
      2581 tttcgactga gcctttcgtt ttatttgatg cctttaatta a
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P62 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P62, contains a Ttg promoter with an upstream Terminator2 and a downstream RiboB',
-                    'label': 'B-P62_Terminator2_Ttg_RiboB'
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P62 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P62, contains a Ttg promoter with an upstream Terminator2 and a downstream RiboB",
+                    "label": "B-P62_Terminator2_Ttg_RiboB",
                 },
                 {
-                    'accessor': 'B-P63',
-                    'binaryString': '''LOCUS       B-P63_Terminator3_SaITTC_RiboC 2680 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "B-P63",
+                    "binaryString": """LOCUS       B-P63_Terminator3_SaITTC_RiboC 2680 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  B-P63 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P63,
             contains a SaITTC promoter with an upstream Terminator3 and a
             downstream RiboC.
@@ -7025,19 +7025,19 @@ ORIGIN
      2581 tttgtcctac tcaggagagc gttcaccgac aaacaacaga taaaacgaaa ggcccagtct
      2641 ttcgactgag cctttcgttt tatttgatgc ctttaattaa
 //
-''',
-                    'collection': 'BASIC_PROMOTER_PARTS',
-                    'description': 'B-P63 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P63, contains a SaITTC promoter with an upstream Terminator3 and a downstream RiboC',
-                    'label': 'B-P63_Terminator3_SaITTC_RiboC'
-                }
-            ]
+""",
+                    "collection": "BASIC_PROMOTER_PARTS",
+                    "description": "B-P63 stored in BASIC_SEVA_18. The BASIC insulated promoter B-P63, contains a SaITTC promoter with an upstream Terminator3 and a downstream RiboC",
+                    "label": "B-P63_Terminator3_SaITTC_RiboC",
+                },
+            ],
         },
         {
-            'name': 'BASIC_SEVA_PARTS',
-            'v0.1': [
+            "name": "BASIC_SEVA_PARTS",
+            "v0.1": [
                 {
-                    'accessor': '12',
-                    'binaryString': '''LOCUS       BASIC_SEVA_12           4843 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "12",
+                    "binaryString": """LOCUS       BASIC_SEVA_12           4843 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and RK2
             origin of replication..
 ACCESSION   5ffe4dd31e090d490d72196e4137cf82
@@ -7148,14 +7148,14 @@ ORIGIN
      4741 actgggcctt tcgttttatc tgttgtttgt cggtgaacgc tctctactag agtcacactg
      4801 gctcaccttc gggtgggcct ttctgcgttt atatactggc tcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_12'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_12",
                 },
                 {
-                    'accessor': '13',
-                    'binaryString': '''LOCUS       BASIC_SEVA_13           4143 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "13",
+                    "binaryString": """LOCUS       BASIC_SEVA_13           4143 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and pBBR1
             origin of replication..
 ACCESSION   b0cc681c00c117b6c86cdfbcb050b272
@@ -7255,14 +7255,14 @@ ORIGIN
      4081 tctctactag agtcacactg gctcaccttc gggtgggcct ttctgcgttt atatactggc
      4141 tcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_13'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_13",
                 },
                 {
-                    'accessor': '14',
-                    'binaryString': '''LOCUS       BASIC_SEVA_14           4394 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "14",
+                    "binaryString": """LOCUS       BASIC_SEVA_14           4394 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   059542022621a0912a9ffdddc40ee292
@@ -7368,14 +7368,14 @@ ORIGIN
      4321 tcggtgaacg ctctctacta gagtcacact ggctcacctt cgggtgggcc tttctgcgtt
      4381 tatatactgg ctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_14'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_14",
                 },
                 {
-                    'accessor': '15',
-                    'binaryString': '''LOCUS       BASIC_SEVA_15           6099 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "15",
+                    "binaryString": """LOCUS       BASIC_SEVA_15           6099 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and
             RSF1010 origin of replication..
 ACCESSION   51f82553488c3a17aacdc55d78b363a8
@@ -7509,14 +7509,14 @@ ORIGIN
      6001 ggcctttcgt tttatctgtt gtttgtcggt gaacgctctc tactagagtc acactggctc
      6061 accttcgggt gggcctttct gcgtttatat actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_15'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_15",
                 },
                 {
-                    'accessor': '16',
-                    'binaryString': '''LOCUS       BASIC_SEVA_16           3157 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "16",
+                    "binaryString": """LOCUS       BASIC_SEVA_16           3157 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and p15A
             origin of replication..
 ACCESSION   f77fb6c59e6995d572ef33db00b9d7b0
@@ -7601,14 +7601,14 @@ ORIGIN
      3061 cctttcgttt tatctgttgt ttgtcggtga acgctctcta ctagagtcac actggctcac
      3121 cttcgggtgg gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_16'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_16",
                 },
                 {
-                    'accessor': '17',
-                    'binaryString': '''LOCUS       BASIC_SEVA_17           4081 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "17",
+                    "binaryString": """LOCUS       BASIC_SEVA_17           4081 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and pSC101
             origin of replication..
 ACCESSION   7a602b3ce4e26f30182ccbf045bff782
@@ -7707,14 +7707,14 @@ ORIGIN
      4021 tctactagag tcacactggc tcaccttcgg gtgggccttt ctgcgtttat atactggctc
      4081 g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_17'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_17",
                 },
                 {
-                    'accessor': '18',
-                    'binaryString': '''LOCUS       BASIC_SEVA_18           3354 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "18",
+                    "binaryString": """LOCUS       BASIC_SEVA_18           3354 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and pUC
             origin of replication..
 ACCESSION   bb90c9b9713d85ff695493fde3f0051a
@@ -7802,14 +7802,14 @@ ORIGIN
      3241 tcagtcgaaa gactgggcct ttcgttttat ctgttgtttg tcggtgaacg ctctctacta
      3301 gagtcacact ggctcacctt cgggtgggcc tttctgcgtt tatatactgg ctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_18'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_18",
                 },
                 {
-                    'accessor': '19',
-                    'binaryString': '''LOCUS       BASIC_SEVA_19           3810 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "19",
+                    "binaryString": """LOCUS       BASIC_SEVA_19           3810 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Ampicillin resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   12485441757bf3c0997b28b53938fa44
@@ -7905,14 +7905,14 @@ ORIGIN
      3721 ttttatctgt tgtttgtcgg tgaacgctct ctactagagt cacactggct caccttcggg
      3781 tgggcctttc tgcgtttata tactggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Ampicillin resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_19'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Ampicillin resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_19",
                 },
                 {
-                    'accessor': '22',
-                    'binaryString': '''LOCUS       BASIC_SEVA_22           4731 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "22",
+                    "binaryString": """LOCUS       BASIC_SEVA_22           4731 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and RK2
             origin of replication..
 ACCESSION   d916716736db2b7b6c4ce0a621fc6e9f
@@ -8021,14 +8021,14 @@ ORIGIN
      4621 gtcgaaagac tgggcctttc gttttatctg ttgtttgtcg gtgaacgctc tctactagag
      4681 tcacactggc tcaccttcgg gtgggccttt ctgcgtttat atactggctc g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_22'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_22",
                 },
                 {
-                    'accessor': '23',
-                    'binaryString': '''LOCUS       BASIC_SEVA_23           4031 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "23",
+                    "binaryString": """LOCUS       BASIC_SEVA_23           4031 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and pBBR1
             origin of replication..
 ACCESSION   a883822f7f88a4f12c8e8e93cbc34cc3
@@ -8126,14 +8126,14 @@ ORIGIN
      3961 gtgaacgctc tctactagag tcacactggc tcaccttcgg gtgggccttt ctgcgtttat
      4021 atactggctc g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_23'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_23",
                 },
                 {
-                    'accessor': '24',
-                    'binaryString': '''LOCUS       BASIC_SEVA_24           4282 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "24",
+                    "binaryString": """LOCUS       BASIC_SEVA_24           4282 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   9414713dcef3fac873f41a7d881db797
@@ -8237,14 +8237,14 @@ ORIGIN
      4201 gttgtttgtc ggtgaacgct ctctactaga gtcacactgg ctcaccttcg ggtgggcctt
      4261 tctgcgttta tatactggct cg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_24'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_24",
                 },
                 {
-                    'accessor': '25',
-                    'binaryString': '''LOCUS       BASIC_SEVA_25           5987 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "25",
+                    "binaryString": """LOCUS       BASIC_SEVA_25           5987 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and RSF1010
             origin of replication..
 ACCESSION   c4c251994910cc0861fe6324822266fb
@@ -8376,14 +8376,14 @@ ORIGIN
      5881 aaagactggg cctttcgttt tatctgttgt ttgtcggtga acgctctcta ctagagtcac
      5941 actggctcac cttcgggtgg gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_25'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_25",
                 },
                 {
-                    'accessor': '26',
-                    'binaryString': '''LOCUS       BASIC_SEVA_26           3045 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "26",
+                    "binaryString": """LOCUS       BASIC_SEVA_26           3045 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and p15A
             origin of replication..
 ACCESSION   c92d2eb763c0cd5a28e50d32a195c621
@@ -8466,14 +8466,14 @@ ORIGIN
      2941 agactgggcc tttcgtttta tctgttgttt gtcggtgaac gctctctact agagtcacac
      3001 tggctcacct tcgggtgggc ctttctgcgt ttatatactg gctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_26'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_26",
                 },
                 {
-                    'accessor': '27',
-                    'binaryString': '''LOCUS       BASIC_SEVA_27           3969 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "27",
+                    "binaryString": """LOCUS       BASIC_SEVA_27           3969 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and pSC101
             origin of replication..
 ACCESSION   9d3f6c884c90f253ed894bcf0e72b193
@@ -8570,14 +8570,14 @@ ORIGIN
      3901 gaacgctctc tactagagtc acactggctc accttcgggt gggcctttct gcgtttatat
      3961 actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_27'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_27",
                 },
                 {
-                    'accessor': '28',
-                    'binaryString': '''LOCUS       BASIC_SEVA_28           3242 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "28",
+                    "binaryString": """LOCUS       BASIC_SEVA_28           3242 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and pUC
             origin of replication..
 ACCESSION   e960becd8f97dc2988e5ffd17ad4379f
@@ -8664,14 +8664,14 @@ ORIGIN
      3181 ctctactaga gtcacactgg ctcaccttcg ggtgggcctt tctgcgttta tatactggct
      3241 cg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_28'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_28",
                 },
                 {
-                    'accessor': '29',
-                    'binaryString': '''LOCUS       BASIC_SEVA_29           3698 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "29",
+                    "binaryString": """LOCUS       BASIC_SEVA_29           3698 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Kanamycin resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   52c4b95c8cfa7223c166bfa25ccb102f
@@ -8765,14 +8765,14 @@ ORIGIN
      3601 gcctttcgtt ttatctgttg tttgtcggtg aacgctctct actagagtca cactggctca
      3661 ccttcgggtg ggcctttctg cgtttatata ctggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Kanamycin resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_29'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Kanamycin resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_29",
                 },
                 {
-                    'accessor': '32',
-                    'binaryString': '''LOCUS       BASIC_SEVA_32           4587 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "32",
+                    "binaryString": """LOCUS       BASIC_SEVA_32           4587 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             RK2 origin of replication..
 ACCESSION   24f70e7cdb2bbdf7e33cd505aa9194e0
@@ -8879,14 +8879,14 @@ ORIGIN
      4501 tatctgttgt ttgtcggtga acgctctcta ctagagtcac actggctcac cttcgggtgg
      4561 gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_32'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_32",
                 },
                 {
-                    'accessor': '33',
-                    'binaryString': '''LOCUS       BASIC_SEVA_33           3887 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "33",
+                    "binaryString": """LOCUS       BASIC_SEVA_33           3887 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             pBBR1 origin of replication..
 ACCESSION   7e861708c72a18b544e5574679749a31
@@ -8981,14 +8981,14 @@ ORIGIN
      3781 aaagactggg cctttcgttt tatctgttgt ttgtcggtga acgctctcta ctagagtcac
      3841 actggctcac cttcgggtgg gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_33'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_33",
                 },
                 {
-                    'accessor': '34',
-                    'binaryString': '''LOCUS       BASIC_SEVA_34           4138 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "34",
+                    "binaryString": """LOCUS       BASIC_SEVA_34           4138 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   1d0cfeeca882a775fadb595d2db6c0a4
@@ -9089,14 +9089,14 @@ ORIGIN
      4021 aggctcagtc gaaagactgg gcctttcgtt ttatctgttg tttgtcggtg aacgctctct
      4081 actagagtca cactggctca ccttcgggtg ggcctttctg cgtttatata ctggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_34'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_34",
                 },
                 {
-                    'accessor': '35',
-                    'binaryString': '''LOCUS       BASIC_SEVA_35           5843 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "35",
+                    "binaryString": """LOCUS       BASIC_SEVA_35           5843 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             RSF1010 origin of replication..
 ACCESSION   e0003a4d55dabf27305128b65167bf44
@@ -9226,14 +9226,14 @@ ORIGIN
      5761 tgttgtttgt cggtgaacgc tctctactag agtcacactg gctcaccttc gggtgggcct
      5821 ttctgcgttt atatactggc tcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_35'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_35",
                 },
                 {
-                    'accessor': '36',
-                    'binaryString': '''LOCUS       BASIC_SEVA_36           2901 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "36",
+                    "binaryString": """LOCUS       BASIC_SEVA_36           2901 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             p15A origin of replication..
 ACCESSION   817f6b5c8cecf3151314b28b98a2a2e3
@@ -9314,14 +9314,14 @@ ORIGIN
      2821 ttgtttgtcg gtgaacgctc tctactagag tcacactggc tcaccttcgg gtgggccttt
      2881 ctgcgtttat atactggctc g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_36'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_36",
                 },
                 {
-                    'accessor': '37',
-                    'binaryString': '''LOCUS       BASIC_SEVA_37           3825 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "37",
+                    "binaryString": """LOCUS       BASIC_SEVA_37           3825 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             pSC101 origin of replication..
 ACCESSION   58617d197d0335ce9ace1bb3a0402c30
@@ -9415,14 +9415,14 @@ ORIGIN
      3721 agactgggcc tttcgtttta tctgttgttt gtcggtgaac gctctctact agagtcacac
      3781 tggctcacct tcgggtgggc ctttctgcgt ttatatactg gctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_37'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_37",
                 },
                 {
-                    'accessor': '38',
-                    'binaryString': '''LOCUS       BASIC_SEVA_38           3098 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "38",
+                    "binaryString": """LOCUS       BASIC_SEVA_38           3098 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             pUC origin of replication..
 ACCESSION   dcf87eb4a87a61d8963500c2c5b854b4
@@ -9506,14 +9506,14 @@ ORIGIN
      3001 gcctttcgtt ttatctgttg tttgtcggtg aacgctctct actagagtca cactggctca
      3061 ccttcgggtg ggcctttctg cgtttatata ctggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_38'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_38",
                 },
                 {
-                    'accessor': '39',
-                    'binaryString': '''LOCUS       BASIC_SEVA_39           3554 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "39",
+                    "binaryString": """LOCUS       BASIC_SEVA_39           3554 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Chloramphenicol resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   3d2aca52c1ccb2400dd9ca26546e5b40
@@ -9605,14 +9605,14 @@ ORIGIN
      3481 tcggtgaacg ctctctacta gagtcacact ggctcacctt cgggtgggcc tttctgcgtt
      3541 tatatactgg ctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Chloramphenicol resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_39'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Chloramphenicol resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_39",
                 },
                 {
-                    'accessor': '42',
-                    'binaryString': '''LOCUS       BASIC_SEVA_42           4801 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "42",
+                    "binaryString": """LOCUS       BASIC_SEVA_42           4801 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and RK2
             origin of replication..
 ACCESSION   7c8d98d5b6b2effbc1c68261c8afdd63
@@ -9723,14 +9723,14 @@ ORIGIN
      4741 tctactagag tcacactggc tcaccttcgg gtgggccttt ctgcgtttat atactggctc
      4801 g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_42'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_42",
                 },
                 {
-                    'accessor': '43',
-                    'binaryString': '''LOCUS       BASIC_SEVA_43           4101 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "43",
+                    "binaryString": """LOCUS       BASIC_SEVA_43           4101 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and
             pBBR1 origin of replication..
 ACCESSION   1164f71e44b124d61f996b31340de6b0
@@ -9829,14 +9829,14 @@ ORIGIN
      4021 ttgtttgtcg gtgaacgctc tctactagag tcacactggc tcaccttcgg gtgggccttt
      4081 ctgcgtttat atactggctc g
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_43'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_43",
                 },
                 {
-                    'accessor': '44',
-                    'binaryString': '''LOCUS       BASIC_SEVA_44           4352 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "44",
+                    "binaryString": """LOCUS       BASIC_SEVA_44           4352 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   89e355d5c4ac3b3b96310ac1b3cb7412
@@ -9941,14 +9941,14 @@ ORIGIN
      4261 cgttttatct gttgtttgtc ggtgaacgct ctctactaga gtcacactgg ctcaccttcg
      4321 ggtgggcctt tctgcgttta tatactggct cg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_44'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_44",
                 },
                 {
-                    'accessor': '45',
-                    'binaryString': '''LOCUS       BASIC_SEVA_45           6057 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "45",
+                    "binaryString": """LOCUS       BASIC_SEVA_45           6057 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and
             RSF1010 origin of replication..
 ACCESSION   7072310bb13203707bb813b628eff9b7
@@ -10081,14 +10081,14 @@ ORIGIN
      5941 ggctcagtcg aaagactggg cctttcgttt tatctgttgt ttgtcggtga acgctctcta
      6001 ctagagtcac actggctcac cttcgggtgg gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_45'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_45",
                 },
                 {
-                    'accessor': '46',
-                    'binaryString': '''LOCUS       BASIC_SEVA_46           3115 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "46",
+                    "binaryString": """LOCUS       BASIC_SEVA_46           3115 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and p15A
             origin of replication..
 ACCESSION   9d55b6bfb91e90bb21e6acb4fdb1915d
@@ -10172,14 +10172,14 @@ ORIGIN
      3001 ctcagtcgaa agactgggcc tttcgtttta tctgttgttt gtcggtgaac gctctctact
      3061 agagtcacac tggctcacct tcgggtgggc ctttctgcgt ttatatactg gctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_46'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_46",
                 },
                 {
-                    'accessor': '47',
-                    'binaryString': '''LOCUS       BASIC_SEVA_47           4039 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "47",
+                    "binaryString": """LOCUS       BASIC_SEVA_47           4039 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and
             pSC101 origin of replication..
 ACCESSION   e276798c3ebd5ffdc016fbead7d37903
@@ -10277,14 +10277,14 @@ ORIGIN
      3961 gtttgtcggt gaacgctctc tactagagtc acactggctc accttcgggt gggcctttct
      4021 gcgtttatat actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_47'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_47",
                 },
                 {
-                    'accessor': '48',
-                    'binaryString': '''LOCUS       BASIC_SEVA_48           3312 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "48",
+                    "binaryString": """LOCUS       BASIC_SEVA_48           3312 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and pUC
             origin of replication..
 ACCESSION   72bca0fe0dc27fa1db1bd0a753193aca
@@ -10372,14 +10372,14 @@ ORIGIN
      3241 ggtgaacgct ctctactaga gtcacactgg ctcaccttcg ggtgggcctt tctgcgttta
      3301 tatactggct cg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_48'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_48",
                 },
                 {
-                    'accessor': '49',
-                    'binaryString': '''LOCUS       BASIC_SEVA_49           3768 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "49",
+                    "binaryString": """LOCUS       BASIC_SEVA_49           3768 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Streptomycin resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   e089de570a552d5c35715270486c48cc
@@ -10474,14 +10474,14 @@ ORIGIN
      3661 gaaagactgg gcctttcgtt ttatctgttg tttgtcggtg aacgctctct actagagtca
      3721 cactggctca ccttcgggtg ggcctttctg cgtttatata ctggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Streptomycin resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_49'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Streptomycin resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_49",
                 },
                 {
-                    'accessor': '52',
-                    'binaryString': '''LOCUS       BASIC_SEVA_52           5079 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "52",
+                    "binaryString": """LOCUS       BASIC_SEVA_52           5079 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and RK2
             origin of replication..
 ACCESSION   8a6b275731b465403c0420f195ce90cb
@@ -10596,14 +10596,14 @@ ORIGIN
      4981 ggcctttcgt tttatctgtt gtttgtcggt gaacgctctc tactagagtc acactggctc
      5041 accttcgggt gggcctttct gcgtttatat actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_52'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_52",
                 },
                 {
-                    'accessor': '53',
-                    'binaryString': '''LOCUS       BASIC_SEVA_53           4379 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "53",
+                    "binaryString": """LOCUS       BASIC_SEVA_53           4379 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and
             pBBR1 origin of replication..
 ACCESSION   b1c8b9f61d00f7f91859a0aaabe94db6
@@ -10706,14 +10706,14 @@ ORIGIN
      4261 aaggctcagt cgaaagactg ggcctttcgt tttatctgtt gtttgtcggt gaacgctctc
      4321 tactagagtc acactggctc accttcgggt gggcctttct gcgtttatat actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_53'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_53",
                 },
                 {
-                    'accessor': '54',
-                    'binaryString': '''LOCUS       BASIC_SEVA_54           4630 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "54",
+                    "binaryString": """LOCUS       BASIC_SEVA_54           4630 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   15433d91d38015969dce8c44b3dd1736
@@ -10823,14 +10823,14 @@ ORIGIN
      4561 tgaacgctct ctactagagt cacactggct caccttcggg tgggcctttc tgcgtttata
      4621 tactggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_54'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_54",
                 },
                 {
-                    'accessor': '55',
-                    'binaryString': '''LOCUS       BASIC_SEVA_55           6335 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "55",
+                    "binaryString": """LOCUS       BASIC_SEVA_55           6335 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and
             RSF1010 origin of replication..
 ACCESSION   958bce75e4cb6c99ecf451f888f9fd07
@@ -10968,14 +10968,14 @@ ORIGIN
      6241 tttcgtttta tctgttgttt gtcggtgaac gctctctact agagtcacac tggctcacct
      6301 tcgggtgggc ctttctgcgt ttatatactg gctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_55'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_55",
                 },
                 {
-                    'accessor': '56',
-                    'binaryString': '''LOCUS       BASIC_SEVA_56           3393 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "56",
+                    "binaryString": """LOCUS       BASIC_SEVA_56           3393 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and p15A
             origin of replication..
 ACCESSION   51852c5b59b43f6944de097f3ccb6d8e
@@ -11064,14 +11064,14 @@ ORIGIN
      3301 tcgttttatc tgttgtttgt cggtgaacgc tctctactag agtcacactg gctcaccttc
      3361 gggtgggcct ttctgcgttt atatactggc tcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_56'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_56",
                 },
                 {
-                    'accessor': '57',
-                    'binaryString': '''LOCUS       BASIC_SEVA_57           4317 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "57",
+                    "binaryString": """LOCUS       BASIC_SEVA_57           4317 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and
             pSC101 origin of replication..
 ACCESSION   1717a522fb5416a5f5f9666578dee856
@@ -11173,14 +11173,14 @@ ORIGIN
      4201 ggctcagtcg aaagactggg cctttcgttt tatctgttgt ttgtcggtga acgctctcta
      4261 ctagagtcac actggctcac cttcgggtgg gcctttctgc gtttatatac tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_57'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_57",
                 },
                 {
-                    'accessor': '58',
-                    'binaryString': '''LOCUS       BASIC_SEVA_58           3590 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "58",
+                    "binaryString": """LOCUS       BASIC_SEVA_58           3590 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and pUC
             origin of replication..
 ACCESSION   477b1d2b812116bc6151f3e4a1a0c635
@@ -11272,14 +11272,14 @@ ORIGIN
      3481 tcgaaagact gggcctttcg ttttatctgt tgtttgtcgg tgaacgctct ctactagagt
      3541 cacactggct caccttcggg tgggcctttc tgcgtttata tactggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_58'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_58",
                 },
                 {
-                    'accessor': '59',
-                    'binaryString': '''LOCUS       BASIC_SEVA_59           4046 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "59",
+                    "binaryString": """LOCUS       BASIC_SEVA_59           4046 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Tetracycline resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   c169e83a91a8e4453627ae72c10f6bf0
@@ -11379,14 +11379,14 @@ ORIGIN
      3961 atctgttgtt tgtcggtgaa cgctctctac tagagtcaca ctggctcacc ttcgggtggg
      4021 cctttctgcg tttatatact ggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Tetracycline resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_59'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Tetracycline resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_59",
                 },
                 {
-                    'accessor': '62',
-                    'binaryString': '''LOCUS       BASIC_SEVA_62           4609 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "62",
+                    "binaryString": """LOCUS       BASIC_SEVA_62           4609 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and RK2
             origin of replication..
 ACCESSION   d5cb5debc69f624ccc0d12b627816666
@@ -11493,14 +11493,14 @@ ORIGIN
      4501 cgaaagactg ggcctttcgt tttatctgtt gtttgtcggt gaacgctctc tactagagtc
      4561 acactggctc accttcgggt gggcctttct gcgtttatat actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and RK2 origin of replication.',
-                    'label': 'BASIC_SEVA_62'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and RK2 origin of replication.",
+                    "label": "BASIC_SEVA_62",
                 },
                 {
-                    'accessor': '63',
-                    'binaryString': '''LOCUS       BASIC_SEVA_63           3909 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "63",
+                    "binaryString": """LOCUS       BASIC_SEVA_63           3909 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and pBBR1
             origin of replication..
 ACCESSION   dc4b1f3d7ce456eea715d1cf35deecc0
@@ -11596,14 +11596,14 @@ ORIGIN
      3841 gaacgctctc tactagagtc acactggctc accttcgggt gggcctttct gcgtttatat
      3901 actggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and pBBR1 origin of replication.',
-                    'label': 'BASIC_SEVA_63'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and pBBR1 origin of replication.",
+                    "label": "BASIC_SEVA_63",
                 },
                 {
-                    'accessor': '64',
-                    'binaryString': '''LOCUS       BASIC_SEVA_64           4160 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "64",
+                    "binaryString": """LOCUS       BASIC_SEVA_64           4160 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and
             pRO1600/ColE1 origin of replication..
 ACCESSION   5bcbfec04b54bcc37a17ba5bd5d6776d
@@ -11705,14 +11705,14 @@ ORIGIN
      4081 tgtttgtcgg tgaacgctct ctactagagt cacactggct caccttcggg tgggcctttc
      4141 tgcgtttata tactggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and pRO1600/ColE1 origin of replication.',
-                    'label': 'BASIC_SEVA_64'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and pRO1600/ColE1 origin of replication.",
+                    "label": "BASIC_SEVA_64",
                 },
                 {
-                    'accessor': '65',
-                    'binaryString': '''LOCUS       BASIC_SEVA_65           5865 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "65",
+                    "binaryString": """LOCUS       BASIC_SEVA_65           5865 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and
             RSF1010 origin of replication..
 ACCESSION   4b8862f782d04fa17f10ec9484b1f945
@@ -11842,14 +11842,14 @@ ORIGIN
      5761 agactgggcc tttcgtttta tctgttgttt gtcggtgaac gctctctact agagtcacac
      5821 tggctcacct tcgggtgggc ctttctgcgt ttatatactg gctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and RSF1010 origin of replication.',
-                    'label': 'BASIC_SEVA_65'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and RSF1010 origin of replication.",
+                    "label": "BASIC_SEVA_65",
                 },
                 {
-                    'accessor': '66',
-                    'binaryString': '''LOCUS       BASIC_SEVA_66           2923 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "66",
+                    "binaryString": """LOCUS       BASIC_SEVA_66           2923 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and p15A
             origin of replication..
 ACCESSION   c4086f1150c7096ada36e3445f07bc74
@@ -11930,14 +11930,14 @@ ORIGIN
      2821 actgggcctt tcgttttatc tgttgtttgt cggtgaacgc tctctactag agtcacactg
      2881 gctcaccttc gggtgggcct ttctgcgttt atatactggc tcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and p15A origin of replication.',
-                    'label': 'BASIC_SEVA_66'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and p15A origin of replication.",
+                    "label": "BASIC_SEVA_66",
                 },
                 {
-                    'accessor': '67',
-                    'binaryString': '''LOCUS       BASIC_SEVA_67           3847 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "67",
+                    "binaryString": """LOCUS       BASIC_SEVA_67           3847 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and pSC101
             origin of replication..
 ACCESSION   2ec5633c7edef85d47632723006c365c
@@ -12032,14 +12032,14 @@ ORIGIN
      3781 acgctctcta ctagagtcac actggctcac cttcgggtgg gcctttctgc gtttatatac
      3841 tggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and pSC101 origin of replication.',
-                    'label': 'BASIC_SEVA_67'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and pSC101 origin of replication.",
+                    "label": "BASIC_SEVA_67",
                 },
                 {
-                    'accessor': '68',
-                    'binaryString': '''LOCUS       BASIC_SEVA_68           3120 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "68",
+                    "binaryString": """LOCUS       BASIC_SEVA_68           3120 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and pUC
             origin of replication..
 ACCESSION   6c867b6cbf05361d09da7c1ecca28613
@@ -12123,14 +12123,14 @@ ORIGIN
      3001 aaaggctcag tcgaaagact gggcctttcg ttttatctgt tgtttgtcgg tgaacgctct
      3061 ctactagagt cacactggct caccttcggg tgggcctttc tgcgtttata tactggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and pUC origin of replication.',
-                    'label': 'BASIC_SEVA_68'
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and pUC origin of replication.",
+                    "label": "BASIC_SEVA_68",
                 },
                 {
-                    'accessor': '69',
-                    'binaryString': '''LOCUS       BASIC_SEVA_69           3576 bp    DNA     circular UNK 03-SEP-2020
+                    "accessor": "69",
+                    "binaryString": """LOCUS       BASIC_SEVA_69           3576 bp    DNA     circular UNK 03-SEP-2020
 DEFINITION  BASIC SEVA vector containing Gentamicin resistance marker and
             pBR322-ROP origin of replication..
 ACCESSION   c24ab786cffd654c2a89c82048dce73d
@@ -12222,29 +12222,27 @@ ORIGIN
      3481 ctttcgtttt atctgttgtt tgtcggtgaa cgctctctac tagagtcaca ctggctcacc
      3541 ttcgggtggg cctttctgcg tttatatact ggctcg
 //
-''',
-                    'collection': 'BASIC_SEVA_PARTS',
-                    'description': 'BASIC SEVA vector containing Gentamicin resistance marker and pBR322-ROP origin of replication.',
-                    'label': 'BASIC_SEVA_69'
-                }
-            ]
-        }
+""",
+                    "collection": "BASIC_SEVA_PARTS",
+                    "description": "BASIC SEVA vector containing Gentamicin resistance marker and pBR322-ROP origin of replication.",
+                    "label": "BASIC_SEVA_69",
+                },
+            ],
+        },
     ]
 }
 
-snapshots['test_collection_names 1'] = 200
+snapshots["test_collection_names 1"] = 200
 
-snapshots['test_collection_names 2'] = {
-    'data': [
-        'BASIC_BIOLEGIO_LINKERS',
-        'BASIC_CDS_PARTS',
-        'BASIC_PROMOTER_PARTS',
-        'BASIC_SEVA_PARTS'
+snapshots["test_collection_names 2"] = {
+    "data": [
+        "BASIC_BIOLEGIO_LINKERS",
+        "BASIC_CDS_PARTS",
+        "BASIC_PROMOTER_PARTS",
+        "BASIC_SEVA_PARTS",
     ]
 }
 
-snapshots['test_root_hello_world 1'] = 200
+snapshots["test_root_hello_world 1"] = 200
 
-snapshots['test_root_hello_world 2'] = {
-    'message': 'Hello World'
-}
+snapshots["test_root_hello_world 2"] = {"message": "Hello World"}

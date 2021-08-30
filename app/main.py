@@ -12,7 +12,6 @@ from app.src.buildCSVs import buildCSVs
 
 
 app = FastAPI()
-
 # the `/docs` endpoint is reserved for OPENAPI good for testing
 # Root to the API to check if it is running
 @app.get("/")
