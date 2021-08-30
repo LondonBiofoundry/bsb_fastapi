@@ -97,7 +97,7 @@ def test_singular_file_upload(snapshot):
             "file": (
                 "filename",
                 open("tests/inputs/single-sfgfp.gb", "rb"),
-                " chemical/seq-na-genbank",
+                "chemical/seq-na-genbank",
             )
         },
     )
@@ -132,7 +132,7 @@ def test_singular_build_echo_instructions(snapshot):
 
 
 def test_singular_build_PDF_instructions(snapshot):
-    """Testing the API for ability to build echo instructions"""
+    """Testing the API for ability to pdf instructions"""
     f = open("tests/inputs/BasicBuild.json")
     _data = json.load(f)
     my_api_response = client.post(
@@ -145,7 +145,7 @@ def test_singular_build_PDF_instructions(snapshot):
 
 
 def test_singular_build_json(snapshot):
-    """Testing the API for ability to build echo instructions"""
+    """Testing the API for ability to json instructions"""
     f = open("tests/inputs/BasicBuild.json")
     _data = json.load(f)
     my_api_response = client.post(
@@ -153,6 +153,18 @@ def test_singular_build_json(snapshot):
         json=_data,
     )
     snapshot.assert_match(my_api_response.status_code)
-    print(my_api_response.json())
+    # TODO: fix snapshot of binary zip response containing 2 csv files
+    # snapshot.assert_match(my_api_response.raw)
+
+
+def test_singular_unique_parts_genbank(snapshot):
+    """Testing the API for ability to build unique parts genbank"""
+    f = open("tests/inputs/BasicBuild.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/builduniqueparts",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
     # TODO: fix snapshot of binary zip response containing 2 csv files
     # snapshot.assert_match(my_api_response.raw)

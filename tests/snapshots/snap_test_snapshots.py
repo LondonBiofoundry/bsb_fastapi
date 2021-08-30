@@ -12280,3 +12280,5 @@ snapshots["test_singular_file_upload 7"] = 200
 snapshots["test_singular_file_upload 8"] = {
     "error": "BASIC_sfGFP_ORF_[52-774] lacks iP sequence"
 }
+
+snapshots["test_singular_unique_parts_genbank 1"] = 200
