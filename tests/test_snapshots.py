@@ -29,6 +29,10 @@ def test_collection_data(snapshot):
 
 def test_singular_file_upload(snapshot):
     """Testing the API for ability to upload singular files"""
+
+    ############### FASTA file upload ###############
+
+    # Test for adding a file successfully that needs i seq
     # This is how you add query parameters to the URL to make a request
     _params={'type':'fasta','addiseq':'true'}
     # This is how you add a file to the request to simulate a upload File input
@@ -36,6 +40,40 @@ def test_singular_file_upload(snapshot):
         "/fileupload/singular",
         params=_params,
         files={"file": ("filename", open("tests/inputs/single-sfgfp.fasta", "rb"),"application/fasta")},
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+    # Test for adding a file unsuccessfully that needs i seq
+
+    _params={'type':'fasta','addiseq':'false'}
+    my_api_response = client.post(
+        "/fileupload/singular",
+        params=_params,
+        files={"file": ("filename", open("tests/inputs/single-sfgfp.fasta", "rb"),"application/fasta")},
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+    ################## Genbank file upload ##################
+
+    _params={'type':'genbank','addiseq':'true'}
+    # This is how you add a file to the request to simulate a upload File input
+    my_api_response = client.post(
+        "/fileupload/singular",
+        params=_params,
+        files={"file": ("filename", open("tests/inputs/single-sfgfp.gb", "rb"),"application/fasta")},
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+    # Test for adding a file unsuccessfully that needs i seq
+
+    _params={'type':'genbank','addiseq':'false'}
+    my_api_response = client.post(
+        "/fileupload/singular",
+        params=_params,
+        files={"file": ("filename", open("tests/inputs/single-sfgfp.gb", "rb")," chemical/seq-na-genbank")},
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
