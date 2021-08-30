@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import basicsynbio as bsb
 from pathlib import Path
 import os
@@ -12,6 +13,22 @@ from app.src.buildCSVs import buildCSVs
 
 
 app = FastAPI()
+
+origins = [
+    "http://basicsynbio.web.app",
+    "https://basicsynbio.web.app",
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # the `/docs` endpoint is reserved for OPENAPI good for testing
 # Root to the API to check if it is running
 @app.get("/")
