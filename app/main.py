@@ -10,6 +10,7 @@ from app.src.getCollections import getCollections
 from app.src.fileUploadSingular import fileUploadSingular
 from app.src.fileUploadMultiple import fileUploadMultiple
 from app.src.buildCSVs import buildCSVs
+from app.src.buildEchoInstructions import buildEchoInstructions
 
 
 app = FastAPI()
@@ -68,3 +69,9 @@ async def file_upload_multiple(
 @app.post("/buildcsvs")
 async def return_build_csvs(myBuild: List[basicBuild]):
     return buildCSVs(myBuild)
+
+
+# Route to return CSV representation on basicBuild Object
+@app.post("/buildechoinstructions")
+async def return_build_echo_instructions(myBuild: List[basicBuild]):
+    return buildEchoInstructions(myBuild)
