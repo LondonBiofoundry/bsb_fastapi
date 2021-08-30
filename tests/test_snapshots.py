@@ -129,3 +129,16 @@ def test_singular_build_echo_instructions(snapshot):
     snapshot.assert_match(my_api_response.status_code)
     # TODO: fix snapshot of binary zip response containing 2 csv files
     # snapshot.assert_match(my_api_response.raw)
+
+
+def test_singular_build_PDF_instructions(snapshot):
+    """Testing the API for ability to build echo instructions"""
+    f = open("tests/inputs/BasicBuild.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/build_pdf_instructions",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    # TODO: fix snapshot of binary zip response containing 2 csv files
+    # snapshot.assert_match(my_api_response.raw)

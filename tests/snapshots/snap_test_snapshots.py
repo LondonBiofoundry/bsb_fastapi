@@ -12247,6 +12247,8 @@ snapshots["test_root_hello_world 1"] = 200
 
 snapshots["test_root_hello_world 2"] = {"message": "Hello World"}
 
+snapshots["test_singular_build_PDF_instructions 1"] = 200
+
 snapshots["test_singular_build_csvs 1"] = 200
 
 snapshots["test_singular_build_echo_instructions 1"] = 200
