@@ -15,7 +15,7 @@ def buildUniqueParts(myBuild: List[basicBuild]):
         build = return_build(myBuild)
         bsb.export_sequences_to_file(build.unique_parts, "Unique_Parts.gb")
         return read_return_delete(
-            "Unique_Parts.gb", "Unique_Parts.gb", "Unique_Parts.gb"
+            "Unique_Parts.gb", "chemical/seq-na-genbank", "Unique_Parts.gb"
         )
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
