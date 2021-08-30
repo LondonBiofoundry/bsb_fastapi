@@ -14,6 +14,7 @@ from app.src.buildEchoInstructions import buildEchoInstructions
 from app.src.buildPDFInstructions import buildPDFInstructions
 from app.src.buildJSON import buildJSON
 from app.src.buildUniqueParts import buildUniqueParts
+from app.src.buildUniqueAssemblies import buildUniqueAssemblies
 
 
 app = FastAPI()
@@ -96,3 +97,9 @@ async def return_build_json(myBuild: List[basicBuild]):
 @app.post("/builduniqueparts")
 async def return_unique_parts_genbank(myBuild: List[basicBuild]):
     return buildUniqueParts(myBuild)
+
+
+# Route to return unique assemblies genbank representation on basicBuild Object
+@app.post("/builduniqueassemblies")
+async def return_unique_assemblies_genbank(myBuild: List[basicBuild]):
+    return buildUniqueAssemblies(myBuild)

@@ -67,7 +67,9 @@ def test_singular_file_upload(snapshot):
             )
         },
     )
-    read_return_delete("single-sfgfp.fasta","application/x-fasta","single-sfgfp.fasta")
+    read_return_delete(
+        "single-sfgfp.fasta", "application/x-fasta", "single-sfgfp.fasta"
+    )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
 
@@ -103,7 +105,7 @@ def test_singular_file_upload(snapshot):
             )
         },
     )
-    read_return_delete("single-sfgfp.gb","chemical/seq-na-genbank","single-sfgfp.gb")
+    read_return_delete("single-sfgfp.gb", "chemical/seq-na-genbank", "single-sfgfp.gb")
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
 
@@ -166,6 +168,19 @@ def test_singular_unique_parts_genbank(snapshot):
     _data = json.load(f)
     my_api_response = client.post(
         "/builduniqueparts",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    # TODO: fix snapshot of binary zip response containing 2 csv files
+    # snapshot.assert_match(my_api_response.raw)
+
+
+def test_singular_unique_assemblies_genbank(snapshot):
+    """Testing the API for ability to build unique assemblies genbank"""
+    f = open("tests/inputs/BasicBuild.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/builduniqueassemblies",
         json=_data,
     )
     snapshot.assert_match(my_api_response.status_code)
