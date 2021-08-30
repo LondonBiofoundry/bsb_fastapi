@@ -12284,3 +12284,7 @@ snapshots["test_singular_file_upload 8"] = {
 snapshots["test_singular_unique_assemblies_genbank 1"] = 200
 
 snapshots["test_singular_unique_parts_genbank 1"] = 200
+
+snapshots["test_validate_success 1"] = 200
+
+snapshots["test_validate_success 2"] = {"result": "success"}

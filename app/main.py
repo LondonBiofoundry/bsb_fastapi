@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import basicsynbio as bsb
 from pathlib import Path
 import os
-from app.schema import fileType, fileTypeData, basicBuild
+from app.schema import fileType, fileTypeData, basicBuild, basicPart
 from typing import List
 
 from app.src.getCollections import getCollections
@@ -15,6 +15,7 @@ from app.src.buildPDFInstructions import buildPDFInstructions
 from app.src.buildJSON import buildJSON
 from app.src.buildUniqueParts import buildUniqueParts
 from app.src.buildUniqueAssemblies import buildUniqueAssemblies
+from app.src.validateAssembly import validateAssembly
 
 
 app = FastAPI()
@@ -103,3 +104,9 @@ async def return_unique_parts_genbank(myBuild: List[basicBuild]):
 @app.post("/builduniqueassemblies")
 async def return_unique_assemblies_genbank(myBuild: List[basicBuild]):
     return buildUniqueAssemblies(myBuild)
+
+
+# Route to return unique assemblies genbank representation on basicBuild Object
+@app.post("/validate")
+async def return_validate_assembly(myBuild: List[basicPart]):
+    return validateAssembly(myBuild)
