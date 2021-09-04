@@ -6,6 +6,7 @@ from fastapi import HTTPException
 
 from app.utils.readReturnDelete import read_return_delete
 from app.utils.ItemtoPart import itemtopart
+from app.utils.partstoBSBAssembly import partsToBSBAssembly
 
 import basicsynbio as bsb
 
@@ -15,13 +16,9 @@ def validateAssembly(mybuild: List[basicPart]):
         if len(mybuild) == 0:
             return {"result": "no parts within assembly"}
         else:
-            parts = []
-            for item in mybuild:
-                part = itemtopart(item)
-                parts.append(part)
-            parts.insert(0, "first_build")
-            mytuple = tuple(parts)
-            assembly = bsb.BasicAssembly(*mytuple)
-            return {"result": "success"}
+            assembly = partsToBSBAssembly(mybuild)
+            if isinstance(assembly, bsb.BasicAssembly):
+                return {"result": "success"}
+            return assembly
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        return {"result": "failed", "detail": str(e)}

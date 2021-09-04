@@ -12285,10 +12285,11 @@ snapshots["test_singular_unique_assemblies_genbank 1"] = 200
 
 snapshots["test_singular_unique_parts_genbank 1"] = 200
 
-snapshots["test_validate_failure 1"] = 400
+snapshots["test_validate_failure 1"] = 200
 
 snapshots["test_validate_failure 2"] = {
-    "detail": "Alternating BasicPart, BasicLinker instances required: 00d898637a50a35f638cd3c4bc3ef744 is preceeded by <class 'basicsynbio.main.BasicLinker'> and is of type <class 'basicsynbio.main.BasicLinker'>."
+    "detail": "Alternating BasicPart, BasicLinker instances required: 00d898637a50a35f638cd3c4bc3ef744 is preceeded by <class 'basicsynbio.main.BasicLinker'> and is of type <class 'basicsynbio.main.BasicLinker'>.",
+    "result": "failed",
 }
 
 snapshots["test_validate_success 1"] = 200
