@@ -222,3 +222,15 @@ def test_get_seq_labels(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
+
+
+def test_get_part_labels(snapshot):
+    """Testing the API for ability to return part labels"""
+    f = open("tests/inputs/BasicPartSeva14.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/viewpartlabels",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())

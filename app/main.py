@@ -17,6 +17,7 @@ from app.src.buildUniqueParts import buildUniqueParts
 from app.src.buildUniqueAssemblies import buildUniqueAssemblies
 from app.src.validateAssembly import validateAssembly
 from app.src.viewseqlabels import viewseqlabels
+from app.src.viewpartlabels import viewpartlabels
 
 
 app = FastAPI()
@@ -119,3 +120,9 @@ async def return_validate_assembly(myBuild: List[basicPart]):
 @app.post("/viewseqlabels")
 async def return_seq_labels(myBuild: List[basicPart]):
     return viewseqlabels(myBuild)
+
+
+# Route to return unique assemblies part labels representation of basicBuild Object
+@app.post("/viewpartlabels")
+async def return_part_labels(myBuild: basicPart):
+    return viewpartlabels(myBuild)
