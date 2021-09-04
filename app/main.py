@@ -19,6 +19,7 @@ from app.src.validateAssembly import validateAssembly
 from app.src.viewseqlabels import viewseqlabels
 from app.src.viewpartlabels import viewpartlabels
 from app.src.return_sequence_annotations import return_sequence_annotations
+from app.src.dnafeatureviewer import dnafeaturesviewerpng
 
 
 app = FastAPI()
@@ -133,3 +134,9 @@ async def return_part_labels(myBuild: basicPart):
 @app.post("/returnseqann")
 async def return_seq_annotations(myBuild: basicPart, Qualifier: str):
     return return_sequence_annotations(myBuild, Qualifier)
+
+
+# Route to return sequence annotations
+@app.post("/dnafeatureviewer")
+async def return_dnafeatureviewer(myBuild: basicPart):
+    return dnafeaturesviewerpng(myBuild)
