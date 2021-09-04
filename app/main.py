@@ -16,6 +16,7 @@ from app.src.buildJSON import buildJSON
 from app.src.buildUniqueParts import buildUniqueParts
 from app.src.buildUniqueAssemblies import buildUniqueAssemblies
 from app.src.validateAssembly import validateAssembly
+from app.src.viewseqlabels import viewseqlabels
 
 
 app = FastAPI()
@@ -110,3 +111,11 @@ async def return_unique_assemblies_genbank(myBuild: List[basicBuild]):
 @app.post("/validate")
 async def return_validate_assembly(myBuild: List[basicPart]):
     return validateAssembly(myBuild)
+
+
+#################### Visualization ####################
+
+# Route to return unique assemblies seq labels representation of basicBuild Object
+@app.post("/viewseqlabels")
+async def return_seq_labels(myBuild: List[basicPart]):
+    return viewseqlabels(myBuild)

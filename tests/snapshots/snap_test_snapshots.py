@@ -12243,6 +12243,10 @@ snapshots["test_collection_names 2"] = {
     ]
 }
 
+snapshots["test_get_seq_labels 1"] = 200
+
+snapshots["test_get_seq_labels 2"] = ["label", "Feature"]
+
 snapshots["test_root_hello_world 1"] = 200
 
 snapshots["test_root_hello_world 2"] = {"message": "Hello World"}

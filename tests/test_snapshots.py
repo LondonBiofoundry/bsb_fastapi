@@ -210,3 +210,15 @@ def test_validate_failure(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
+
+
+def test_get_seq_labels(snapshot):
+    """Testing the API for ability to return seq labels"""
+    f = open("tests/inputs/BasicBuildPartsValidate.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/viewseqlabels",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
