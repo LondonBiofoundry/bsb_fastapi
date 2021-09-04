@@ -20,6 +20,7 @@ from app.src.viewseqlabels import viewseqlabels
 from app.src.viewpartlabels import viewpartlabels
 from app.src.return_sequence_annotations import return_sequence_annotations
 from app.src.dnafeatureviewer import dnafeaturesviewerpng
+from app.src.dnafeatureviewer_assembly import dnafeaturesviewerpng_assembly
 
 
 app = FastAPI()
@@ -140,3 +141,9 @@ async def return_seq_annotations(myBuild: basicPart, Qualifier: str):
 @app.post("/dnafeatureviewer")
 async def return_dnafeatureviewer(myBuild: basicPart):
     return dnafeaturesviewerpng(myBuild)
+
+
+# Route to return sequence annotations for assemblys on Dna feature viewer
+@app.post("/dnafeatureviewer_assembly")
+async def returndnafeaturesviewer_assembly(myBuild: List[basicPart]):
+    return dnafeaturesviewerpng_assembly(myBuild)

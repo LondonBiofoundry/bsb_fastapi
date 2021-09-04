@@ -260,3 +260,15 @@ def test_dna_feature_viewer(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
+
+
+def test_dna_feature_viewer_assembly(snapshot):
+    """Testing the API for ability to return part labels"""
+    f = open("tests/inputs/BasicBuildPartsValidate.json")
+    _data = json.load(f)
+    my_api_response = client.post(
+        "/dnafeatureviewer_assembly",
+        json=_data,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
