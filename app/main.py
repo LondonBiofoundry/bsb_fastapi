@@ -18,6 +18,7 @@ from app.src.buildUniqueAssemblies import buildUniqueAssemblies
 from app.src.validateAssembly import validateAssembly
 from app.src.viewseqlabels import viewseqlabels
 from app.src.viewpartlabels import viewpartlabels
+from app.src.return_sequence_annotations import return_sequence_annotations
 
 
 app = FastAPI()
@@ -126,3 +127,9 @@ async def return_seq_labels(myBuild: List[basicPart]):
 @app.post("/viewpartlabels")
 async def return_part_labels(myBuild: basicPart):
     return viewpartlabels(myBuild)
+
+
+# Route to return sequence annotations
+@app.post("/returnseqann")
+async def return_seq_annotations(myBuild: basicPart, Qualifier: str):
+    return return_sequence_annotations(myBuild, Qualifier)
