@@ -3,18 +3,16 @@ import basicsynbio as bsb
 import os
 from Bio import SeqIO
 from app.schema import fileType, fileTypeData
-
-
-def createPathForType(type: fileType = fileType.genbank):
-    return "mypart" + fileTypeData[type].value["extension"]
+import tempfile
 
 
 def partToString(mypart, type: fileType = fileType.genbank):
-    filename = createPathForType(type)
     mypart.annotations["molecule_type"] = "DNA"
-    SeqIO.write(mypart, filename, type)
-    with open(filename, "r") as f:
-        output = f.read()
-        f.close()
-    os.remove(filename)
-    return str(output)
+    suffix = fileTypeData[type].value["extension"]
+    with tempfile.NamedTemporaryFile(suffix=suffix) as tmp:
+        SeqIO.write(mypart, tmp.name, type)
+        output = tmp.read()
+    tmp.close()
+    output_text = output.decode("utf-8")
+    return output_text
+
