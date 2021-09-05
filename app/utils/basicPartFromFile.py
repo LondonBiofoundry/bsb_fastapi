@@ -26,7 +26,11 @@ def returnBasicPartFromUploadFile(
         os.remove(filepath)
         return basic_part
     except Exception as e:
-        return {"error": str(e)}
+        try:
+            filepath = get_file_path_name(file)
+            os.remove(filepath)
+        finally:
+            return {"error": str(e)}
 
 
 def basicPartsFromUploadFile(
@@ -50,4 +54,8 @@ def basicPartsFromUploadFile(
             os.remove(filepath)
             return {"result": "success", "partsarray": parts_array}
     except Exception as e:
-        return {"error": str(e)}
+        try:
+            filepath = get_file_path_name(file)
+            os.remove(filepath)
+        finally:
+            return {"error": str(e)}
