@@ -22,8 +22,20 @@ from app.src.return_sequence_annotations import return_sequence_annotations
 from app.src.dnafeatureviewer import dnafeaturesviewerpng
 from app.src.dnafeatureviewer_assembly import dnafeaturesviewerpng_assembly
 
+description = """
+A REST API for BasicSynBio that allows the BasicSynBio python package to be consumed by any language - the primary use case for this is own own BasicSynBio frontend application. 🚀
 
-app = FastAPI()
+[Python Package](https://pypi.org/project/basicsynbio/) --- 
+[Interactive Web App](https://basicsynbio.web.app)
+
+Below is a list of endpoints that can be accessed via the API, each endpoint can be simulated within their corresponding boxes.
+"""
+
+app = FastAPI(
+    title="BasicSynBio API",
+    description=description,
+    version="0.0.1",
+)
 
 origins = [
     "http://basicsynbio.web.app",

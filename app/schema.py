@@ -3,6 +3,7 @@ from typing import Optional, List, Any
 from enum import Enum
 from fastapi import File, UploadFile
 from app.schema_examples.exampleBasicBuild import exampleBasicBuild
+from app.schema_examples.exampleBasicPart import exampleBasicPart
 
 
 class basicPart(BaseModel):
@@ -16,6 +17,9 @@ class basicPart(BaseModel):
     multiple: Optional[bool] = None
     index: Optional[int] = None
     type: Optional[str] = None
+
+    class Config:
+        schema_extra = {"example": exampleBasicPart}
 
 
 class basicBuild(BaseModel):
