@@ -1,10 +1,15 @@
 from fastapi.responses import FileResponse
 from fastapi import FastAPI, Response
+import tempfile
 import io
 import os
+from typing import Callable
+import basicsynbio as bsb
+from pathlib import Path
 
 
-def read_return_delete(file, media_type, filename):
+
+def read_return_delete(file: str, media_type, filename):
     return_data = io.BytesIO()
     with open(file, "rb") as fo:
         return_data.write(fo.read())
@@ -18,4 +23,19 @@ def read_return_delete(file, media_type, filename):
 
     os.remove(file)
 
+    return resp
+
+def create_file_execute_build_command_return(command: Callable,build: bsb.BasicBuild, media_type: str, output_filename: str):
+    return_data = io.BytesIO()
+    suffix = Path(output_filename).suffix
+    with tempfile.NamedTemporaryFile(suffix=suffix) as tmp:
+        command(build,path = tmp.name)
+        return_data.write(tmp.read())
+    return_data.seek(0)
+    tmp.close()
+    resp = Response(
+        return_data.getvalue(),
+        media_type="application/x-zip-compressed",
+        headers={"Content-Disposition": f"attachment;filename={output_filename}"},
+    )
     return resp

@@ -1,12 +1,11 @@
 from typing import List
 from app.schema import basicBuild
 from app.utils.returnBasicBuild import return_build
-from app.utils.readReturnDelete import read_return_delete
+from app.utils.readReturnDelete import read_return_delete, create_file_execute_build_command_return
 
 import basicsynbio as bsb
 
 
 def buildEchoInstructions(myBuild: List[basicBuild]):
     build = return_build(myBuild)
-    filepath = bsb.export_echo_assembly(build)
-    return read_return_delete(filepath, "application/zip", "archive.zip")
+    return create_file_execute_build_command_return(bsb.export_echo_assembly,build,"application/zip", "archive.zip")
