@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 from fastapi import HTTPException
 import json
 
-from app.utils.readReturnDelete import read_return_delete
+from app.utils.readReturnDelete import create_file_execute_build_command_return
 
 import basicsynbio as bsb
 
@@ -14,9 +14,6 @@ def buildUniqueAssemblies(myBuild: List[basicBuild]):
     try:
         build = return_build(myBuild)
         unique_assemblies = (assembly for assembly in build.basic_assemblies)
-        bsb.export_sequences_to_file(unique_assemblies, "Unique_Assemblies.gb")
-        return read_return_delete(
-            "Unique_Assemblies.gb", "chemical/seq-na-genbank", "Unique_Assemblies.gb"
-        )
+        return create_file_execute_build_command_return(bsb.export_sequences_to_file,unique_assemblies,"chemical/seq-na-genbank", "Unique_Assemblies.gb")
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
