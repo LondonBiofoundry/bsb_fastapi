@@ -4,7 +4,6 @@ from pathlib import Path
 import json
 
 from app.main import app
-from app.utils.readReturnDelete import read_return_delete
 
 client = TestClient(app)
 
@@ -67,9 +66,6 @@ def test_singular_file_upload(snapshot):
             )
         },
     )
-    read_return_delete(
-        "single-sfgfp.fasta", "application/x-fasta", "single-sfgfp.fasta"
-    )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
 
@@ -105,7 +101,6 @@ def test_singular_file_upload(snapshot):
             )
         },
     )
-    read_return_delete("single-sfgfp.gb", "chemical/seq-na-genbank", "single-sfgfp.gb")
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
 
