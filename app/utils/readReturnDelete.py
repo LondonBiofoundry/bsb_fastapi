@@ -8,7 +8,6 @@ import basicsynbio as bsb
 from pathlib import Path
 
 
-
 def read_return_delete(file: str, media_type, filename):
     return_data = io.BytesIO()
     with open(file, "rb") as fo:
@@ -25,11 +24,14 @@ def read_return_delete(file: str, media_type, filename):
 
     return resp
 
-def create_file_execute_build_command_return(command: Callable,build, media_type: str, output_filename: str):
+
+def create_file_execute_build_command_return(
+    command: Callable, build, media_type: str, output_filename: str
+):
     return_data = io.BytesIO()
     suffix = Path(output_filename).suffix
     with tempfile.NamedTemporaryFile(suffix=suffix) as tmp:
-        command(build,tmp.name)
+        command(build, tmp.name)
         return_data.write(tmp.read())
     return_data.seek(0)
     tmp.close()

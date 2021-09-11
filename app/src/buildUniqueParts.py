@@ -12,5 +12,9 @@ import basicsynbio as bsb
 
 def buildUniqueParts(myBuild: List[basicBuild]):
     build = return_build(myBuild)
-    return create_file_execute_build_command_return(bsb.export_sequences_to_file,build.unique_parts,"chemical/seq-na-genbank", "Unique_Parts.gb")
-
+    return create_file_execute_build_command_return(
+        bsb.export_sequences_to_file,
+        build.unique_parts,
+        "chemical/seq-na-genbank",
+        "Unique_Parts.gb",
+    )

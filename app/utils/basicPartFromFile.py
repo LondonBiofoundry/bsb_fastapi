@@ -13,6 +13,7 @@ from app.utils.partToString import partToString
 def get_file_path_name(file: UploadFile) -> Path:
     return Path(os.path.join(Path.cwd(), Path(file.filename)))
 
+
 def create_temp_file(upload_file: UploadFile) -> Path:
     try:
         suffix = Path(upload_file.filename).suffix

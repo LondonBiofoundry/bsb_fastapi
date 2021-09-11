@@ -3,7 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 import basicsynbio as bsb
 from pathlib import Path
 import os
-from app.schema import fileType, fileTypeData, basicBuild, basicPart
+from app.schema import (
+    fileType,
+    fileTypeData,
+    basicBuild,
+    basicPart,
+    responseCollectionsName,
+    responseCollectionsData,
+)
 from typing import List
 
 from app.src.getCollections import getCollections
@@ -65,7 +72,7 @@ def root_endpoint_for_health_check():
 
 
 # Route to return the available collections
-@app.get("/collections/names")
+@app.get("/collections/names", response_model=responseCollectionsName)
 def get_collection_names():
     """
     ## Collection Names
@@ -78,7 +85,7 @@ def get_collection_names():
 
 
 # Route to return data within available collections
-@app.get("/collections/data")
+@app.get("/collections/data", response_model=responseCollectionsData)
 def get_collection_data():
     """
     ## Collection Data

@@ -8,4 +8,6 @@ import basicsynbio as bsb
 
 def buildEchoInstructions(myBuild: List[basicBuild]):
     build = return_build(myBuild)
-    return create_file_execute_build_command_return(bsb.export_echo_assembly,build,"application/zip", "archive.zip")
+    return create_file_execute_build_command_return(
+        bsb.export_echo_assembly, build, "application/zip", "archive.zip"
+    )

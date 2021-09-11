@@ -7,11 +7,12 @@ from app.schema_examples.exampleBasicPart import exampleBasicPart
 
 
 class basicPart(BaseModel):
-    id: str
+    id: Optional[str] = None
     accessor: Optional[str] = None
     binaryString: Optional[str] = None
     base64: Optional[Any] = None
     collection: Optional[str] = None
+    version: Optional[str] = None
     description: Optional[str] = None
     label: Optional[str] = None
     multiple: Optional[bool] = None
@@ -52,3 +53,22 @@ class fileType(str, Enum):
 class fileUploadArgs(BaseModel):
     addiseq: bool
     type: fileType
+
+
+class collectionVersionInstance(BaseModel):
+    name: str
+    parts: List[basicPart]
+
+
+class collection(BaseModel):
+    name: str
+    availableVersions: List[str]
+    versions: List[collectionVersionInstance]
+
+
+class responseCollectionsData(BaseModel):
+    data: List[collection]
+
+
+class responseCollectionsName(BaseModel):
+    data: List[str]

@@ -15,4 +15,3 @@ def partToString(mypart, type: fileType = fileType.genbank):
     tmp.close()
     output_text = output.decode("utf-8")
     return output_text
-

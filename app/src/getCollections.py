@@ -6,20 +6,27 @@ def getCollections():
     collections = [x for x in dir(bsb) if x.startswith("BASIC_")]
     apiresponse = []
     for collection in collections:
-        apicollection = {"name": collection}
         bsbcollection = getattr(bsb, collection)
         versions = list(bsbcollection.keys())
-        for version in versions:
-            bsbversion = bsbcollection[version]
-            apicollection[version] = [
+        apicollection = {
+            "name": collection,
+            "availableVersions": versions,
+            "versions": [
                 {
-                    "label": bsbversion[item].name,
-                    "accessor": item,
-                    "binaryString": partToString(bsbversion[item]),
-                    "description": bsbversion[item].description,
-                    "collection": collection,
+                    "name": version,
+                    "parts": [
+                        {
+                            "label": bsbcollection[version][item].name,
+                            "accessor": item,
+                            "binaryString": partToString(bsbcollection[version][item]),
+                            "description": bsbcollection[version][item].description,
+                            "collection": collection,
+                            "version": version,
+                        }
+                        for item in bsbcollection[version]
+                    ],
                 }
-                for item in bsbversion
-            ]
-        apiresponse.append(apicollection)
+                for version in versions
+            ],
+        }
     return apiresponse
