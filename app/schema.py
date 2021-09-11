@@ -72,3 +72,8 @@ class responseCollectionsData(BaseModel):
 
 class responseCollectionsName(BaseModel):
     data: List[str]
+
+
+class responseSingularFileUpload(BaseModel):
+    result: str
+    seq: str
