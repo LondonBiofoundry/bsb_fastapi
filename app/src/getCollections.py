@@ -29,4 +29,5 @@ def getCollections():
                 for version in versions
             ],
         }
+    apiresponse.append(apicollection)
     return apiresponse
