@@ -3,7 +3,7 @@ import basicsynbio as bsb
 import os
 
 from app.schema import basicPart, fileType
-from app.utils.Iitemtopart import basicPartsFromUploadFile, returnBasicPartFromUploadFile
+from app.utils.basicPartFromFile import basicPartsFromUploadFile, returnBasicPartFromUploadFile
 
 
 def itemtopart(item: basicPart):
