@@ -9,8 +9,3 @@ def extract_feature(item):
         "name": name,
         "direction": item.strand,
     }
-
-
-def parttoannotations(mypart):
-    annotations = map(extract_feature, mypart.features)
-    return list(annotations)

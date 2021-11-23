@@ -1,6 +1,4 @@
-import base64
 import basicsynbio as bsb
-import os
 
 from app.schema import basicPart, fileType
 from app.utils.basicPartFromFile import basicPartsFromUploadFile, returnBasicPartFromUploadFile
