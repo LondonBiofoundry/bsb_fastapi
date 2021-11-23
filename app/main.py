@@ -99,7 +99,7 @@ def get_collection_data():
 
 # Route to return sequence data witin a uploaded file
 @app.post("/fileupload/singular")
-async def singular_file_upload(
+def singular_file_upload(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
 ):
     """
@@ -107,7 +107,7 @@ async def singular_file_upload(
 
     Uploads a file containing only one sequence record to the server to return a JSON version of the same object for further processing in the basicsynbio interactive web app.
     """
-    return await fileUploadSingular(type, addiseq, file)
+    return fileUploadSingular(type, addiseq, file)
 
 
 # Route to return sequence datas for each record within a uploaded file

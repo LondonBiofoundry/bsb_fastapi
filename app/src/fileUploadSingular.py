@@ -5,7 +5,9 @@ from app.schema import fileType, fileTypeData
 from app.utils.basicPartFromFile import returnBasicPartFromUploadFile
 
 
-async def fileUploadSingular(
+
+
+def fileUploadSingular(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
 ):
     result = returnBasicPartFromUploadFile(file, type, addiseq)
