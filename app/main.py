@@ -42,6 +42,7 @@ app = FastAPI(
     title="BasicSynBio API",
     description=description,
     version="0.0.1",
+    debug=True
 )
 
 origins = [
@@ -49,6 +50,7 @@ origins = [
     "https://basicsynbio.web.app",
     "http://localhost",
     "http://localhost:8080",
+    "http://localhost:3000",
 ]
 
 app.add_middleware(
