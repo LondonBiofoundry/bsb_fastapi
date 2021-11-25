@@ -8,7 +8,7 @@ from app.schema import fileType
 from app.utils.partToString import partToString
 
 
-def returnBasicPartFromUploadFile(
+def returnBasicPartFromUploadFileInitial(
     file: UploadFile, type: fileType, addiseq: bool
 ) -> bsb.BasicPart:
     try:
