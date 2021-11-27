@@ -140,14 +140,16 @@ async def validate_assembly(
 # Route to return CSV representation on basicAssembly Object ^^^
 @app.post("/buildcsvs")
 async def build_csvs(
-    myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
 ):
     """
     ## Build CSVs
 
     This endpoint takes a list of basicAssembly objects and returns a CSV representation of the same objects.
     """
-    return buildCSVs(myBuild)
+    AssemblyArray = json.loads(myAssemblyArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return buildCSVs(AssemblyArray, hashFileDictionary)
 
 
 # Route to return echo representation on basicAssembly Object
