@@ -41,11 +41,6 @@ def test_validate_success_with_files(snapshot):
     _dataString = json.dumps(_data)
     seva12path = "tests/inputs/validatePass/SEVA_12.gb"
     seva13path = "tests/inputs/validatePass/SEVA_13.gb"
-    # with open(seva12path, "rb") as seva12file:
-    #     seva12 = seva12file.read()
-    # with open(seva13path, "rb") as seva13file:
-    #     seva13 = seva13file.read()
-    # myFiles = [{"files": ("SEVA_12.gb", open(seva12path, "rb"))}]
     myFiles = [
         ("files", ("SEVA_12.gb", open(seva12path, "rb"))),
         ("files", ("SEVA_13.gb", open(seva13path, "rb"))),
@@ -67,6 +62,27 @@ def test_validate_fail_without_files(snapshot):
     _dataString = json.dumps(_data)
     my_api_response = client.post(
         "/validate", data={"myPartArrayStr": _dataString}, files={}
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+
+def test_validate_fail_with_files(snapshot):
+    """Testing the API for ability to validate builds"""
+    f = open("tests/inputs/validateFail/FailingWithFiles.json")
+    _data = json.load(f)
+    _dataString = json.dumps(_data)
+    seva12path = "tests/inputs/validateFail/SEVA_12.gb"
+    seva13path = "tests/inputs/validateFail/SEVA_13.gb"
+    myFiles = [
+        ("files", ("SEVA_12.gb", open(seva12path, "rb"))),
+        ("files", ("SEVA_13.gb", open(seva13path, "rb"))),
+    ]
+    print(myFiles)
+    my_api_response = client.post(
+        "/validate",
+        data={"myPartArrayStr": _dataString},
+        files=myFiles,
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())

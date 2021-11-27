@@ -24,6 +24,13 @@ snapshots['test_root_hello_world 2'] = {
     'message': 'Hello World'
 }
 
+snapshots['test_validate_fail_with_files 1'] = 200
+
+snapshots['test_validate_fail_with_files 2'] = {
+    'message': "Alternating BasicPart, BasicLinker instances required: SEVA_12 is preceeded by <class 'basicsynbio.main.BasicPart'> and is of type <class 'basicsynbio.main.BasicPart'>.",
+    'result': False
+}
+
 snapshots['test_validate_fail_without_files 1'] = 200
 
 snapshots['test_validate_fail_without_files 2'] = {
