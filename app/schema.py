@@ -13,20 +13,22 @@ class basicPartType(str, Enum):
 class basicPart(BaseModel):
     # A unique identifier for the part
     id: Optional[str] = None
+    # A human readable name (non unique): of the part
+    label: Optional[str] = None
+    # The type of bsb part
+    type: Optional[basicPartType] = None
+    # A description of the part
+    description: Optional[str] = None
+    # The sequence of the available part
+    seq: Optional[str] = None
     # (If Collection): The key of the collection version
     accessor: Optional[str] = None
     # (If Collection): The bsb collection that the part comes from
     collection: Optional[str] = None
     # (If Collection): The version of the basicsynbio collection that the part comes from
     version: Optional[str] = None
-    # A description of the part
-    description: Optional[str] = None
-    # A human readable name (non unique): of the part
-    label: Optional[str] = None
     # (If multipleUpload): The index of the individual part
     index: Optional[int] = None
-    # The type of bsb part
-    type: Optional[basicPartType] = None
 
     class Config:
         schema_extra = {"example": exampleBasicPart}
