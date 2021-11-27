@@ -1,21 +1,24 @@
-from typing import List
+from typing import Dict, List
 from app.schema import basicAssembly
 
 # from app.utils.returnbasicAssembly import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
 import json
+from app.utils.jsonAssemblyArrayToBsbBuild import jsonAssemblyArrayToBsbBuild
 
 from app.utils.readReturnDelete import read_return_delete
 
 import basicsynbio as bsb
 
 
-def buildJSON(myBuild: List[basicAssembly]):
+def buildJSON(assemblyArray: List[basicAssembly], hashFileDict: Dict = None):
     try:
-        # build = return_build(myBuild)
+        bsbBuild = jsonAssemblyArrayToBsbBuild(assemblyArray, hashFileDict)
+        if isinstance(bsbBuild, str):
+            return {"result": False, "message": bsbBuild}
         with open("my_build.json", "w") as json_file:
-            json.dump(build, json_file, cls=bsb.BuildEncoder, indent=4)
+            json.dump(bsbBuild, json_file, cls=bsb.BuildEncoder, indent=4)
         return read_return_delete("my_build.json", "application/json", "my_build.json")
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        return {"result": False, "message": bsbBuild}

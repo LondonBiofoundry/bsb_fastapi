@@ -184,13 +184,17 @@ async def build_pdf_instructions(
 
 # Route to return JSON representation on basicAssembly Object
 @app.post("/buildjson")
-async def build_json(myBuild: List[basicAssembly]):
+async def build_json(
+    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
     """
     ## Build JSON
 
     This endpoint takes a list of basicAssembly objects and returns a JSON serialised version of the same objects.
     """
-    return buildJSON(myBuild)
+    AssemblyArray = json.loads(myAssemblyArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return buildJSON(AssemblyArray, hashFileDictionary)
 
 
 # Route to return unique assemblies genbank representation on basicAssembly Object

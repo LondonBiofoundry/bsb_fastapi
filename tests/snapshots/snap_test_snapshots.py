@@ -32,6 +32,34 @@ snapshots['test_singular_build_echoinstructions 1'] = 200
 
 snapshots['test_singular_build_echoinstructions_with_files 1'] = 200
 
+snapshots['test_singular_build_json 1'] = 200
+
+snapshots['test_singular_build_json 2'] = {
+    '__BasicBuild__': True,
+    'assembly_data': {
+    },
+    'clips_data': {
+    },
+    'unique_linkers': {
+    },
+    'unique_parts': {
+    }
+}
+
+snapshots['test_singular_build_json_with_files 1'] = 200
+
+snapshots['test_singular_build_json_with_files 2'] = {
+    '__BasicBuild__': True,
+    'assembly_data': {
+    },
+    'clips_data': {
+    },
+    'unique_linkers': {
+    },
+    'unique_parts': {
+    }
+}
+
 snapshots['test_singular_build_pdf 1'] = 200
 
 snapshots['test_singular_build_pdf_with_files 1'] = 200
