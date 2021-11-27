@@ -91,4 +91,5 @@ class responseCollectionsName(BaseModel):
 
 class responseSingularFileUpload(BaseModel):
     result: bool
-    part: basicPart
+    message: Optional[str] = None
+    part: Optional[basicPart] = None

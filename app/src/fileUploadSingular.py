@@ -14,4 +14,4 @@ def fileUploadSingular(type: fileType, addiseq: bool, file: UploadFile = File(..
         )
         return {"result": True, "part": jsonBasicPart}
     else:
-        return result
+        return {"result": False, "message": result["error"]}
