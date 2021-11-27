@@ -26,6 +26,7 @@ def jsonAssemblyArrayToBsbBuild(
             bsbAssembly = bsbPartsTobsbAssembly(bsbParts, assemblyId)
             if isinstance(bsbAssembly, str):
                 return bsbPart
+            bsbAssemblies.append(bsbAssembly)
         bsbBuild = bsb.BasicBuild(*bsbAssemblies)
         return bsbBuild
     except Exception as e:
