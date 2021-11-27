@@ -2,7 +2,7 @@ import basicsynbio as bsb
 from app.utils.ItemtoPart import itemtopart
 
 
-def return_build(mybuild) -> bsb.BasicBuild:
+def return_build(mybuild) -> bsb.basicAssembly:
     try:
         assemblies = []
         for assembly in mybuild:
@@ -17,7 +17,7 @@ def return_build(mybuild) -> bsb.BasicBuild:
             mytuple = tuple(parts)
             assemblies.append(bsb.BasicAssembly(*mytuple))
         AssembliesTuple = tuple(assemblies)
-        build = bsb.BasicBuild(*AssembliesTuple)
+        build = bsb.basicAssembly(*AssembliesTuple)
         return build
     except Exception as e:
         return {"error2": str(e)}

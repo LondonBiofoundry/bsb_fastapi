@@ -1,6 +1,6 @@
 from typing import List
-from app.schema import basicBuild
-from app.utils.returnBasicBuild import return_build
+from app.schema import basicAssembly
+from app.utils.returnbasicAssembly import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
 import json
@@ -10,7 +10,7 @@ from app.utils.readReturnDelete import read_return_delete
 import basicsynbio as bsb
 
 
-def buildJSON(myBuild: List[basicBuild]):
+def buildJSON(myBuild: List[basicAssembly]):
     try:
         build = return_build(myBuild)
         with open("my_build.json", "w") as json_file:

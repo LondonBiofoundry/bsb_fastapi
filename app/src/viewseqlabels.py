@@ -1,6 +1,6 @@
 from typing import List
-from app.schema import basicBuild, basicPart
-from app.utils.returnBasicBuild import return_build
+from app.schema import basicAssembly, basicPart
+from app.utils.returnbasicAssembly import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
 

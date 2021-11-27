@@ -1,13 +1,13 @@
-from typing import List
-from app.schema import basicBuild
-from app.utils.returnBasicBuild import return_build
+from typing import Dict, List
+from app.schema import basicAssembly
+from app.utils.returnbasicAssembly import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
 
 from app.utils.readReturnDelete import read_return_delete
 
 
-def buildCSVs(myBuild: List[basicBuild]):
+def buildCSVs(BuildArray: List[basicAssembly], hashFileDict: Dict = None):
     try:
         build = return_build(myBuild)
         filepath = build.export_csvs()

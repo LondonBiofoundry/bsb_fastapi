@@ -1,4 +1,4 @@
-exampleBasicBuild = {
+examplebasicAssembly = {
     "id": "2f4b235d-1736-4b9b-85b8-6af8befeb39f",
     "parts": [
         {

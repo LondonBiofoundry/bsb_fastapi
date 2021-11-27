@@ -5,7 +5,7 @@ import json
 from app.schema import (
     fileType,
     fileTypeData,
-    basicBuild,
+    basicAssembly,
     basicPart,
     responseCollectionsName,
     responseCollectionsData,
@@ -122,7 +122,7 @@ async def multiple_file_upload(
     return await fileUploadMultiple(type, addiseq, file)
 
 
-# Route to return unique assemblies genbank representation on basicBuild Object ^^^
+# Route to return unique assemblies genbank representation on basicAssembly Object ^^^
 @app.post("/validate", response_model=responseValidate)
 async def validate_assembly(
     myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
@@ -137,7 +137,7 @@ async def validate_assembly(
     return validateAssembly(PartArray, hashFileDictionary)
 
 
-# Route to return CSV representation on basicBuild Object ^^^
+# Route to return CSV representation on basicAssembly Object ^^^
 @app.post("/buildcsvs")
 async def build_csvs(
     myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
@@ -145,75 +145,75 @@ async def build_csvs(
     """
     ## Build CSVs
 
-    This endpoint takes a list of basicBuild objects and returns a CSV representation of the same objects.
+    This endpoint takes a list of basicAssembly objects and returns a CSV representation of the same objects.
     """
     return buildCSVs(myBuild)
 
 
-# Route to return echo representation on basicBuild Object
+# Route to return echo representation on basicAssembly Object
 @app.post("/buildechoinstructions")
-async def build_echo_instructions(myBuild: List[basicBuild]):
+async def build_echo_instructions(myBuild: List[basicAssembly]):
     """
     ## Build Echo Instructions
 
-    This endpoint takes a list of basicBuild objects and returns the Echo robot instructions to perform the clip step of BASIC DNA assembly.
+    This endpoint takes a list of basicAssembly objects and returns the Echo robot instructions to perform the clip step of BASIC DNA assembly.
     """
     return buildEchoInstructions(myBuild)
 
 
-# Route to return PDF representation on basicBuild Object
+# Route to return PDF representation on basicAssembly Object
 @app.post("/build_pdf_instructions")
-async def build_pdf_instructions(myBuild: List[basicBuild]):
+async def build_pdf_instructions(myBuild: List[basicAssembly]):
     """
     ## Build PDF Instructions
 
-    This endpoint takes a list of basicBuild objects and returns a PDF for the manual assembly within a lab of the BasicBuild object.
+    This endpoint takes a list of basicAssembly objects and returns a PDF for the manual assembly within a lab of the basicAssembly object.
     """
     return buildPDFInstructions(myBuild)
 
 
-# Route to return JSON representation on basicBuild Object
+# Route to return JSON representation on basicAssembly Object
 @app.post("/buildjson")
-async def build_json(myBuild: List[basicBuild]):
+async def build_json(myBuild: List[basicAssembly]):
     """
     ## Build JSON
 
-    This endpoint takes a list of basicBuild objects and returns a JSON serialised version of the same objects.
+    This endpoint takes a list of basicAssembly objects and returns a JSON serialised version of the same objects.
     """
     return buildJSON(myBuild)
 
 
-# Route to return unique assemblies genbank representation on basicBuild Object
+# Route to return unique assemblies genbank representation on basicAssembly Object
 @app.post("/builduniqueparts")
-async def build_unique_parts_as_genbank(myBuild: List[basicBuild]):
+async def build_unique_parts_as_genbank(myBuild: List[basicAssembly]):
     """
     ## Build Unique Parts
 
-    This endpoint takes a list of basicBuild objects and returns unique parts within each BasicAssembly as a genbank file.
+    This endpoint takes a list of basicAssembly objects and returns unique parts within each BasicAssembly as a genbank file.
     """
     return buildUniqueParts(myBuild)
 
 
-# Route to return unique assemblies genbank representation on basicBuild Object
+# Route to return unique assemblies genbank representation on basicAssembly Object
 @app.post("/builduniqueassemblies")
-async def buils_unique_assemblies_as_genbank(myBuild: List[basicBuild]):
+async def buils_unique_assemblies_as_genbank(myBuild: List[basicAssembly]):
     """
     ## Build Unique Assemblies
 
-    This endpoint takes a list of basicBuild objects and returns unique assemblies within the BasicBuild as a genbank file.
+    This endpoint takes a list of basicAssembly objects and returns unique assemblies within the basicAssembly as a genbank file.
     """
     return buildUniqueAssemblies(myBuild)
 
 
 #################### Visualization ####################
 
-# Route to return unique assemblies seq labels representation of basicBuild Object
+# Route to return unique assemblies seq labels representation of basicAssembly Object
 @app.post("/viewseqlabels")
 async def view_sequence_labels(myBuild: List[basicPart]):
     return viewseqlabels(myBuild)
 
 
-# Route to return unique assemblies part labels representation of basicBuild Object
+# Route to return unique assemblies part labels representation of basicAssembly Object
 @app.post("/viewpartlabels")
 async def view_part_labels(myBuild: basicPart):
     return viewpartlabels(myBuild)

@@ -173,7 +173,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_build_csvs(snapshot):
 #     """Testing the API for ability to build csv"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/buildcsvs",
@@ -186,7 +186,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_build_echo_instructions(snapshot):
 #     """Testing the API for ability to build echo instructions"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/buildechoinstructions",
@@ -199,7 +199,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_build_PDF_instructions(snapshot):
 #     """Testing the API for ability to pdf instructions"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/build_pdf_instructions",
@@ -212,7 +212,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_build_json(snapshot):
 #     """Testing the API for ability to json instructions"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/buildjson",
@@ -225,7 +225,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_unique_parts_genbank(snapshot):
 #     """Testing the API for ability to build unique parts genbank"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/builduniqueparts",
@@ -238,7 +238,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_singular_unique_assemblies_genbank(snapshot):
 #     """Testing the API for ability to build unique assemblies genbank"""
-#     f = open("tests/inputs/BasicBuild.json")
+#     f = open("tests/inputs/basicAssembly.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/builduniqueassemblies",
@@ -251,7 +251,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_validate_success(snapshot):
 #     """Testing the API for ability to validate builds"""
-#     f = open("tests/inputs/BasicBuildPartsValidate.json")
+#     f = open("tests/inputs/basicAssemblyPartsValidate.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/validate",
@@ -263,7 +263,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_validate_failure(snapshot):
 #     """Testing the API for ability to fail builds"""
-#     f = open("tests/inputs/BasicBuildPartsFailure.json")
+#     f = open("tests/inputs/basicAssemblyPartsFailure.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/validate",
@@ -275,7 +275,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_get_seq_labels(snapshot):
 #     """Testing the API for ability to return seq labels"""
-#     f = open("tests/inputs/BasicBuildPartsValidate.json")
+#     f = open("tests/inputs/basicAssemblyPartsValidate.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/viewseqlabels",
@@ -325,7 +325,7 @@ def test_validate_fail_with_files(snapshot):
 
 # def test_dna_feature_viewer_assembly(snapshot):
 #     """Testing the API for ability to return part labels"""
-#     f = open("tests/inputs/BasicBuildPartsValidate.json")
+#     f = open("tests/inputs/basicAssemblyPartsValidate.json")
 #     _data = json.load(f)
 #     my_api_response = client.post(
 #         "/dnafeatureviewer_assembly",
