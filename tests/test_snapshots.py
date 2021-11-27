@@ -36,18 +36,25 @@ def test_validate_success_without_files(snapshot):
 
 def test_validate_success_with_files(snapshot):
     """Testing the API for ability to validate builds"""
-    f = open("tests/inputs/validatePass/Passing.json")
+    f = open("tests/inputs/validatePass/PassingWithFiles.json")
     _data = json.load(f)
     _dataString = json.dumps(_data)
     seva12path = "tests/inputs/validatePass/SEVA_12.gb"
     seva13path = "tests/inputs/validatePass/SEVA_13.gb"
-    myFiles = {
-        "file": ("SEVA_12.gb", open(seva12path, "rb")),
-        "file": ("SEVA_13.gb", open(seva13path, "rb")),
-    }
+    # with open(seva12path, "rb") as seva12file:
+    #     seva12 = seva12file.read()
+    # with open(seva13path, "rb") as seva13file:
+    #     seva13 = seva13file.read()
+    # myFiles = [{"files": ("SEVA_12.gb", open(seva12path, "rb"))}]
+    myFiles = [
+        ("files", ("SEVA_12.gb", open(seva12path, "rb"))),
+        ("files", ("SEVA_13.gb", open(seva13path, "rb"))),
+    ]
     print(myFiles)
     my_api_response = client.post(
-        "/validate", data={"myPartArrayStr": _dataString}, files=myFiles
+        "/validate",
+        data={"myPartArrayStr": _dataString},
+        files=myFiles,
     )
     snapshot.assert_match(my_api_response.status_code)
     snapshot.assert_match(my_api_response.json())
