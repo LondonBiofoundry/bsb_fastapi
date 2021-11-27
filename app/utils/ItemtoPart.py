@@ -23,7 +23,6 @@ def itemtopart(item: basicPart):
                     item.base64, fileType.genbank, False
                 )[item.index]
             else:
-                print("Attempting to return basicpart from uploaded file")
                 mypart = returnBasicPartFromUploadFileInitial(
                     item.base64, fileType.genbank, False
                 )

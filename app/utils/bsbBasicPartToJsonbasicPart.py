@@ -10,6 +10,7 @@ def bsbBasicPartToJsonbasicPart(
     uploadType: basicPartType,
     file: UploadFile = None,
     index: int = None,
+    addiseq: bool = None,
 ) -> basicPart:
     jsonDocument = {
         # A unique identifier for the part
@@ -31,4 +32,7 @@ def bsbBasicPartToJsonbasicPart(
     if not index == None:
         # Add the index attribute of the jsonBasicPart
         jsonDocument["index"] = index
+    if not addiseq == None:
+        # Add the index attribute of the jsonBasicPart
+        jsonDocument["addiseq"] = addiseq
     return jsonDocument

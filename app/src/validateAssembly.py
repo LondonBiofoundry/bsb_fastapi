@@ -1,5 +1,9 @@
-from typing import List
+from typing import Dict, List
+
+from fastapi.datastructures import UploadFile
 from app.schema import basicBuild, basicPart
+from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
+from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 from app.utils.returnBasicBuild import return_build
 from fastapi.responses import FileResponse
 from fastapi import HTTPException
@@ -10,14 +14,21 @@ from app.utils.partstoBSBAssembly import partsToBSBAssembly
 import basicsynbio as bsb
 
 
-def validateAssembly(mybuild: List[basicPart]):
+def validateAssembly(parts: List[basicPart], hashFileDictionary: Dict = None):
     try:
-        if len(mybuild) == 0:
-            return {"result": "no parts within assembly"}
+        if len(parts) == 0:
+            return {"result": False, "message": "no parts within assembly"}
         else:
-            assembly = partsToBSBAssembly(mybuild)
+            bsbBasicParts = [
+                jsonPartToBsbPart(part, hashFileDictionary) for part in parts
+            ]
+            for part in bsbBasicParts:
+                if isinstance(part, str):
+                    return {"result": False, "message": part}
+            print("bsbBasicParts", bsbBasicParts)
+            assembly = bsbPartsTobsbAssembly(bsbBasicParts, "validatedAssembly")
             if isinstance(assembly, bsb.BasicAssembly):
-                return {"result": "success"}
-            return assembly
+                return {"result": True}
+            return {"result": False, "message": assembly}
     except Exception as e:
-        return {"result": "failed", "detail": str(e)}
+        return {"result": False, "message": str(e)}

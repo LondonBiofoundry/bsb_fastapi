@@ -22,10 +22,9 @@ async def fileUploadMultiple(
                     "result": False,
                     "message": "Unable to convert record into BasicSynBio part ${bsbBasicPart}",
                 }
-        print("Just before turning to json basic parts")
         jsonBasicParts = [
             bsbBasicPartToJsonbasicPart(
-                bsbBasicPart, basicPartType.uploadMultiple, file, index
+                bsbBasicPart, basicPartType.uploadMultiple, file, index, addiseq
             )
             for index, bsbBasicPart in enumerate(bsbBasicParts)
         ]

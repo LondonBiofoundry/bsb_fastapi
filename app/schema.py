@@ -31,6 +31,8 @@ class basicPart(BaseModel):
     version: Optional[str] = None
     # (If upload) hash of the uploaded file used to recognize associated files
     fileId: Optional[str] = None
+    # (If upload) addiseq, wether or not the uploaded file was parsed with addiseq argument
+    addiseq: Optional[bool] = None
     # (If multipleUpload): The index of the individual part
     index: Optional[int] = None
 
@@ -99,3 +101,8 @@ class responseMultipleFileUpload(BaseModel):
     result: bool
     message: Optional[str] = None
     parts: Optional[List[basicPart]] = None
+
+
+class responseValidate(BaseModel):
+    result: bool
+    message: Optional[str] = None

@@ -1,8 +1,7 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.middleware.cors import CORSMiddleware
 import basicsynbio as bsb
-from pathlib import Path
-import os
+import json
 from app.schema import (
     fileType,
     fileTypeData,
@@ -11,6 +10,7 @@ from app.schema import (
     responseCollectionsName,
     responseCollectionsData,
     responseSingularFileUpload,
+    responseValidate,
 )
 from typing import List
 
@@ -29,6 +29,7 @@ from app.src.viewpartlabels import viewpartlabels
 from app.src.return_sequence_annotations import return_sequence_annotations
 from app.src.dnafeatureviewer import dnafeaturesviewerpng
 from app.src.dnafeatureviewer_assembly import dnafeaturesviewerpng_assembly
+from app.utils.createHashFileDictionary import createHashFileDictionary
 
 description = """
 A REST API for BasicSynBio that allows the BasicSynBio python package to be consumed by any language - the primary use case for this is own own BasicSynBio frontend application. 🚀
@@ -108,7 +109,7 @@ def singular_file_upload(type: fileType, addiseq: bool, file: UploadFile = File(
     return fileUploadSingular(type, addiseq, file)
 
 
-# Route to return the json basic part for each record within a uploaded file
+# Route to return the json basic part for each record within a uploaded file ^^^
 @app.post("/fileupload/multiple")
 async def multiple_file_upload(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
@@ -119,6 +120,21 @@ async def multiple_file_upload(
     Uploads a file containing more than one sequence record to the server to return a JSON version of the same object for further processing in the basicsynbio interactive web app.
     """
     return await fileUploadMultiple(type, addiseq, file)
+
+
+# Route to return unique assemblies genbank representation on basicBuild Object
+@app.post("/validate", response_model=responseValidate)
+async def validate_assembly(
+    myPartArrayStr: str = Form(...), files: List[UploadFile] = File(...)
+):
+    """
+    ## Validate
+
+    This endpoint ensures that a input list of basicParts can successfully build a basic assembly.
+    """
+    PartArray = json.loads(myPartArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return validateAssembly(PartArray, hashFileDictionary)
 
 
 # Route to return CSV representation on basicBuild Object
@@ -185,17 +201,6 @@ async def buils_unique_assemblies_as_genbank(myBuild: List[basicBuild]):
     This endpoint takes a list of basicBuild objects and returns unique assemblies within the BasicBuild as a genbank file.
     """
     return buildUniqueAssemblies(myBuild)
-
-
-# Route to return unique assemblies genbank representation on basicBuild Object
-@app.post("/validate")
-async def validate_assembly(myBuild: List[basicPart]):
-    """
-    ## Validate
-
-    This endpoint ensures that a input list of basicParts can successfully build a basic assembly.
-    """
-    return validateAssembly(myBuild)
 
 
 #################### Visualization ####################

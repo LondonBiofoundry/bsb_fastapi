@@ -9,12 +9,13 @@ from app.utils.partToString import partToString
 
 
 def returnBasicPartFromUploadFileInitial(
-    file: UploadFile, type: fileType, addiseq: bool
+    file: UploadFile, type: fileType = fileType.genbank, addiseq: bool = False
 ) -> bsb.BasicPart:
     try:
         if type == fileType.SBOL:
             basic_part = bsb.import_sbol_part(file.file, addiseq)
         else:
+            file.file.seek(0)
             seqrec = SeqIO.read(StringIO(str(file.file.read(), "utf-8")), type)
             return bsb.seqrec2part(seqrec, addiseq)
         return basic_part

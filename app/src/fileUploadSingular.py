@@ -10,7 +10,7 @@ def fileUploadSingular(type: fileType, addiseq: bool, file: UploadFile = File(..
     result = returnBasicPartFromUploadFileInitial(file, type, addiseq)
     if isinstance(result, bsb.BasicPart):
         jsonBasicPart = bsbBasicPartToJsonbasicPart(
-            result, basicPartType.uploadSingle, file
+            result, basicPartType.uploadSingle, file, addiseq=addiseq
         )
         return {"result": True, "part": jsonBasicPart}
     else:

@@ -9,7 +9,6 @@ def return_build(mybuild) -> bsb.BasicBuild:
             parts = []
             for item in assembly.parts:
                 part = itemtopart(item)
-                print("part", part)
                 parts.append(part)
             if assembly.name:
                 parts.insert(0, assembly.name)
@@ -19,7 +18,6 @@ def return_build(mybuild) -> bsb.BasicBuild:
             assemblies.append(bsb.BasicAssembly(*mytuple))
         AssembliesTuple = tuple(assemblies)
         build = bsb.BasicBuild(*AssembliesTuple)
-        print("thebuild", build)
         return build
     except Exception as e:
         return {"error2": str(e)}
