@@ -169,13 +169,17 @@ async def build_echo_instructions(
 
 # Route to return PDF representation on basicAssembly Object
 @app.post("/build_pdf_instructions")
-async def build_pdf_instructions(myBuild: List[basicAssembly]):
+async def build_pdf_instructions(
+    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
     """
     ## Build PDF Instructions
 
     This endpoint takes a list of basicAssembly objects and returns a PDF for the manual assembly within a lab of the basicAssembly object.
     """
-    return buildPDFInstructions(myBuild)
+    AssemblyArray = json.loads(myAssemblyArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return buildPDFInstructions(AssemblyArray, hashFileDictionary)
 
 
 # Route to return JSON representation on basicAssembly Object
