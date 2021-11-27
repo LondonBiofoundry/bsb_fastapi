@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional, List, Any
 from enum import Enum
 from fastapi import File, UploadFile
-from app.schema_examples.examplebasicAssembly import examplebasicAssembly
+from app.schema_examples.exampleBasicAssembly import exampleBasicAssembly
 from app.schema_examples.exampleBasicPart import exampleBasicPart
 
 
@@ -47,7 +47,7 @@ class basicAssembly(BaseModel):
     parts: Optional[List[basicPart]] = None
 
     class Config:
-        schema_extra = {"example": examplebasicAssembly}
+        schema_extra = {"example": exampleBasicAssembly}
 
 
 class fileTypeInformation:

@@ -4,9 +4,6 @@ from fastapi.datastructures import UploadFile
 from app.schema import basicAssembly, basicPart
 from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
-from app.utils.returnbasicAssembly import return_build
-from fastapi.responses import FileResponse
-from fastapi import HTTPException
 
 from app.utils.ItemtoPart import itemtopart
 from app.utils.partstoBSBAssembly import partsToBSBAssembly
