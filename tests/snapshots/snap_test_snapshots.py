@@ -31,6 +31,13 @@ snapshots['test_validate_fail_without_files 2'] = {
     'result': False
 }
 
+snapshots['test_validate_success_with_files 1'] = 200
+
+snapshots['test_validate_success_with_files 2'] = {
+    'message': None,
+    'result': True
+}
+
 snapshots['test_validate_success_without_files 1'] = 200
 
 snapshots['test_validate_success_without_files 2'] = {
