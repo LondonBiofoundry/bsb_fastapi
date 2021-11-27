@@ -12,7 +12,7 @@ from app.schema import (
     responseSingularFileUpload,
     responseValidate,
 )
-from typing import List
+from typing import List, Optional
 
 from app.src.getCollections import getCollections
 from app.src.fileUploadSingular import fileUploadSingular
@@ -125,7 +125,7 @@ async def multiple_file_upload(
 # Route to return unique assemblies genbank representation on basicBuild Object
 @app.post("/validate", response_model=responseValidate)
 async def validate_assembly(
-    myPartArrayStr: str = Form(...), files: List[UploadFile] = File(...)
+    myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
 ):
     """
     ## Validate
