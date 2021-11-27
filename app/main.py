@@ -122,7 +122,7 @@ async def multiple_file_upload(
     return await fileUploadMultiple(type, addiseq, file)
 
 
-# Route to return unique assemblies genbank representation on basicBuild Object
+# Route to return unique assemblies genbank representation on basicBuild Object ^^^
 @app.post("/validate", response_model=responseValidate)
 async def validate_assembly(
     myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
@@ -137,9 +137,11 @@ async def validate_assembly(
     return validateAssembly(PartArray, hashFileDictionary)
 
 
-# Route to return CSV representation on basicBuild Object
+# Route to return CSV representation on basicBuild Object ^^^
 @app.post("/buildcsvs")
-async def build_csvs(myBuild: List[basicBuild]):
+async def build_csvs(
+    myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
     """
     ## Build CSVs
 
