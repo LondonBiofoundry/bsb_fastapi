@@ -1,6 +1,6 @@
 from fastapi import File, UploadFile
 import basicsynbio as bsb
-from app.schema import basicPartType, fileType, fileTypeData
+from app.schema import basicPartType, fileType
 
 from app.utils.basicPartFromFile import returnBasicPartFromUploadFileInitial
 from app.utils.bsbBasicPartToJsonbasicPart import bsbBasicPartToJsonbasicPart
