@@ -5,10 +5,12 @@ from fastapi import File, UploadFile
 from app.schema_examples.exampleBasicBuild import exampleBasicBuild
 from app.schema_examples.exampleBasicPart import exampleBasicPart
 
+
 class basicPartType(str, Enum):
     uploadSingle = "uploadSingle"
     uploadMultiple = "uploadMultiple"
     collection = "collection"
+
 
 class basicPart(BaseModel):
     # A unique identifier for the part
@@ -27,6 +29,8 @@ class basicPart(BaseModel):
     collection: Optional[str] = None
     # (If Collection): The version of the basicsynbio collection that the part comes from
     version: Optional[str] = None
+    # (If upload) hash of the uploaded file used to recognize associated files
+    fileId: Optional[str] = None
     # (If multipleUpload): The index of the individual part
     index: Optional[int] = None
 
@@ -86,5 +90,5 @@ class responseCollectionsName(BaseModel):
 
 
 class responseSingularFileUpload(BaseModel):
-    result: str
-    seq: str
+    result: bool
+    part: basicPart

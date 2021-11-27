@@ -10,6 +10,7 @@ from app.schema import (
     basicPart,
     responseCollectionsName,
     responseCollectionsData,
+    responseSingularFileUpload,
 )
 from typing import List
 
@@ -62,7 +63,7 @@ app.add_middleware(
 )
 
 # the `/docs` endpoint is reserved for OPENAPI good for testing
-# Root to the API to check if it is running
+# Root to the API to check if it is running ^^^
 @app.get("/")
 def root_endpoint_for_health_check():
     """
@@ -73,7 +74,7 @@ def root_endpoint_for_health_check():
     return {"message": "Hello World"}
 
 
-# Route to return the available collections
+# Route to return a list of all the available collections ^^^
 @app.get("/collections/names", response_model=responseCollectionsName)
 def get_collection_names():
     """
@@ -86,7 +87,7 @@ def get_collection_names():
     return {"data": [x for x in dir(bsb) if x.startswith("BASIC_")]}
 
 
-# Route to return data within available collections
+# Route to return data as a dictionary within available collections ^^^
 @app.get("/collections/data", response_model=responseCollectionsData)
 def get_collection_data():
     """
@@ -99,8 +100,8 @@ def get_collection_data():
     return {"data": getCollections()}
 
 
-# Route to return sequence data witin a uploaded file
-@app.post("/fileupload/singular")
+# Route to return sequence data witin a uploaded file ^^^
+@app.post("/fileupload/singular", response_model=responseSingularFileUpload)
 def singular_file_upload(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
 ):
