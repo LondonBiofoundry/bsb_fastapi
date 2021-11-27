@@ -214,13 +214,17 @@ async def build_unique_parts_as_genbank(
 
 # Route to return unique assemblies genbank representation on basicAssembly Object
 @app.post("/builduniqueassemblies")
-async def buils_unique_assemblies_as_genbank(myBuild: List[basicAssembly]):
+async def buils_unique_assemblies_as_genbank(
+    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
     """
     ## Build Unique Assemblies
 
     This endpoint takes a list of basicAssembly objects and returns unique assemblies within the basicAssembly as a genbank file.
     """
-    return buildUniqueAssemblies(myBuild)
+    AssemblyArray = json.loads(myAssemblyArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return buildUniqueAssemblies(AssemblyArray, hashFileDictionary)
 
 
 #################### Visualization ####################
