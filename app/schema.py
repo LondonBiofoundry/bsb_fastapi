@@ -93,3 +93,9 @@ class responseSingularFileUpload(BaseModel):
     result: bool
     message: Optional[str] = None
     part: Optional[basicPart] = None
+
+
+class responseMultipleFileUpload(BaseModel):
+    result: bool
+    message: Optional[str] = None
+    parts: Optional[List[basicPart]] = None

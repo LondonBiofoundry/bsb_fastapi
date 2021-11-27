@@ -1,7 +1,10 @@
 import basicsynbio as bsb
 
 from app.schema import basicPart, fileType
-from app.utils.basicPartFromFile import basicPartsFromUploadFile, returnBasicPartFromUploadFileInitial
+from app.utils.basicPartFromFile import (
+    returnBasicPartsFromUploadFileInitial,
+    returnBasicPartFromUploadFileInitial,
+)
 
 
 def itemtopart(item: basicPart):
@@ -16,9 +19,9 @@ def itemtopart(item: basicPart):
     else:
         if item.type == fileType.genbank:
             if item.multiple:
-                mypart = basicPartsFromUploadFile(item.base64, fileType.genbank, False)[
-                    item.index
-                ]
+                mypart = returnBasicPartsFromUploadFileInitial(
+                    item.base64, fileType.genbank, False
+                )[item.index]
             else:
                 print("Attempting to return basicpart from uploaded file")
                 mypart = returnBasicPartFromUploadFileInitial(
@@ -26,13 +29,15 @@ def itemtopart(item: basicPart):
                 )
         if item.type == fileType.fasta:
             if item.multiple:
-                mypart = basicPartsFromUploadFile(item.base64, fileType.fasta, False)[
-                    item.index
-                ]
+                mypart = returnBasicPartsFromUploadFileInitial(
+                    item.base64, fileType.fasta, False
+                )[item.index]
             else:
                 mypart = returnBasicPartFromUploadFileInitial(
                     item.base64, fileType.fasta, False
                 )
         if item.type == fileType.SBOL:
-            mypart = returnBasicPartFromUploadFileInitial(item.base64, fileType.SBOL, False)
+            mypart = returnBasicPartFromUploadFileInitial(
+                item.base64, fileType.SBOL, False
+            )
         return mypart

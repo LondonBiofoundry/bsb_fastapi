@@ -6,7 +6,10 @@ from app.schema import basicPart, basicPartType
 
 
 def bsbBasicPartToJsonbasicPart(
-    bsbBasicPart: bsb.BasicPart, uploadType: basicPartType, file: UploadFile = None
+    bsbBasicPart: bsb.BasicPart,
+    uploadType: basicPartType,
+    file: UploadFile = None,
+    index: int = None,
 ) -> basicPart:
     jsonDocument = {
         # A unique identifier for the part
@@ -22,6 +25,10 @@ def bsbBasicPartToJsonbasicPart(
         # The sequence of the available part
     }
     if not file == None:
+        # Add the fileId attribute of the jsonBasicPart
         file.file.seek(0)
         jsonDocument["fileId"] = hashlib.md5(file.file.read()).hexdigest()
+    if not index == None:
+        # Add the index attribute of the jsonBasicPart
+        jsonDocument["index"] = index
     return jsonDocument

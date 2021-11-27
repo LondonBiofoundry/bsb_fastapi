@@ -40,10 +40,7 @@ Below is a list of endpoints that can be accessed via the API, each endpoint can
 """
 
 app = FastAPI(
-    title="BasicSynBio API",
-    description=description,
-    version="0.0.1",
-    debug=True
+    title="BasicSynBio API", description=description, version="0.0.1", debug=True
 )
 
 origins = [
@@ -100,11 +97,9 @@ def get_collection_data():
     return {"data": getCollections()}
 
 
-# Route to return sequence data witin a uploaded file ^^^
+# Route to return the json basic part witin a uploaded file ^^^
 @app.post("/fileupload/singular", response_model=responseSingularFileUpload)
-def singular_file_upload(
-    type: fileType, addiseq: bool, file: UploadFile = File(...)
-):
+def singular_file_upload(type: fileType, addiseq: bool, file: UploadFile = File(...)):
     """
     ## Singular File Upload
 
@@ -113,7 +108,7 @@ def singular_file_upload(
     return fileUploadSingular(type, addiseq, file)
 
 
-# Route to return sequence datas for each record within a uploaded file
+# Route to return the json basic part for each record within a uploaded file
 @app.post("/fileupload/multiple")
 async def multiple_file_upload(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
