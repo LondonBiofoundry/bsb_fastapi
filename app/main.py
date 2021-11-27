@@ -132,9 +132,6 @@ async def validate_assembly(
 
     This endpoint ensures that a input list of basicParts can successfully build a basic assembly.
     """
-    print("sFilenames", files)
-    for file in files:
-        print(file.filename)
     PartArray = json.loads(myPartArrayStr)
     hashFileDictionary = createHashFileDictionary(files)
     return validateAssembly(PartArray, hashFileDictionary)
