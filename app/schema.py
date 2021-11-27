@@ -5,19 +5,28 @@ from fastapi import File, UploadFile
 from app.schema_examples.exampleBasicBuild import exampleBasicBuild
 from app.schema_examples.exampleBasicPart import exampleBasicPart
 
+class basicPartType(str, Enum):
+    uploadSingle = "uploadSingle"
+    uploadMultiple = "uploadMultiple"
+    collection = "collection"
 
 class basicPart(BaseModel):
+    # A unique identifier for the part
     id: Optional[str] = None
+    # (If Collection): The key of the collection version
     accessor: Optional[str] = None
-    binaryString: Optional[str] = None
-    base64: Optional[Any] = None
+    # (If Collection): The bsb collection that the part comes from
     collection: Optional[str] = None
+    # (If Collection): The version of the basicsynbio collection that the part comes from
     version: Optional[str] = None
+    # A description of the part
     description: Optional[str] = None
+    # A human readable name (non unique): of the part
     label: Optional[str] = None
-    multiple: Optional[bool] = None
+    # (If multipleUpload): The index of the individual part
     index: Optional[int] = None
-    type: Optional[str] = None
+    # The type of bsb part
+    type: Optional[basicPartType] = None
 
     class Config:
         schema_extra = {"example": exampleBasicPart}
