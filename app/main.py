@@ -154,13 +154,17 @@ async def build_csvs(
 
 # Route to return echo representation on basicAssembly Object
 @app.post("/buildechoinstructions")
-async def build_echo_instructions(myBuild: List[basicAssembly]):
+async def build_echo_instructions(
+    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
     """
     ## Build Echo Instructions
 
     This endpoint takes a list of basicAssembly objects and returns the Echo robot instructions to perform the clip step of BASIC DNA assembly.
     """
-    return buildEchoInstructions(myBuild)
+    AssemblyArray = json.loads(myAssemblyArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return buildEchoInstructions(AssemblyArray, hashFileDictionary)
 
 
 # Route to return PDF representation on basicAssembly Object

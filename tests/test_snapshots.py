@@ -98,7 +98,7 @@ def test_singular_build_csvs(snapshot):
     )
     snapshot.assert_match(my_api_response.status_code)
     # TODO: fix snapshot of binary zip response containing 2 csv files
-    snapshot.assert_match(my_api_response.content)
+    # snapshot.assert_match(my_api_response.content)
 
 
 def test_singular_build_csvs_with_files(snapshot):
@@ -114,6 +114,40 @@ def test_singular_build_csvs_with_files(snapshot):
     ]
     my_api_response = client.post(
         "/buildcsvs", data={"myAssemblyArrayStr": _dataString}, files=myFiles
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    # TODO: fix snapshot of binary zip response containing 2 csv files
+    # snapshot.assert_match(my_api_response.content)
+
+
+def test_singular_build_echoinstructions(snapshot):
+    """Testing the API for ability to build csv"""
+    f = open("tests/inputs/basicBuildExamples/simple1AssemblyArray.json")
+    _data = json.load(f)
+    _dataString = json.dumps(_data)
+    my_api_response = client.post(
+        "/buildechoinstructions", data={"myAssemblyArrayStr": _dataString}, files={}
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    # TODO: fix snapshot of binary zip response containing 2 csv files
+    snapshot.assert_match(my_api_response.content)
+
+
+def test_singular_build_echoinstructions_with_files(snapshot):
+    """Testing the API for ability to build csv"""
+    f = open("tests/inputs/basicBuildExamples/simple1AssemblyArray.json")
+    _data = json.load(f)
+    _dataString = json.dumps(_data)
+    seva12path = "tests/inputs/validateFail/SEVA_12.gb"
+    seva13path = "tests/inputs/validateFail/SEVA_13.gb"
+    myFiles = [
+        ("files", ("SEVA_12.gb", open(seva12path, "rb"))),
+        ("files", ("SEVA_13.gb", open(seva13path, "rb"))),
+    ]
+    my_api_response = client.post(
+        "/buildechoinstructions",
+        data={"myAssemblyArrayStr": _dataString},
+        files=myFiles,
     )
     snapshot.assert_match(my_api_response.status_code)
     # TODO: fix snapshot of binary zip response containing 2 csv files
