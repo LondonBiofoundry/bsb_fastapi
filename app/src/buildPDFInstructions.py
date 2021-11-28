@@ -2,7 +2,6 @@ from typing import Dict, List
 from app.schema import basicAssembly
 from app.utils.jsonAssemblyArrayToBsbBuild import jsonAssemblyArrayToBsbBuild
 
-# from app.utils.returnbasicAssembly import return_build
 from app.utils.readReturnDelete import read_return_delete
 
 import basicsynbio as bsb
