@@ -79,6 +79,7 @@ snapshots['test_singular_build_uniqueparts_with_files 1'] = 200
 snapshots['test_validate_fail_with_files 1'] = 200
 
 snapshots['test_validate_fail_with_files 2'] = {
+    'assembly': None,
     'message': "Alternating BasicPart, BasicLinker instances required: SEVA_12 is preceeded by <class 'basicsynbio.main.BasicPart'> and is of type <class 'basicsynbio.main.BasicPart'>.",
     'result': False
 }
@@ -86,6 +87,7 @@ snapshots['test_validate_fail_with_files 2'] = {
 snapshots['test_validate_fail_without_files 1'] = 200
 
 snapshots['test_validate_fail_without_files 2'] = {
+    'assembly': None,
     'message': "Alternating BasicPart, BasicLinker instances required: b0cc681c00c117b6c86cdfbcb050b272 is preceeded by <class 'basicsynbio.main.BasicPart'> and is of type <class 'basicsynbio.main.BasicPart'>.",
     'result': False
 }
@@ -93,6 +95,7 @@ snapshots['test_validate_fail_without_files 2'] = {
 snapshots['test_validate_success_with_files 1'] = 200
 
 snapshots['test_validate_success_with_files 2'] = {
+    'assembly': None,
     'message': None,
     'result': True
 }
@@ -100,6 +103,7 @@ snapshots['test_validate_success_with_files 2'] = {
 snapshots['test_validate_success_without_files 1'] = 200
 
 snapshots['test_validate_success_without_files 2'] = {
+    'assembly': None,
     'message': None,
     'result': True
 }

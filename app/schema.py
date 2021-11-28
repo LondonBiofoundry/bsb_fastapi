@@ -112,3 +112,4 @@ class responseMultipleFileUpload(BaseModel):
 class responseValidate(BaseModel):
     result: bool
     message: Optional[str] = None
+    assembly: Optional[basicAssembly] = None
