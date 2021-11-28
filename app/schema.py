@@ -35,6 +35,12 @@ class basicPart(BaseModel):
     addiseq: Optional[bool] = None
     # (If multipleUpload): The index of the individual part
     index: Optional[int] = None
+    # (frontend usage): associcated file to be handled in the frontend
+    file: Optional[Any] = None
+    # (frontend usage): to check wether a part in combinatorial
+    combinatorial: Optional[bool] = None
+    # (frontend usage): parts in combinatorial position
+    combinatorialParts: Optional[Any] = None
 
     class Config:
         schema_extra = {"example": exampleBasicPart}
