@@ -1,4 +1,5 @@
 import basicsynbio as bsb
+from app.schema import basicPartType
 from app.utils.partToString import partToString
 
 
@@ -16,9 +17,10 @@ def getCollections():
                     "name": version,
                     "parts": [
                         {
+                            "id": bsbcollection[version][item].id,
+                            "type": basicPartType.collection,
                             "label": bsbcollection[version][item].name,
                             "accessor": item,
-                            "binaryString": partToString(bsbcollection[version][item]),
                             "description": bsbcollection[version][item].description,
                             "collection": collection,
                             "version": version,
@@ -29,5 +31,5 @@ def getCollections():
                 for version in versions
             ],
         }
-    apiresponse.append(apicollection)
+        apiresponse.append(apicollection)
     return apiresponse
