@@ -263,8 +263,12 @@ async def view_sequence_annotations(
 
 # Route to return sequence annotations
 @app.post("/dnafeatureviewer")
-async def dnafeatureviewer(myBuild: basicPart):
-    return dnafeaturesviewerpng(myBuild)
+async def dnafeatureviewer(
+    myPart: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
+    jsonPart = json.loads(myPart)
+    hashFileDictionary = createHashFileDictionary(files)
+    return dnafeaturesviewerpng(jsonPart, hashFileDictionary)
 
 
 # Route to return sequence annotations for assemblys on Dna feature viewer
