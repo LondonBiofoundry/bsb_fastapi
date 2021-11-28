@@ -14,11 +14,11 @@ class basicPartType(str, Enum):
 
 class basicPart(BaseModel):
     # A unique identifier for the part
-    id: Optional[str] = None
+    id: str = None
     # A human readable name (non unique): of the part
     label: Optional[str] = None
     # The type of bsb part
-    type: Optional[basicPartType] = None
+    type: basicPartType = None
     # A description of the part
     description: Optional[str] = None
     # The sequence of the available part
