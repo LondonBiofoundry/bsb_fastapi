@@ -1,6 +1,5 @@
 from typing import Dict
 from app.schema import basicPart
-from app.utils.ItemtoPart import itemtopart
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 
 

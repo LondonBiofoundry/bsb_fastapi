@@ -1,7 +1,6 @@
 from typing import Dict
 import basicsynbio as bsb
 from app.schema import basicPart
-from app.utils.ItemtoPart import itemtopart
 from dna_features_viewer import BiopythonTranslator
 import base64
 import matplotlib

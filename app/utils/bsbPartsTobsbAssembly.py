@@ -1,8 +1,6 @@
 from typing import List, Union
 import basicsynbio as bsb
 
-from app.utils.ItemtoPart import itemtopart
-
 
 def bsbPartsTobsbAssembly(
     bsbParts: List[bsb.BasicPart], assemblyId: str

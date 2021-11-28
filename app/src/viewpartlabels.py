@@ -1,7 +1,5 @@
 from typing import Dict
 from app.schema import basicPart
-from app.utils.ItemtoPart import itemtopart
-from fastapi.logger import logger
 
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 

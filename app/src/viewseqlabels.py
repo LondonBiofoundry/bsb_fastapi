@@ -1,14 +1,8 @@
 from typing import Dict, List
 from app.schema import basicAssembly, basicPart
 
-from fastapi.responses import FileResponse
-from fastapi import HTTPException
-
-from app.utils.ItemtoPart import itemtopart
 from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
-from app.utils.partstoBSBAssembly import partsToBSBAssembly
-
 from app.src.viewpartlabels import get_qualifiers
 
 import basicsynbio as bsb

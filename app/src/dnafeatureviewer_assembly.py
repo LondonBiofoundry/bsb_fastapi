@@ -1,15 +1,12 @@
 from typing import Dict, List
 import basicsynbio as bsb
 from app.schema import basicPart
-from app.utils.ItemtoPart import itemtopart
 from dna_features_viewer import BiopythonTranslator
 import base64
 import matplotlib
 import os
 from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
-
-from app.utils.partstoBSBAssembly import partsToBSBAssembly
 
 matplotlib.use("Agg")
 

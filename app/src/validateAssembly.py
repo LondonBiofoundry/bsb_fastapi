@@ -5,9 +5,6 @@ from app.schema import basicAssembly, basicPart
 from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
 from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 
-from app.utils.ItemtoPart import itemtopart
-from app.utils.partstoBSBAssembly import partsToBSBAssembly
-
 import basicsynbio as bsb
 
 
