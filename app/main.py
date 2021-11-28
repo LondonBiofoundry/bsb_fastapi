@@ -251,8 +251,14 @@ async def view_part_labels(
 
 # Route to return sequence annotations
 @app.post("/returnseqann")
-async def view_sequence_annotations(myBuild: basicPart, Qualifier: str):
-    return return_sequence_annotations(myBuild, Qualifier)
+async def view_sequence_annotations(
+    Qualifier: str = Form(...),
+    myPart: str = Form(...),
+    files: Optional[List[UploadFile]] = File([]),
+):
+    jsonPart = json.loads(myPart)
+    hashFileDictionary = createHashFileDictionary(files)
+    return return_sequence_annotations(jsonPart, Qualifier, hashFileDictionary)
 
 
 # Route to return sequence annotations

@@ -90,6 +90,170 @@ snapshots['test_viewpartlabels_success_without_files 2'] = [
     'Feature'
 ]
 
+snapshots['test_viewseqann_success_with_files 1'] = 200
+
+snapshots['test_viewseqann_success_with_files 2'] = {
+    'annotations': [
+        {
+            'direction': 1,
+            'end': 3639,
+            'name': 'SEVA_T1',
+            'start': 3534
+        },
+        {
+            'direction': 1,
+            'end': 51,
+            'name': 'Prefix',
+            'start': 33
+        },
+        {
+            'direction': 1,
+            'end': 1286,
+            'name': 'Linker04',
+            'start': 1241
+        },
+        {
+            'direction': 1,
+            'end': 3666,
+            'name': 'Suffix',
+            'start': 3648
+        },
+        {
+            'direction': 1,
+            'end': 4833,
+            'name': 'terminator_B0015',
+            'start': 4704
+        },
+        {
+            'direction': 1,
+            'end': 4668,
+            'name': 'mscarlett',
+            'start': 3963
+        },
+        {
+            'direction': 1,
+            'end': 160,
+            'name': 'SEVA_T0',
+            'start': 57
+        },
+        {
+            'direction': 1,
+            'end': 3520,
+            'name': 'SEVA_RK2',
+            'start': 1298
+        },
+        {
+            'direction': 1,
+            'end': 47,
+            'name': 'LinkerA',
+            'start': 0
+        },
+        {
+            'direction': 1,
+            'end': 3705,
+            'name': 'LMS',
+            'start': 3648
+        },
+        {
+            'direction': 1,
+            'end': 3701,
+            'name': 'LinkerB',
+            'start': 3654
+        },
+        {
+            'direction': 1,
+            'end': 4843,
+            'name': 'LMP',
+            'start': 4837
+        },
+        {
+            'direction': 1,
+            'end': 1225,
+            'name': 'SEVA_Ap',
+            'start': 186
+        },
+        {
+            'direction': 1,
+            'end': 4668,
+            'name': 'mScarlett',
+            'start': 3963
+        },
+        {
+            'direction': 1,
+            'end': 279,
+            'name': 'Amp prom',
+            'start': 250
+        },
+        {
+            'direction': 1,
+            'end': 3832,
+            'name': 'PJ23119',
+            'start': 3797
+        }
+    ]
+}
+
+snapshots['test_viewseqann_success_without_files 1'] = 200
+
+snapshots['test_viewseqann_success_without_files 2'] = {
+    'annotations': [
+        {
+            'direction': 1,
+            'end': 160,
+            'name': 'SEVA_T0',
+            'start': 57
+        },
+        {
+            'direction': 1,
+            'end': 3832,
+            'name': 'J23119',
+            'start': 3797
+        },
+        {
+            'direction': 1,
+            'end': 4843,
+            'name': 'LMP',
+            'start': 4837
+        },
+        {
+            'direction': 1,
+            'end': 4833,
+            'name': 'B0015',
+            'start': 4704
+        },
+        {
+            'direction': 1,
+            'end': 3705,
+            'name': 'LMS',
+            'start': 3648
+        },
+        {
+            'direction': 1,
+            'end': 4668,
+            'name': 'mScarlett',
+            'start': 3963
+        },
+        {
+            'direction': 1,
+            'end': 3639,
+            'name': 'SEVA_T1',
+            'start': 3534
+        },
+        {
+            'direction': 1,
+            'end': 3520,
+            'name': 'SEVA_RK2',
+            'start': 1298
+        },
+        {
+            'direction': 1,
+            'end': 1225,
+            'name': 'SEVA_Ap',
+            'start': 186
+        }
+    ]
+}
+
 snapshots['test_viewseqlabels_success_with_files 1'] = 200
 
 snapshots['test_viewseqlabels_success_with_files 2'] = [

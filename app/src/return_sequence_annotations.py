@@ -1,7 +1,12 @@
+from typing import Dict
+from app.schema import basicPart
 from app.utils.ItemtoPart import itemtopart
+from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 
 
-def return_sequence_annotations(item, Qualifier):
+def return_sequence_annotations(
+    jsonPart: basicPart, Qualifier: str, hashFileDictionary: Dict = None
+):
     def extract_feature(myfeature):
         try:
             # myfeature.qualifiers[Qualifier][0]:
@@ -24,7 +29,9 @@ def return_sequence_annotations(item, Qualifier):
         except:
             return
 
-    mypart = itemtopart(item)
-    annotations = map(extract_feature, mypart.features)
-
-    return {"annotated": list(annotations), "seq": str(mypart.seq)}
+    try:
+        bsbPart = jsonPartToBsbPart(jsonPart, hashFileDictionary)
+        annotations = map(extract_feature, bsbPart.features)
+        return {"annotations": list(annotations)}
+    except:
+        return {"annotations": []}
