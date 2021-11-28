@@ -9,6 +9,7 @@ from app.schema import (
     basicPart,
     responseCollectionsName,
     responseCollectionsData,
+    responseMultipleFileUpload,
     responseSingularFileUpload,
     responseValidate,
 )
@@ -110,7 +111,7 @@ def singular_file_upload(type: fileType, addiseq: bool, file: UploadFile = File(
 
 
 # Route to return the json basic part for each record within a uploaded file ^^^
-@app.post("/fileupload/multiple")
+@app.post("/fileupload/multiple", response_model=responseMultipleFileUpload)
 async def multiple_file_upload(
     type: fileType, addiseq: bool, file: UploadFile = File(...)
 ):
