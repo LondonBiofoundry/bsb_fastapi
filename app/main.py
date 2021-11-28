@@ -241,8 +241,12 @@ async def view_sequence_labels(
 
 # Route to return unique assemblies part labels representation of basicAssembly Object
 @app.post("/viewpartlabels")
-async def view_part_labels(myBuild: basicPart):
-    return viewpartlabels(myBuild)
+async def view_part_labels(
+    myPart: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
+    jsonPart = json.loads(myPart)
+    hashFileDictionary = createHashFileDictionary(files)
+    return viewpartlabels(jsonPart, hashFileDictionary)
 
 
 # Route to return sequence annotations

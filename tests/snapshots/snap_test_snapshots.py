@@ -76,6 +76,20 @@ snapshots['test_validate_success_without_files 2'] = {
     'result': True
 }
 
+snapshots['test_viewpartlabels_success_with_files 1'] = 200
+
+snapshots['test_viewpartlabels_success_with_files 2'] = [
+    'label',
+    'Feature'
+]
+
+snapshots['test_viewpartlabels_success_without_files 1'] = 200
+
+snapshots['test_viewpartlabels_success_without_files 2'] = [
+    'label',
+    'Feature'
+]
+
 snapshots['test_viewseqlabels_success_with_files 1'] = 200
 
 snapshots['test_viewseqlabels_success_with_files 2'] = [
