@@ -290,6 +290,42 @@ def test_singular_build_uniqueassemblies_with_files(snapshot):
     # snapshot.assert_match(my_api_response.content)
 
 
+####################### Visualise ####################################
+
+
+def test_viewseqlabels_success_without_files(snapshot):
+    """Testing the API for ability to validate builds"""
+    f = open("tests/inputs/validatePass/Passing.json")
+    _data = json.load(f)
+    _dataString = json.dumps(_data)
+    my_api_response = client.post(
+        "/viewseqlabels", data={"myPartArrayStr": _dataString}, files={}
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+
+def test_viewseqlabels_success_with_files(snapshot):
+    """Testing the API for ability to validate builds"""
+    f = open("tests/inputs/validatePass/PassingWithFiles.json")
+    _data = json.load(f)
+    _dataString = json.dumps(_data)
+    seva12path = "tests/inputs/validatePass/SEVA_12.gb"
+    seva13path = "tests/inputs/validatePass/SEVA_13.gb"
+    myFiles = [
+        ("files", ("SEVA_12.gb", open(seva12path, "rb"))),
+        ("files", ("SEVA_13.gb", open(seva13path, "rb"))),
+    ]
+    print(myFiles)
+    my_api_response = client.post(
+        "/viewseqlabels",
+        data={"myPartArrayStr": _dataString},
+        files=myFiles,
+    )
+    snapshot.assert_match(my_api_response.status_code)
+    snapshot.assert_match(my_api_response.json())
+
+
 # def test_collection_data(snapshot):
 #     """Testing the API for collection data"""
 #     my_api_response = client.get("/collections/data")

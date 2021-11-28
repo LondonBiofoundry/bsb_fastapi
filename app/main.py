@@ -231,8 +231,12 @@ async def buils_unique_assemblies_as_genbank(
 
 # Route to return unique assemblies seq labels representation of basicAssembly Object
 @app.post("/viewseqlabels")
-async def view_sequence_labels(myBuild: List[basicPart]):
-    return viewseqlabels(myBuild)
+async def view_sequence_labels(
+    myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+):
+    PartArray = json.loads(myPartArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return viewseqlabels(PartArray, hashFileDictionary)
 
 
 # Route to return unique assemblies part labels representation of basicAssembly Object

@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict, List
 from app.schema import basicAssembly, basicPart
 
 # from app.utils.returnbasicAssembly import return_build
@@ -6,6 +6,8 @@ from fastapi.responses import FileResponse
 from fastapi import HTTPException
 
 from app.utils.ItemtoPart import itemtopart
+from app.utils.bsbPartsTobsbAssembly import bsbPartsTobsbAssembly
+from app.utils.jsonPartToBsbPart import jsonPartToBsbPart
 from app.utils.partstoBSBAssembly import partsToBSBAssembly
 
 from app.src.viewpartlabels import get_qualifiers
@@ -13,17 +15,24 @@ from app.src.viewpartlabels import get_qualifiers
 import basicsynbio as bsb
 
 
-def viewseqlabels(mybuild: List[basicPart]):
+def viewseqlabels(parts: List[basicPart], hashFileDictionary: Dict = None):
     try:
-        if len(mybuild) == 0:
-            return {"result": "no parts within assembly"}
+        if len(parts) == 0:
+            return {"result": False, "message": "no parts within assembly"}
         else:
-            assembly = partsToBSBAssembly(mybuild)
+            bsbBasicParts = [
+                jsonPartToBsbPart(part, hashFileDictionary) for part in parts
+            ]
+            for part in bsbBasicParts:
+                if isinstance(part, str):
+                    return {"result": False, "message": part}
+            print("bsbBasicParts", bsbBasicParts)
+            assembly = bsbPartsTobsbAssembly(bsbBasicParts, "validatedAssembly")
             if isinstance(assembly, bsb.BasicAssembly):
                 part_from_build = assembly.return_part()
                 options = list(set(map(get_qualifiers, part_from_build.features)))
                 options.append("Feature")
                 return options
-            return assembly
+            return {"result": False, "message": assembly}
     except Exception as e:
-        return {"result": "failed", "detail": str(e)}
+        return {"result": False, "message": str(e)}
