@@ -16,11 +16,11 @@ def read_return_delete(file: str, media_type, filename):
 
     resp = Response(
         return_data.getvalue(),
-        media_type="application/x-zip-compressed",
+        media_type=media_type,
         headers={"Content-Disposition": f"attachment;filename={filename}"},
     )
 
-    os.remove(file)
+    # os.remove(file)
 
     return resp
 
