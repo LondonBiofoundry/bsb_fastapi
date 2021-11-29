@@ -37,7 +37,7 @@ def create_file_execute_build_command_return(
     tmp.close()
     resp = Response(
         return_data.getvalue(),
-        media_type="application/x-zip-compressed",
+        media_type=media_type,
         headers={"Content-Disposition": f"attachment;filename={output_filename}"},
     )
     return resp
