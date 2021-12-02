@@ -28,6 +28,7 @@ from app.src.buildJSON import buildJSON
 from app.src.buildUniqueParts import buildUniqueParts
 from app.src.buildUniqueAssemblies import buildUniqueAssemblies
 from app.src.validateAssembly import validateAssembly
+from app.src.viewAssemblySeq import return_assembly_sequence
 from app.src.viewseqlabels import viewseqlabels
 from app.src.viewpartlabels import viewpartlabels
 from app.src.return_sequence_annotations import return_sequence_annotations
@@ -275,6 +276,19 @@ async def view_sequence_annotations(
     jsonPart = json.loads(myPart)
     hashFileDictionary = createHashFileDictionary(files)
     return return_sequence_annotations(jsonPart, Qualifier, hashFileDictionary)
+
+
+@app.post("/assemblySeq", response_model=responseViewSeqLabels)
+async def return_assembly_seq_and_annotations(
+    Qualifier: str = Form(...),
+    myPartArrayStr: str = Form(...),
+    files: Optional[List[UploadFile]] = File([]),
+):
+    PartArray = json.loads(myPartArrayStr)
+    hashFileDictionary = createHashFileDictionary(files)
+    return return_assembly_sequence(
+        parts=PartArray, Qualifier=Qualifier, hashFileDictionary=hashFileDictionary
+    )
 
 
 # Route to return sequence annotations
