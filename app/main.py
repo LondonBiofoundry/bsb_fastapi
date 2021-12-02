@@ -1,7 +1,9 @@
-from fastapi import FastAPI, File, UploadFile, Form
+from fastapi import FastAPI, File, UploadFile, Form, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 import basicsynbio as bsb
 import json
+
+from starlette.responses import FileResponse
 from app.schema import (
     fileType,
     fileTypeData,
@@ -139,9 +141,11 @@ async def validate_assembly(
 
 
 # Route to return CSV representation on basicAssembly Object ^^^
-@app.post("/buildcsvs")
+@app.post("/buildcsvs", response_class=FileResponse)
 async def build_csvs(
-    myAssemblyArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
+    background_tasks: BackgroundTasks,
+    myAssemblyArrayStr: str = Form(...),
+    files: Optional[List[UploadFile]] = File([]),
 ):
     """
     ## Build CSVs
@@ -150,7 +154,11 @@ async def build_csvs(
     """
     AssemblyArray = json.loads(myAssemblyArrayStr)
     hashFileDictionary = createHashFileDictionary(files)
-    return buildCSVs(AssemblyArray, hashFileDictionary)
+    return buildCSVs(
+        assemblyArray=AssemblyArray,
+        hashFileDict=hashFileDictionary,
+        background_tasks=background_tasks,
+    )
 
 
 # Route to return echo representation on basicAssembly Object

@@ -1,11 +1,18 @@
 from fastapi.responses import FileResponse
-from fastapi import FastAPI, Response
+from fastapi import FastAPI, Response, BackgroundTasks
 import tempfile
 import io
 import os
 from typing import Callable
 import basicsynbio as bsb
 from pathlib import Path
+
+
+def returnFileResponse(file: str, media_type, filename, bg_tasks: BackgroundTasks):
+    bg_tasks.add_task(os.remove, file)
+    return FileResponse(
+        file, 200, None, media_type, background=bg_tasks, filename=filename
+    )
 
 
 def read_return_delete(file: str, media_type, filename):
