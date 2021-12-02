@@ -266,7 +266,7 @@ async def view_part_labels(
 
 
 # Route to return sequence annotations
-@app.post("/returnseqann")
+@app.post("/returnseqann", response_model=responseViewSeqLabels)
 async def view_sequence_annotations(
     Qualifier: str = Form(...),
     myPart: str = Form(...),

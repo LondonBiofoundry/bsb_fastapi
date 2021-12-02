@@ -24,6 +24,7 @@ def getCollections():
                             "description": bsbcollection[version][item].description,
                             "collection": collection,
                             "version": version,
+                            "seq": str(bsbcollection[version][item].seq),
                         }
                         for item in bsbcollection[version]
                     ],

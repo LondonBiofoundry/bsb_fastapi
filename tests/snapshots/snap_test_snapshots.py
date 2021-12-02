@@ -131,7 +131,7 @@ snapshots['test_viewpartlabels_success_without_files 2'] = {
 snapshots['test_viewseqann_success_with_files 1'] = 200
 
 snapshots['test_viewseqann_success_with_files 2'] = {
-    'annotations': [
+    'message': [
         {
             'direction': 1,
             'end': 3639,
@@ -228,13 +228,14 @@ snapshots['test_viewseqann_success_with_files 2'] = {
             'name': 'PJ23119',
             'start': 3797
         }
-    ]
+    ],
+    'result': True
 }
 
 snapshots['test_viewseqann_success_without_files 1'] = 200
 
 snapshots['test_viewseqann_success_without_files 2'] = {
-    'annotations': [
+    'message': [
         {
             'direction': 1,
             'end': 160,
@@ -289,7 +290,8 @@ snapshots['test_viewseqann_success_without_files 2'] = {
             'name': 'SEVA_Ap',
             'start': 186
         }
-    ]
+    ],
+    'result': True
 }
 
 snapshots['test_viewseqlabels_success_with_files 1'] = 200

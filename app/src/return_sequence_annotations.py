@@ -31,6 +31,6 @@ def return_sequence_annotations(
     try:
         bsbPart = jsonPartToBsbPart(jsonPart, hashFileDictionary)
         annotations = map(extract_feature, bsbPart.features)
-        return {"annotations": list(annotations)}
+        return {"result": True, "message": list(annotations)}
     except:
-        return {"annotations": []}
+        return {"result": False, "message": []}
