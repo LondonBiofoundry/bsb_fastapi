@@ -9,10 +9,13 @@ def get_qualifiers(item):
 
 
 def viewpartlabels(part: basicPart, hashFileDictionary: Dict = None):
-    if part:
-        bsbPart = jsonPartToBsbPart(part, hashFileDictionary)
-        options = list(set(map(get_qualifiers, bsbPart.features)))
-    else:
-        options = []
-    options.append("Feature")
-    return options
+    try:
+        if part:
+            bsbPart = jsonPartToBsbPart(part, hashFileDictionary)
+            options = list(set(map(get_qualifiers, bsbPart.features)))
+            options.append("Feature")
+            return {"result": True, "message": options}
+        else:
+            return {"result": False, "message": "No part supplied"}
+    except Exception:
+        return {"result": False, "message": "No part supplied"}

@@ -256,7 +256,7 @@ async def view_sequence_labels(
 
 
 # Route to return unique assemblies part labels representation of basicAssembly Object
-@app.post("/viewpartlabels")
+@app.post("/viewpartlabels", response_model=responseViewSeqLabels)
 async def view_part_labels(
     myPart: str = Form(...), files: Optional[List[UploadFile]] = File([])
 ):
