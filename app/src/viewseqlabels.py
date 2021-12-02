@@ -25,7 +25,7 @@ def viewseqlabels(parts: List[basicPart], hashFileDictionary: Dict = None):
                 part_from_build = assembly.return_part()
                 options = list(set(map(get_qualifiers, part_from_build.features)))
                 options.append("Feature")
-                return options
+                return {"result": True, "message": options}
             return {"result": False, "message": assembly}
     except Exception as e:
         return {"result": False, "message": str(e)}

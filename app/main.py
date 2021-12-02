@@ -14,6 +14,7 @@ from app.schema import (
     responseMultipleFileUpload,
     responseSingularFileUpload,
     responseValidate,
+    responseViewSeqLabels,
 )
 from typing import List, Optional
 
@@ -245,7 +246,7 @@ async def buils_unique_assemblies_as_genbank(
 #################### Visualization ####################
 
 # Route to return unique assemblies seq labels representation of basicAssembly Object
-@app.post("/viewseqlabels")
+@app.post("/viewseqlabels", response_model=responseViewSeqLabels)
 async def view_sequence_labels(
     myPartArrayStr: str = Form(...), files: Optional[List[UploadFile]] = File([])
 ):

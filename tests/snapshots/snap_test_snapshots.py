@@ -288,14 +288,20 @@ snapshots['test_viewseqann_success_without_files 2'] = {
 
 snapshots['test_viewseqlabels_success_with_files 1'] = 200
 
-snapshots['test_viewseqlabels_success_with_files 2'] = [
-    'label',
-    'Feature'
-]
+snapshots['test_viewseqlabels_success_with_files 2'] = {
+    'message': [
+        'label',
+        'Feature'
+    ],
+    'result': True
+}
 
 snapshots['test_viewseqlabels_success_without_files 1'] = 200
 
-snapshots['test_viewseqlabels_success_without_files 2'] = [
-    'label',
-    'Feature'
-]
+snapshots['test_viewseqlabels_success_without_files 2'] = {
+    'message': [
+        'label',
+        'Feature'
+    ],
+    'result': True
+}
