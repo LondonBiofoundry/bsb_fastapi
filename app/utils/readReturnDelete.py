@@ -27,7 +27,7 @@ def read_return_delete(file: str, media_type, filename):
         headers={"Content-Disposition": f"attachment;filename={filename}"},
     )
 
-    # os.remove(file)
+    os.remove(file)
 
     return resp
 
