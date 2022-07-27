@@ -1,6 +1,6 @@
 # BasicSynBio API
 
-This API is build with [Fast API](https://fastapi.tiangolo.com) and can be accessed at https://app-basicsynbio.co.uk CORS dependent. The documentation can be viewed at https://app-basicsynbio.co.uk/docs/
+This API is build with [Fast API](https://fastapi.tiangolo.com) and can be accessed at https://basic-syn-bio.herokuapp.com CORS dependent. The documentation can be viewed at https://basic-syn-bio.herokuapp.com/docs
 
 At the documentation a list of the endpoints can be seen and tested!
 
